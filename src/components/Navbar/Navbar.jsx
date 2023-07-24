@@ -5,7 +5,7 @@ export class Navbar extends Component {
     return (
       <nav className="navbar">
         <input hidden type="checkbox" id="menu" />
-        <label for="menu" class="material-symbols-outlined burger-icon">
+        <label htmlFor="menu" className="material-symbols-outlined burger-icon">
           menu
         </label>
         <label className="logo">NewsPigeon</label>
