@@ -9,10 +9,10 @@ export class News extends Component {
   }
   async componentDidMount() {
     let url =
-      "http://api.mediastack.com/v1/news?access_key=f553f07d194bd9848f3ca5b8689d9141";
+      "https://newsdata.io/api/1/news?apikey=pub_26635720e3d09ab1aeff65b0e2e33c9278257&q=world&language=en";
     let data = await fetch(url);
     let parsedData = await data.json();
-    this.setState({ articles: parsedData.data });
+    this.setState({ articles: parsedData.results });
   }
   render() {
     const newsItems = this.state.articles.map((article) => {
