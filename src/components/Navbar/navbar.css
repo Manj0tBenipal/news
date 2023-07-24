@@ -1,0 +1,76 @@
+nav ul {
+  list-style: none;
+  float: right;
+  margin-right: 20px;
+  transition: all ease 0.3s;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+nav {
+  position: fixed;
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+  z-index: 1000;
+}
+label.logo {
+  color: white;
+  line-height: 80px;
+  font-size: 35px;
+  padding-inline: 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+.burger-icon {
+  color: white;
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 952px) {
+  .burger-icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    height: 100vh;
+    width: 100%;
+    background: #2c3e50ef;
+    left: -100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 25px;
+  }
+  nav ul li a:hover {
+    color: #0082e6;
+  }
+  #menu:checked ~ ul {
+    left: 0;
+  }
+}
