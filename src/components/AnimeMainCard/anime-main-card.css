@@ -67,9 +67,11 @@
   border-top: 1px solid rgba(206, 206, 206, 0.694);
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 5px;
 }
 .info-badge {
   background-color: rgba(226, 226, 226, 0.563);
   padding: 4px 8px;
   border-radius: 7px;
+
 }

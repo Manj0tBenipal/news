@@ -35,11 +35,11 @@ export default function NewsItem(props) {
 
         <p className=" card-text">{synopsis}</p>
         <div className="more-info">
-          <span className="info-badge">{status}</span>
-          <span className="info-badge">episodes:{episodes}</span>
-          <span className="info-badge">Score:{episodes}</span>
-          <span className="info-badge">Rank:{rank}</span>
-          <span className="info-badge">Duration:{duration}</span>
+          <span className="info-badge f-ubuntu">{status}</span>
+          <span className="info-badge f-ubuntu">episodes:{episodes}</span>
+          <span className="info-badge f-ubuntu">Score:{episodes}</span>
+          <span className="info-badge f-ubuntu">Rank:{rank}</span>
+          <span className="info-badge f-ubuntu">Duration:{duration}</span>
         </div>
       </div>
     </a>
