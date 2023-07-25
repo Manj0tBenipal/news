@@ -1,25 +1,30 @@
-import React, { Component } from "react";
-import NewsItem from "../NewsItem/NewsItem";
+import React from "react";
+import NewsItem from "../AnimeMainCard/AnimeMainCard";
 import "./newsContainer.css";
+import backupData from "../../example.json";
 
-export class News extends Component {
-  constructor() {
-    super();
-    this.state = { articles: [], loading: false, page: 1 };
-  }
-  async componentDidMount() {
-    let url =
-      "https://newsdata.io/api/1/news?apikey=pub_26635720e3d09ab1aeff65b0e2e33c9278257&q=world&language=en";
-    let data = await fetch(url);
-    let parsedData = await data.json();
-    this.setState({ articles: parsedData.results });
-  }
-  render() {
-    const newsItems = this.state.articles.map((article) => {
-      return <NewsItem key={article.title} article={article} />;
+export default function News() {
+  const [articles, setArticles] = React.useState([]);
+
+  React.useEffect(() => {
+    const fetchData = async () => {
+      const url = "https://api.jikan.moe/v4/anime";
+
+      try {
+        const response = await fetch(url);
+        const result = await response.json();
+        setArticles(result.data || backupData);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  {
+    const animeCards = articles.map((anime) => {
+      return <NewsItem key={anime.title} article={anime} />;
     });
-    return <div className="news-container">{newsItems}</div>;
+    return <div className="news-container">{animeCards}</div>;
   }
 }
-
-export default News;
