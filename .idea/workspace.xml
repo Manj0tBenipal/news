@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Started using a new component for anime card and news component will be used somewhere else" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SzDx8lIG0DHo0zXrVLpKlqoBSM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/manjo/HTML/news",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="" />
+      <created>1690140759731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690140759731</updated>
+      <workItem from="1690140760780" duration="1083000" />
+      <workItem from="1690163741313" duration="2715000" />
+      <workItem from="1690168881714" duration="627000" />
+      <workItem from="1690200664034" duration="30000" />
+      <workItem from="1690308845571" duration="132000" />
+    </task>
+    <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
+      <created>1690151449296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690151449296</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Styled navbar and made it responsive">
+      <created>1690163764124</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690163764124</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added external stylesheet for navbar">
+      <created>1690163785947</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690163785947</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fetched data from api">
+      <created>1690164695340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690164695340</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added default image for urlToImage=null from APi">
+      <created>1690165999389</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690165999389</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Chnaged Api from NewsApi to mediastack">
+      <created>1690167246676</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690167246676</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Chnaged Api from NewsApi to mediastack">
+      <created>1690168668894</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690168668894</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Chnaged Api from  mediastack to NewsData">
+      <created>1690168710177</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690168710177</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Started using a new component for anime card and news component will be used somewhere else">
+      <created>1690308910472</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690308910472</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Started using a new component for anime card and news component will be used somewhere else">
+      <created>1690308938775</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690308938775</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project modified. Styling added for news cards and news card wrapper" />
+    <MESSAGE value="Styled navbar and made it responsive" />
+    <MESSAGE value="added external stylesheet for navbar" />
+    <MESSAGE value="Fetched data from api" />
+    <MESSAGE value="added default image for urlToImage=null from APi" />
+    <MESSAGE value="Chnaged Api from NewsApi to mediastack" />
+    <MESSAGE value="Chnaged Api from  mediastack to NewsData" />
+    <MESSAGE value="Changes the theme of website from general news to anime" />
+    <MESSAGE value="Started using a new component for anime card and news component will be used somewhere else" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started using a new component for anime card and news component will be used somewhere else" />
+  </component>
+</project>
