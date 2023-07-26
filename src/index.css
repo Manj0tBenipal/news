@@ -1,0 +1,7 @@
+body {
+   background: var(--dark);
+
+}
+#root {
+  min-width: 100%;
+}

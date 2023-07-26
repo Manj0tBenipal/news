@@ -6,9 +6,11 @@
   border-radius: 10px;
   margin: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   text-decoration: none;
-  color: black;
+  color: white;
+  background: transparent;
+
 }
 .card img {
   width: 100%;
@@ -35,6 +37,7 @@
   overflow: hidden;
   margin-block: 15px;
   color: grey;
+  
 }
 
 .tags {

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Started using a new component for anime card and news component will be used somewhere else" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Added hero component">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AnimeMainCard/anime-main-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnimeMainCard/anime-main-card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroComponent/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroComponent/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +64,9 @@
       <workItem from="1690168881714" duration="627000" />
       <workItem from="1690200664034" duration="30000" />
       <workItem from="1690308845571" duration="132000" />
+      <workItem from="1690308985019" duration="2295000" />
+      <workItem from="1690373890410" duration="11000" />
+      <workItem from="1690403452159" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -122,7 +138,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690308938775</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Started using a new component for anime card and news component will be used somewhere else">
+      <created>1690309008396</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690309008396</updated>
+    </task>
+    <task id="LOCAL-00012" summary="font family changed for some elements">
+      <created>1690309455856</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690309455856</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added hero component">
+      <created>1690313484036</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690313484036</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +186,8 @@
     <MESSAGE value="Chnaged Api from  mediastack to NewsData" />
     <MESSAGE value="Changes the theme of website from general news to anime" />
     <MESSAGE value="Started using a new component for anime card and news component will be used somewhere else" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started using a new component for anime card and news component will be used somewhere else" />
+    <MESSAGE value="font family changed for some elements" />
+    <MESSAGE value="Added hero component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added hero component" />
   </component>
 </project>

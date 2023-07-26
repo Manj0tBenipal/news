@@ -2,8 +2,25 @@
 .f-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
+:root {
+  --grey-dark: #343a40;
+  --dark: #242428;
+  --height-small: 600px;
+  --height-large: 700px;
+}
+.d-flex {
+  display: flex;
+}
+.a-j-center {
+  align-items: center;
+  justify-content: center;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.container {
+  min-width: 98vw;
+  margin: auto;
 }

@@ -8,7 +8,7 @@ export class Navbar extends Component {
         <label htmlFor="menu" className="material-symbols-outlined burger-icon">
           menu
         </label>
-        <label className="logo f-ubuntu">NewsPigeon</label>
+        <label className="logo f-ubuntu">Tanjiro</label>
         <ul>
           <li>
             <a href="/">Home</a>
