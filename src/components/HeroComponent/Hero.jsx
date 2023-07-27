@@ -90,7 +90,7 @@ export default function Hero() {
       <div className="carousel-inner">{heroSlide}</div>
       <div className="carousel-controls-wrapper">
         <button
-          class="carousel-controls carousel-control-prev"
+          className="carousel-controls carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
@@ -98,7 +98,7 @@ export default function Hero() {
           <FaChevronLeft size={15} />
         </button>
         <button
-          class="carousel-controls carousel-control-next"
+          className="carousel-controls carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
