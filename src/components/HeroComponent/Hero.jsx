@@ -7,7 +7,7 @@ import {
   FaChevronRight,
   FaClock,
   FaPlayCircle,
-  FaFile,
+  
 } from "react-icons/fa";
 
 export default function Hero() {
@@ -16,7 +16,8 @@ export default function Hero() {
     return (
       <div
         key={item.mal_id}
-        className={`carousel-item ${idx === 1 ? "active" : ""}`}
+        className={`carousel-item ${idx === 0 ? "active" : ""}`}
+        data-bs-interval="3000"
       >
         <div className="anime-info">
           <div className="anime-info-content">
@@ -29,7 +30,7 @@ export default function Hero() {
               </span>
               <span className="anime-st-item">
                 <FaClock size={14} />
-                {item.type == "TV"
+                {item.type === "TV"
                   ? item.duration.slice(0, 2) + "min"
                   : item.duration.slice(0, 7) + "min"}
               </span>
@@ -39,18 +40,20 @@ export default function Hero() {
               </span>
               <span className="anime-st-item">
                 <span className="quality">HD</span>
-                <span className="quality">CC:{item.episodes}</span>
+                <span className="episode-count">CC:{item.episodes}</span>
               </span>
             </div>
-            <p className="description">{item.background || item.synopsis}</p>
+            <p className="description">
+              {(item.background && item.background.slice(0, 360) + "...") ||
+                (item.synopsis && item.synopsis.slice(0, 360) + "...")}
+            </p>
             <div className="button-wrapper">
               <button className="watch-button hero-button">
                 {" "}
                 <FaPlayCircle size={12} /> Watch Now
               </button>
               <button className="details-button hero-button">
-                <FaChevronRight size={12} />
-                Details
+                Details <FaChevronRight size={12} />
               </button>
             </div>
           </div>
@@ -84,23 +87,25 @@ export default function Hero() {
       className="carousel slide"
       data-bs-ride="carousel"
     >
-      <div className="carusel-inner">{heroSlide}</div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <FaChevronLeft size={15} />
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <FaChevronRight size={15} />
-      </button>
+      <div className="carousel-inner">{heroSlide}</div>
+      <div className="carousel-controls-wrapper">
+        <button
+          class="carousel-controls carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <FaChevronLeft size={15} />
+        </button>
+        <button
+          class="carousel-controls carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <FaChevronRight size={15} />
+        </button>
+      </div>
     </div>
   );
 }
