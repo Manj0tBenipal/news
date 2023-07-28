@@ -7,12 +7,12 @@ import {
   FaChevronRight,
   FaClock,
   FaPlayCircle,
-  
 } from "react-icons/fa";
 
 export default function Hero() {
-  const [topAnime, setTopAnime] = useState([]);
-  const heroSlide = topAnime.map((item, idx) => {
+  const [topAnime, setTopAnime] = useState(data.data);
+  const heroSlide = topAnime.map((el, idx) => {
+    const item = el.attributes;
     return (
       <div
         key={item.mal_id}
@@ -22,29 +22,31 @@ export default function Hero() {
         <div className="anime-info">
           <div className="anime-info-content">
             <span className="rank">#{idx + 1} Spotlight</span>
-            <h1 className="anime-title">{item.title_english || item.title}</h1>
+            <h1 className="anime-title">
+              {item.titles.en || item.titles.en_jp}
+            </h1>
             <div className="anime-statistics">
               <span className="anime-st-item">
                 <FaPlayCircle size={14} />
-                {item.type}
+                {item.subtype}
               </span>
               <span className="anime-st-item">
                 <FaClock size={14} />
-                {item.type === "TV"
-                  ? item.duration.slice(0, 2) + "min"
-                  : item.duration.slice(0, 7) + "min"}
+                {item.episodeLength + "m"}
               </span>
 
               <span className="anime-st-item">
-                <FaCalendar size={13} /> {item.aired.string}
+                <FaCalendar size={13} /> {item.startDate}
               </span>
               <span className="anime-st-item">
                 <span className="quality">HD</span>
-                <span className="episode-count">CC:{item.episodes}</span>
+                <span className="episode-count">
+                  CC:{item.episodeCount || "Unknown"}
+                </span>
               </span>
             </div>
             <p className="description">
-              {(item.background && item.background.slice(0, 360) + "...") ||
+              {(item.background && item.description.slice(0, 360) + "...") ||
                 (item.synopsis && item.synopsis.slice(0, 360) + "...")}
             </p>
             <div className="button-wrapper">
@@ -60,8 +62,8 @@ export default function Hero() {
         </div>
         <img
           className="carousel-img"
-          src={item.images.jpg.large_image_url}
-          alt={item.title}
+          src={item.posterImage.original}
+          alt={item.titles.en_jp || item.titles.en}
         />
       </div>
     );
@@ -69,7 +71,7 @@ export default function Hero() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = "https://api.jikan.moe/v4/top/anime";
+      const url = "https://kitsu.io/api/edge/trending/anime";
 
       try {
         const response = await fetch(url);
@@ -90,7 +92,7 @@ export default function Hero() {
       <div className="carousel-inner">{heroSlide}</div>
       <div className="carousel-controls-wrapper">
         <button
-          class="carousel-controls carousel-control-prev"
+          className="carousel-controls carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
@@ -98,7 +100,7 @@ export default function Hero() {
           <FaChevronLeft size={15} />
         </button>
         <button
-          class="carousel-controls carousel-control-next"
+          className="carousel-controls carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"

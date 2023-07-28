@@ -6,7 +6,7 @@ export class Navbar extends Component {
       <nav className="navbar">
         <input hidden type="checkbox" id="menu" />
         <label htmlFor="menu" className="material-symbols-outlined burger-icon">
-          menu
+        
         </label>
         <label className="logo f-ubuntu">Tanjiro</label>
         <ul>

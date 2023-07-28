@@ -11,23 +11,23 @@ li a {
 }
 nav {
   position: fixed !important;
-  background: linear-gradient(
-    0deg,
-    #242428d9 0,
-    rgba(36, 36, 40, 0.8) 50%,
-    #242428 100%
+ background: linear-gradient(
+    90deg,
+    #242428 30%,
+    #24242812 ,
+    #24242800 
   );
   max-height: 80px;
   width: 100%;
   z-index: 1000;
   top: 0;
   left: 0;
-  backdrop-filter: blur(100px);
+
 }
 label.logo {
   color: white;
-  line-height: 80px;
-  font-size: 35px;
+  line-height: 80px !important;
+  font-size: 35px !important;
   padding-inline: 50px;
 }
 
