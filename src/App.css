@@ -2,18 +2,22 @@
 .f-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
+.f-poppins{
+  font-family: "Poppins", sans-serif ;
+}
 :root {
   --grey-dark: #343a40;
   --dark: #242428;
   --height-small: 600px;
   --height-large: 700px;
+  --light: #f8f9fa;
+  --theme: rgb(239, 92, 92);
 }
 .d-flex {
   display: flex;
 }
-.a-j-center {
+.a-center {
   align-items: center;
-  justify-content: center;
 }
 * {
   margin: 0;
@@ -21,6 +25,6 @@
   box-sizing: border-box;
 }
 .container {
-  min-width: 98vw;
-  margin: auto;
+  min-width: 100vw;
+ padding: 0 !important;
 }

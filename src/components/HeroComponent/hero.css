@@ -76,7 +76,7 @@
   font-weight: bolder;
 }
 .quality {
-  background-color: greenyellow;
+  background-color: var(--theme);
   color: black;
   padding: 2px 4px;
   border-radius: 5px;
@@ -94,7 +94,7 @@
   gap: 20px;
 }
 .rank {
-  color: greenyellow;
+  color: var(--theme);
   font-size: 18px;
 }
 .description {
@@ -118,7 +118,7 @@
   gap: 10px;
 }
 .watch-button {
-  background: yellowgreen;
+  background: var(--theme);
 }
 .details-button {
   background: var(--grey-dark);
@@ -136,7 +136,7 @@
 .carousel-controls-wrapper {
   position: absolute;
   right: 1rem;
-  bottom: 1rem;
+  bottom: 3rem;
 
   display: flex;
   gap: 2px;
