@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 import data from "./backupData.json";
 import "./hero.css";
 import {
@@ -18,7 +18,7 @@ export default function Hero() {
       <div
         key={item.mal_id}
         className={`carousel-item ${idx === 0 ? "active" : ""}`}
-        data-bs-interval="3000"
+        data-bs-interval="2300"
       >
         <div className="anime-info">
           <div className="anime-info-content">
