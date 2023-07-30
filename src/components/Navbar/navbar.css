@@ -6,7 +6,8 @@
   width: 100%;
   z-index: 99;
   top: 0;
-  left: 0;
+  max-width: 2500px;
+  margin: auto;
   gap: 40px;
 }
 .burger-icon {

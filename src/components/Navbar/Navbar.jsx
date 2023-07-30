@@ -1,7 +1,6 @@
 import React from "react";
 import "./navbar.css";
 import logo from "../../media/logo.png";
-import burgerIcon from "../../media/burger-icon.png";
 import logoText from "../../media/logo-text.png";
 import profileIcon from "../../media/profile.jpg";
 import {
@@ -16,7 +15,6 @@ import {
   FaComments,
   FaBell,
   FaTwitter,
-  FaStream,
   FaBroadcastTower,
 } from "react-icons/fa";
 export default function NavBar() {
@@ -24,7 +22,7 @@ export default function NavBar() {
     <nav className="navigation-bar a-center d-flex">
       <input hidden type="checkbox" id="menu" />
       <div className="menu-group a-center d-flex">
-        <FaBars size={20} className="burger-icon trans-05"/>
+        <FaBars size={20} className="burger-icon trans-05" />
         <div className="logo-wrapper a-center d-flex">
           <img src={logo} className="logo" alt="logo" />
           <img src={logoText} className="logo-text" alt="logo-text" />
@@ -73,7 +71,7 @@ export default function NavBar() {
       </div>
       <div className="user-profile-nots a-center j-center d-flex trans-c-03">
         <FaBell size={20} />
-        <img className="profile-icon" src={profileIcon} />
+        <img className="profile-icon" src={profileIcon} alt="profile-icon" />
       </div>
     </nav>
   );

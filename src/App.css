@@ -12,7 +12,7 @@
   --height-medium: 600px;
   --height-large: 700px;
   --light: #f8f9fa;
-  --theme: rgb(239, 92, 92);
+  --theme: rgb(241, 83, 83);
 }
 .d-flex {
   display: flex;
@@ -29,8 +29,13 @@
 .trans-03 {
   transition: color 0.3s ease;
 }
-.container {
-  min-width: 100vw;
+.app-container {
+  max-width: 2500px;
   padding: 0 !important;
   margin: 0 auto;
+  color: var(--light);
+}
+.section-header {
+  font-family: "Poppins", sans-serif;
+  color: var(--theme);
 }
