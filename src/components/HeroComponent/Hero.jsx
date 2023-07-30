@@ -52,7 +52,7 @@ export default function Hero() {
             </p>
             <div className="button-wrapper">
               <button className="watch-button hero-button">
-                {" "}
+                
                 <FaPlayCircle size={12} /> Watch Now
               </button>
               <button className="details-button hero-button">
