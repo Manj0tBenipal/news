@@ -2,13 +2,14 @@
 .f-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
-.f-poppins{
-  font-family: "Poppins", sans-serif ;
+.f-poppins {
+  font-family: "Poppins", sans-serif;
 }
 :root {
   --grey-dark: #343a40;
   --dark: #242428;
-  --height-small: 600px;
+  --height-small: 450px;
+  --height-medium: 600px;
   --height-large: 700px;
   --light: #f8f9fa;
   --theme: rgb(239, 92, 92);
@@ -19,12 +20,17 @@
 .a-center {
   align-items: center;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.j-center {
+  justify-content: center;
+}
+.trans-c-03 > * {
+  transition: color 0.3s ease;
+}
+.trans-03 {
+  transition: color 0.3s ease;
 }
 .container {
   min-width: 100vw;
- padding: 0 !important;
+  padding: 0 !important;
+  margin: 0 auto;
 }
