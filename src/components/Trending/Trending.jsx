@@ -6,4 +6,8 @@ export default function Trending() {
       <h2 className="section-header">Trending</h2>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/trending-secction-api_trial
