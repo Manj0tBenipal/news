@@ -2,15 +2,20 @@
 .f-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .f-poppins {
   font-family: "Poppins", sans-serif;
 }
 :root {
   --grey-dark: #343a40;
   --dark: #242428;
-  --height-small: 450px;
-  --height-medium: 600px;
-  --height-large: 700px;
+  --height-small: 400px;
+  --height-medium: 500px;
+  --height-large: 600px;
   --light: #f8f9fa;
   --theme: rgb(241, 83, 83);
 }

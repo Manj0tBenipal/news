@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import data from "./backupData.json";
+
 import "./hero.css";
 import {
   FaCalendar,
@@ -10,9 +10,8 @@ import {
   FaPlayCircle,
 } from "react-icons/fa";
 
-export default function Hero() {
-  const [topAnime, setTopAnime] = useState(data.data);
-  const heroSlide = topAnime.map((el, idx) => {
+export default function Hero(props) {
+  const heroSlide = props.topAnime.map((el, idx) => {
     const item = el.attributes;
     return (
       <div
@@ -47,12 +46,11 @@ export default function Hero() {
               </span>
             </div>
             <p className="description">
-              {(item.background && item.description.slice(0, 360) + "...") ||
-                (item.synopsis && item.synopsis.slice(0, 360) + "...")}
+              {(item.background && item.description.slice(0, 300) + "...") ||
+                (item.synopsis && item.synopsis.slice(0, 300) + "...")}
             </p>
             <div className="button-wrapper">
               <button className="watch-button hero-button">
-                
                 <FaPlayCircle size={12} /> Watch Now
               </button>
               <button className="details-button hero-button">
@@ -70,20 +68,6 @@ export default function Hero() {
     );
   });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const url = "https://kitsu.io/api/edge/trending/anime";
-
-      try {
-        const response = await fetch(url);
-        const result = await response.json();
-        setTopAnime(result.data || data.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchData();
-  }, []);
   return (
     <div
       id="carouselExampleAutoplaying"
@@ -93,20 +77,20 @@ export default function Hero() {
       <div className="carousel-inner">{heroSlide}</div>
       <div className="carousel-controls-wrapper">
         <button
-          className="carousel-controls carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <FaChevronLeft size={15} />
-        </button>
-        <button
           className="carousel-controls carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
           <FaChevronRight size={15} />
+        </button>
+        <button
+          className="carousel-controls carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <FaChevronLeft size={15} />
         </button>
       </div>
     </div>

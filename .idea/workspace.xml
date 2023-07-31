@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Navbar And hero adjusted for small screens. Extra files removed">
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment=" trending section added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroComponent/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroComponent/hero.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,6 +49,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="news" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="news" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,7 +81,9 @@
       <workItem from="1690373890410" duration="11000" />
       <workItem from="1690403452159" duration="53000" />
       <workItem from="1690604090970" duration="37000" />
-      <workItem from="1690695857272" duration="832000" />
+      <workItem from="1690695857272" duration="1235000" />
+      <workItem from="1690697954389" duration="1019000" />
+      <workItem from="1690738413375" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -235,7 +253,126 @@
       <option name="project" value="LOCAL" />
       <updated>1690695904595</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Trending section added. Project Renamed.">
+      <created>1690697573730</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697573730</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Trending section added. Project Renamed.">
+      <created>1690697582430</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697582430</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Trending section added. Project Renamed.">
+      <created>1690697590620</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697590620</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Trending section added. Project Renamed.">
+      <created>1690697641188</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697641188</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Trending section added. Project Renamed.">
+      <created>1690697655589</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697655589</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Trending section added. Project Renamed.">
+      <created>1690697712909</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697712909</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Trending section added. Project Renamed.">
+      <created>1690697722729</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697722729</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Trending section added. Project Renamed.">
+      <created>1690697732871</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697732871</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Trending section added. Project Renamed.">
+      <created>1690697739681</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697739681</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Trending section added. Project Renamed.">
+      <created>1690697742343</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697742343</updated>
+    </task>
+    <task id="LOCAL-00035" summary=" Project Renamed. Minor changes to navbar and container's max-width">
+      <created>1690697795279</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697795279</updated>
+    </task>
+    <task id="LOCAL-00036" summary=" Project Renamed. Minor changes to navbar and container's max-width">
+      <created>1690697897611</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697897611</updated>
+    </task>
+    <task id="LOCAL-00037" summary=" trending section added">
+      <created>1690697910410</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697910410</updated>
+    </task>
+    <task id="LOCAL-00038" summary=" trending section added">
+      <created>1690697911899</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697911900</updated>
+    </task>
+    <task id="LOCAL-00039" summary=" trending section added">
+      <created>1690697918920</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697918920</updated>
+    </task>
+    <task id="LOCAL-00040" summary=" trending section added">
+      <created>1690697985079</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1690697985079</updated>
+    </task>
+    <task id="LOCAL-00041" summary=" trending section added">
+      <created>1690727422495</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1690727422495</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +383,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="trending-secction-api_trial" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -270,6 +419,9 @@
     <MESSAGE value="adjusted height of logo-text and added logo files" />
     <MESSAGE value="Carousel auto-scrolling interval changed to 2.3s from 3s" />
     <MESSAGE value="Navbar And hero adjusted for small screens. Extra files removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar And hero adjusted for small screens. Extra files removed" />
+    <MESSAGE value="Trending section added. Project Renamed." />
+    <MESSAGE value=" Project Renamed. Minor changes to navbar and container's max-width" />
+    <MESSAGE value=" trending section added" />
+    <option name="LAST_COMMIT_MESSAGE" value=" trending section added" />
   </component>
 </project>

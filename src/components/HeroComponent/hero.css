@@ -3,7 +3,7 @@
   right: 0;
   object-fit: cover;
   object-position: top;
-  width: 80%;
+  width: 70%;
   height: var(--height-large);
 }
 .img-wrapper {
@@ -108,7 +108,7 @@
   letter-spacing: 7px;
 }
 .hero-button {
-  padding: 13px 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 30px;
 }
@@ -119,29 +119,94 @@
 .watch-button {
   background: var(--theme);
 }
+
 .details-button {
-  background: var(--grey-dark);
+  background: rgb(124, 124, 124);
   backdrop-filter: blur(10px);
   color: white;
 }
+
 .carousel-controls {
   position: relative !important;
-  width: 50px;
-  height: 50px;
-  background: var(--grey-dark);
+  width: 45px;
+  height: 45px;
+  background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   border-radius: 7px;
 }
+
+.carousel-controls:hover {
+  background: var(--theme);
+}
+
 .carousel-controls-wrapper {
   position: absolute;
   right: 1rem;
   bottom: 3rem;
-
   display: flex;
   gap: 2px;
   flex-direction: column;
 }
+
 @media screen and (max-width: 1220px) {
+  .anime-info {
+    height: var(--height-medium);
+  }
+  .carousel-inner {
+    height: var(--height-medium);
+  }
+  .img-wrapper {
+    height: var(--height-medium);
+  }
+  .carousel-img {
+    height: var(--height-medium);
+  }
+  .carousel {
+    height: var(--height-medium);
+  }
+  .rank {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .anime-info-content {
+    width: 80%;
+  }
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .anime-statistics {
+    display: none;
+  }
+  .description {
+    display: none;
+  }
+  .buttons {
+    height: 30px;
+    width: 100px;
+  }
+  .hero-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  .anime-info::after {
+    background: transparent;
+  }
+  .carousel-img {
+    width: 100%;
+    opacity: 0.5;
+  }
+  .carousel-controls {
+    display: none;
+  }
+  .anime-info-content {
+    width: 100%;
+  }
+  .carousel {
+    height: var(--height-small) !important;
+  }
   .anime-info {
     height: var(--height-small);
   }
@@ -155,39 +220,6 @@
     height: var(--height-small);
   }
   .carousel {
-    height: var(--height-small);
-  }
-  .rank {
-    font-size: 16px;
-  }
-  .anime-info-content {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 580px) {
-  .anime-statistics {
-    display: none;
-  }
-  .description {
-    display: none;
-  }
-  .buttons {
-    height: 30px;
-    width: 100px;
-  }
- .hero-button{
-  font-size: 14px;
-  padding: 7px 15px;
-  
- }
-  .anime-info::after {
-    background: transparent;
-  }
-  .carousel-img {
-    width: 100%;
-    opacity: 0.5;
-  }
-  .carousel-controls{
-    display: none;
+    height: var(--height-medium);
   }
 }
