@@ -1,6 +1,7 @@
-.navigation-sidebar:after {
+
+.navigation-sidebar {
   position: fixed;
-  content: "";
+  transition: all 0.2s ease-in-out;
   min-height: 100vh;
   width: 100%;
   top: 0;
@@ -9,16 +10,11 @@
   z-index: 99;
   background: rgba(36, 36, 40, 0.8);
   backdrop-filter: blur(10px);
-  
-}
-.navigation-sidebar {
-  position: relative;
-  width: 100%;
-transition: all 0.2s ease-in-out;
-  max-height: 100%;
+  z-index: -1;
+
 }
 .navigation-list {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -250px;
   width: 250px;
@@ -29,9 +25,11 @@ transition: all 0.2s ease-in-out;
   row-gap: 20px;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease-in-out;
+
 }
 .button-group {
-  padding: 20px;
+  padding-top: 20px;
+  padding-inline: 20px;
 }
 .button-group > * {
   padding: 7px 15px;
@@ -49,6 +47,30 @@ transition: all 0.2s ease-in-out;
 .button-group a {
   background: black !important;
   font-size: 14px;
+  font-weight: 600;
   color: var(--theme);
   gap: 3px;
 }
+
+.navigation-link-list ul {
+  list-style: none;
+  padding: 0 !important;
+}
+.navigation-link-list ul li {
+  width: 100%;
+}
+.navigation-link-list ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding-block: 15px;
+  padding-left: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.338);
+  transition: all 0.1s ease;
+  
+}
+.navigation-link-list ul li a:hover {
+  color: var(--theme);
+  background-color: var(--dark);
+}
+
