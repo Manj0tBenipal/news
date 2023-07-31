@@ -1,0 +1,54 @@
+.navigation-sidebar:after {
+  position: fixed;
+  content: "";
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(36, 36, 40, 0.8);
+  backdrop-filter: blur(10px);
+  
+}
+.navigation-sidebar {
+  position: relative;
+  width: 100%;
+transition: all 0.2s ease-in-out;
+  max-height: 100%;
+}
+.navigation-list {
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  min-height: 100vh;
+  z-index: 100;
+  overflow-y: auto;
+  flex-direction: column;
+  row-gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.button-group {
+  padding: 20px;
+}
+.button-group > * {
+  padding: 7px 15px;
+  border-radius: 20px;
+  background: var(--dark);
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.button-group label {
+  padding-block: 10px;
+  cursor: pointer;
+}
+.button-group a {
+  background: black !important;
+  font-size: 14px;
+  color: var(--theme);
+  gap: 3px;
+}
