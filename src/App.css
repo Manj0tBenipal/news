@@ -2,20 +2,29 @@
 .f-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .f-poppins {
   font-family: "Poppins", sans-serif;
 }
 :root {
   --grey-dark: #343a40;
   --dark: #242428;
-  --height-small: 450px;
-  --height-medium: 600px;
-  --height-large: 700px;
-  --light: #f8f9fa;
-  --theme: rgb(239, 92, 92);
+  --height-small: 400px;
+  --height-medium: 500px;
+  --height-large: 600px;
+  --light: #ffffff;
+  --theme: rgb(253, 9, 9);
 }
 .d-flex {
   display: flex;
+}
+.d-flex-fd-column {
+  display: flex;
+  flex-direction: column;
 }
 .a-center {
   align-items: center;
@@ -24,13 +33,37 @@
   justify-content: center;
 }
 .trans-c-03 > * {
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 .trans-03 {
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
-.container {
-  min-width: 100vw;
+.app-container {
+  max-width: 2500px;
   padding: 0 !important;
   margin: 0 auto;
+  color: var(--light);
+}
+.section-header {
+  font-family: "Poppins", sans-serif;
+  color: var(--theme);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--grey-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark);
 }

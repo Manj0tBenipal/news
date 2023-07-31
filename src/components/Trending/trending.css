@@ -1,0 +1,121 @@
+.trending-section-wrapper {
+  padding-block: 20px;
+}
+
+.trending-section-wrapper h2 {
+  padding: 20px;
+}
+.swiper {
+  padding: 20px 60px;
+}
+
+.trending-slide {
+  height: 255px;
+  position: relative;
+  padding: 10px;
+}
+.trending-slide a {
+  width: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+}
+.trending-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.trending-item-sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  row-gap: 50px;
+}
+.trending-item-sidebar p {
+  transform: rotate(270deg);
+  white-space: nowrap;
+  font-size: 17px;
+ 
+}
+.trending-item-sidebar span {
+  color: var(--theme);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.trending-swiper-navigation {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px;
+  background-color: var(--dark);
+  z-index: 4;
+  gap: 10px;
+}
+.swiper-controls {
+  flex-grow: 1;
+  background-color: var(--grey-dark);
+  padding: 0px 7px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.swiper-controls:hover{
+  background: var(--theme);
+}
+.share-app{
+ padding: 40px;
+ gap:10px;
+}
+.share-app p{
+  margin: 0 !important;
+}
+.share-app .primary{
+  color: var(--theme);
+  font-weight: 600;
+}
+.share-app img{
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .swiper {
+    padding: 0;
+  }
+  .trending-slide {
+    height: 200px;
+  }
+  .trending-slide a {
+    left: 0;
+  }
+  .trending-item-sidebar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background: white;
+    padding: 4px 10px;
+  }
+
+  .trending-item-sidebar p {
+    display: none;
+  }
+  .trending-swiper-navigation {
+    display: none;
+  }
+}

@@ -1,31 +1,31 @@
 import "./App.css";
 import Hero from "./components/HeroComponent/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState, useEffect } from "react";
+import Trending from "./components/Trending/Trending";
+import data from "./backupData.json";
 
 export default function App() {
-  const containerRef = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
-
+  const [topAnime, setTopAnime] = useState(data.data);
   useEffect(() => {
-    const container = containerRef.current;
-    function handleScroll() {
-      if (container) {
-        const scrollPosition = container.getBoundingClientRect().top;
-        console.log(scrollPosition);
-        setScrollPosition(scrollPosition);
-      }
-    }
-    container.addEventListener("scroll", handleScroll);
+    const fetchData = async () => {
+      const url = "https://kitsu.io/api/edge/trending/anime";
 
-    return () => {
-      container.removeEventListener("scroll", handleScroll);
+      try {
+        const response = await fetch(url);
+        const result = await response.json();
+        setTopAnime(result.data || data.data.json());
+      } catch (error) {
+        console.error(error);
+      }
     };
+    fetchData();
   }, []);
   return (
-    <div ref={containerRef} className="container">
-      <Navbar isScrolled={scrollPosition > 0} />
-      <Hero />
+    <div className="app-container">
+      <Navbar />
+      <Hero topAnime={topAnime} />
+      <Trending topAnime={topAnime} />
     </div>
   );
 }
