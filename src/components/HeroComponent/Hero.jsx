@@ -18,6 +18,7 @@ export default function Hero(props) {
         key={item.mal_id}
         className={`carousel-item ${idx === 0 ? "active" : ""}`}
         data-bs-interval="2300"
+        
       >
         <div className="anime-info">
           <div className="anime-info-content">

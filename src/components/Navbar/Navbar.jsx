@@ -17,15 +17,14 @@ import {
   FaTwitter,
   FaBroadcastTower,
 } from "react-icons/fa";
-import NavSidebar from "./NavSidebar";
-export default function NavBar() {
- const [sidebarIsOpen, setSidebarIsOpen] =  useState(false);
+
+export default function NavBar(props) {
+  const sidebarIsOpen = props.sidebarIsOpen;
+  const setSidebarIsOpen = props.setSidebarIsOpen
+ 
   return (
     <>
-      <NavSidebar
-      sidebarIsOpen={sidebarIsOpen}
-      setSidebarIsOpen={setSidebarIsOpen}
-      />
+      
       <nav className="navigation-bar a-center d-flex">
       
 
