@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./navbar.css";
 import logo from "../../media/logo.png";
 import logoText from "../../media/logo-text.png";
@@ -19,20 +19,16 @@ import {
 } from "react-icons/fa";
 
 export default function NavBar(props) {
-  const sidebarIsOpen = props.sidebarIsOpen;
-  const setSidebarIsOpen = props.setSidebarIsOpen
- 
+  const setSidebarIsOpen = props.setSidebarIsOpen;
+
   return (
     <>
-      
       <nav className="navigation-bar a-center d-flex">
-      
-
         <div className="menu-group a-center d-flex">
           <FaBars
             size={20}
             className="burger-icon trans-05"
-            onClick={()=>setSidebarIsOpen(true)}
+            onClick={() => setSidebarIsOpen(true)}
           />
           <div className="logo-wrapper a-center d-flex">
             <img src={logo} className="logo" alt="logo" />

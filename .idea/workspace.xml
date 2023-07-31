@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Navbar And hero adjusted for small screens. Extra files removed">
-      <change afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroComponent/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/backupData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/backupData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroComponent/hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
-    </list>
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Logic change in how navsidebar works" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="navigation_sidebar" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -235,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690526305500</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Logic change in how navsidebar works">
+      <created>1690826195492</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690826195492</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +264,7 @@
     <MESSAGE value="adjusted height of logo-text and added logo files" />
     <MESSAGE value="Carousel auto-scrolling interval changed to 2.3s from 3s" />
     <MESSAGE value="Side menu added to navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Side menu added to navbar" />
+    <MESSAGE value="Logic change in how navsidebar works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logic change in how navsidebar works" />
   </component>
 </project>
