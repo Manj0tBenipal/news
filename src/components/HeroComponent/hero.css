@@ -130,9 +130,10 @@
   position: relative !important;
   width: 45px;
   height: 45px;
-  background: rgb(0, 0, 0);
+  background: var(--grey-dark) ;
   color: rgb(255, 255, 255);
   border-radius: 7px;
+  opacity: 1 !important;
 }
 
 .carousel-controls:hover {

@@ -29,10 +29,10 @@
   justify-content: center;
 }
 .trans-c-03 > * {
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 .trans-03 {
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 .app-container {
   max-width: 2500px;
