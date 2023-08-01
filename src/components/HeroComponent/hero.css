@@ -60,7 +60,7 @@
 .anime-info-content {
   position: absolute;
   bottom: 3em;
-  left: 1em;
+  left: 3em;
   z-index: 2;
   width: 60%;
   font-family: "Poppins", sans-serif;
@@ -205,6 +205,7 @@
   }
   .anime-info-content {
     width: 100%;
+    left: 1em;
   }
   .carousel {
     height: var(--height-small) !important;
