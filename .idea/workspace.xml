@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Navbar And hero adjusted for small screens. Extra files removed">
-      <change afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="By default sidebarIsOpen sset to false">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroComponent/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/backupData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/backupData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeroComponent/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroComponent/hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationSidebar/NavSidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationSidebar/NavSidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationSidebar/nav-sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationSidebar/nav-sidebar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +20,24 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="navigation_sidebar" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="fdbe5adf-44d2-4b55-a2af-02602c9ebc01" />
+        <option name="url" value="https://github.com/Manj0tBenipal/news.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -235,7 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690526305500</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Logic change in how navsidebar works">
+      <created>1690826195492</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690826195492</updated>
+    </task>
+    <task id="LOCAL-00025" summary="By default sidebarIsOpen sset to false">
+      <created>1690826569691</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690826569691</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +291,8 @@
     <MESSAGE value="adjusted height of logo-text and added logo files" />
     <MESSAGE value="Carousel auto-scrolling interval changed to 2.3s from 3s" />
     <MESSAGE value="Side menu added to navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Side menu added to navbar" />
+    <MESSAGE value="Logic change in how navsidebar works" />
+    <MESSAGE value="By default sidebarIsOpen sset to false" />
+    <option name="LAST_COMMIT_MESSAGE" value="By default sidebarIsOpen sset to false" />
   </component>
 </project>
