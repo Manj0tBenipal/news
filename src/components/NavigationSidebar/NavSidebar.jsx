@@ -64,7 +64,7 @@ export default function NavSidebar(props) {
 
             <li style={{padding: "20px"}}>
               Genre
-              <div className="genre-list d-flex">
+              <div className="genre-list d-flex ">
                 <span>Action</span>
                 <span>Adenture</span>
                 <span>Cars</span>

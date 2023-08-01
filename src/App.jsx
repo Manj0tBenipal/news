@@ -8,7 +8,7 @@ import data from "./backupData.json";
 
 export default function App() {
   const [topAnime, setTopAnime] = useState(data.data);
-  const [sidebarIsOpen, setSidebarIsOpen] = useState(true);
+  const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
       const url = "https://kitsu.io/api/edge/trending/anime";
