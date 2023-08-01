@@ -61,9 +61,10 @@ export default function NavSidebar(props) {
             <li>
               <a href="/">Events</a>
             </li>
-            <li>
+
+            <li style={{padding: "20px"}}>
               Genre
-              <div className="genre-list">
+              <div className="genre-list d-flex">
                 <span>Action</span>
                 <span>Adenture</span>
                 <span>Cars</span>
