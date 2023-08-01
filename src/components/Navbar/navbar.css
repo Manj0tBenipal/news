@@ -4,7 +4,7 @@
   backdrop-filter: blur(100px);
   height: 65px;
   width: 100%;
-  z-index: 10;
+  z-index: 11;
   top: 0;
   max-width: 2500px;
   margin: auto;
