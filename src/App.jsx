@@ -6,8 +6,10 @@ import Trending from "./components/Trending/Trending";
 import NavSidebar from "./components/NavigationSidebar/NavSidebar";
 import ReviewSection from "./components/ReviewSection/ReviewSection";
 import data from "./backupData.json";
+import { FaSpinner } from "react-icons/fa";
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const [topAnime, setTopAnime] = useState(data.data);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
   useEffect(() => {
@@ -18,13 +20,20 @@ export default function App() {
         const response = await fetch(url);
         const result = await response.json();
         setTopAnime(result.data || data.data.json());
+        setIsLoading(false);
       } catch (error) {
         console.error(error);
       }
     };
+
     fetchData();
   }, []);
-  return (
+  return isLoading ? (
+    <div className="loading-container">
+      <FaSpinner size={30} className="spinner" color="white" />
+      <h3 style={{ color: "white", fontFamily: "Poppins" }}>Loading...</h3>
+    </div>
+  ) : (
     <div
       className="app-container"
       style={{
