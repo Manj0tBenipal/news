@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import React, { useState, useEffect } from "react";
 import Trending from "./components/Trending/Trending";
 import NavSidebar from "./components/NavigationSidebar/NavSidebar";
+import ReviewSection from "./components/ReviewSection/ReviewSection";
 import data from "./backupData.json";
 
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
       />
       <Hero topAnime={topAnime} sidebarIsOpen={sidebarIsOpen} />
       <Trending topAnime={topAnime} />
+      <ReviewSection />
     </div>
   );
 }
