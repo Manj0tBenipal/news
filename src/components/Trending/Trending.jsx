@@ -5,8 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 import "./trending.css";
 
 export default function Trending(props) {
@@ -39,7 +37,6 @@ export default function Trending(props) {
         className="swiper"
         modules={[Navigation]}
         breakpoints={{
-      
           1700: {
             slidesPerView: 8,
             spaceBetween: 15,
@@ -84,13 +81,6 @@ export default function Trending(props) {
           </div>
         </div>
       </Swiper>
-      <div className="share-app d-flex a-center f-poppins">
-        <img src="https://gifdb.com/images/high/demon-slayer-muzan-kibutsuji-zrx5xzed4375h0kj.gif"/>
-        <div>
-          <p className="primary">Share Warding</p>
-          <p>to your friends</p>
-        </div>
-      </div>
     </div>
   );
 }
