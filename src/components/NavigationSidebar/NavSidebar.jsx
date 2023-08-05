@@ -6,6 +6,7 @@ export default function NavSidebar(props) {
     <div
       className="navigation-sidebar f-poppins"
       style={{ zIndex: props.sidebarIsOpen ? 100 : -1 }}
+      onClick={()=>props.setSidebarIsOpen(false)}
     >
       <div
         className="navigation-list d-flex"
