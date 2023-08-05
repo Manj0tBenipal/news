@@ -17,7 +17,7 @@
   --height-medium: 500px;
   --height-large: 600px;
   --light: #ffffff;
-  --theme: rgb(253, 9, 9);
+  --theme: rgb(0, 255, 213);
   --random-colors: #ff5733, #33ff57, #5733ff, #ff33a8, #33a8ff, #a833ff, #ff33ff,
     #33ffc2, #a8ff33, #ffc233;
 }
@@ -45,6 +45,7 @@
   padding: 0 !important;
   margin: 0 auto;
   color: var(--light);
+  
 }
 .section-header {
   font-family: "Poppins", sans-serif;
@@ -67,5 +68,27 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--dark);
+  background: var(--theme);
+}
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.spinner {
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Starting rotation angle */
+  }
+  to {
+    transform: rotate(360deg); /* Ending rotation angle */
+  }
 }
