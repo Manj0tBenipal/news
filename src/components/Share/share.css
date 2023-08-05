@@ -15,3 +15,19 @@
   object-fit: cover;
   border-radius: 50%;
 }
+@media screen and (max-width: 600px) {
+  .share-app img{
+    width: 50px;
+    height: 50px;
+  }
+  .share-app .primary{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .share-app p{
+    font-size: 14px;
+  }
+  .share-app{
+    padding: 20px 10px;
+  }
+}

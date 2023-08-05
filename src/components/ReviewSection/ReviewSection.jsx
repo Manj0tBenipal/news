@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaToggleOff, FaToggleOn } from "react-icons/fa";
+import { FaToggleOff, FaToggleOn, FaEvernote, FaVideo} from "react-icons/fa";
 import rengokuPng from "../../media/rengoku.png";
 import LoadingSpinner from "../LoadingSpinner";
 import animeReviewData from "./animeReviewsBak.json";
@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/pagination";
 import "./review-section.css";
-import { Pagination, Scrollbar } from "swiper/modules";
+import { Scrollbar } from "swiper/modules";
 export default function ReviewSection() {
   const [reviewsVisible, setReviewsVisible] = useState(true);
   const [animeReviews, setAnimeReviews] = useState(animeReviewData.data);
@@ -20,16 +20,19 @@ export default function ReviewSection() {
   const reviewType = animeReviewIsSelected ? animeReviews : mangaReviews;
   const reviewCards = reviewType.map((el, idx) => {
     return (
-      <SwiperSlide className="reviewCard">
+      <SwiperSlide className="review-card">
         <div className="review-card-header">
-          <img src="" alt="23" />
-          <span>{el.user.username}</span>
+          <div className="user-profile d-flex a-center ">
+            <img src={el.user.images.webp.image_url} alt="23" />
+            <a rel="noreferrer"  target="_blank" href={el.user.url}>
+              {el.user.username}
+            </a>
+          </div>
         </div>
-        <div className="review-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-          minima, doloremque provident mollitia dolore expedita, quis
-          consectetur, explicabo et laborum quae officiis itaque asperiores
-          debitis reprehenderit reiciendis possimus animi excepturi?
+        <div className="review-text">{el.review.slice(0, 140) + "..."}</div>
+        <div className="anime-title">
+          <FaEvernote size={13} />
+          {el.entry.title}
         </div>
       </SwiperSlide>
     );
@@ -78,14 +81,14 @@ export default function ReviewSection() {
                   className={`${!animeReviewIsSelected ? "selected" : ""}`}
                   onClick={() => setAnimeReviewIsSelected(false)}
                 >
-                  Manga reviews
+                  Manga 
                 </button>
                 <button
                   className={`${animeReviewIsSelected ? "selected" : ""}`}
                   onClick={() => setAnimeReviewIsSelected(true)}
                 >
                   {" "}
-                  Anime reviews
+                  Anime 
                 </button>
               </div>
               <div className="review-toggle d-flex a-center j-center">
@@ -102,6 +105,7 @@ export default function ReviewSection() {
               slidesPerView={"auto"}
               scrollbar={{ draggable: true }}
               className="review-list "
+              spaceBetween={30}
             >
               {reviewsLoaded ? reviewCards : <LoadingSpinner />}
             </Swiper>
