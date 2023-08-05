@@ -54,7 +54,6 @@ export default function App() {
       <Trending topAnime={topAnime} />
       <Share />
       <ReviewSection />
-      <Share />
     </div>
   );
 }

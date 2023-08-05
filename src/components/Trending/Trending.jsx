@@ -21,7 +21,7 @@ export default function Trending(props) {
           </div>
           <a href="/">
             <img
-              src={item.posterImage.original}
+              src={item.posterImage.small}
               className="trending-slide-img "
               alt="item.title"
             />

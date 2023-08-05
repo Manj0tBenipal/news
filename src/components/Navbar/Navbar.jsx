@@ -1,7 +1,6 @@
 import React from "react";
 import "./navbar.css";
 import logo from "../../media/logo.png";
-import logoText from "../../media/logo-text.png";
 import profileIcon from "../../media/profile.jpg";
 import {
   FaSearch,
@@ -32,7 +31,7 @@ export default function NavBar(props) {
           />
           <div className="logo-wrapper a-center d-flex">
             <img src={logo} className="logo" alt="logo" />
-            <img src={logoText} className="logo-text" alt="logo-text" />
+            
           </div>
         </div>
         <div className="search-wrapper">
