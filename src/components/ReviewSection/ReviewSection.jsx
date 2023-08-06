@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { FaToggleOff, FaToggleOn, FaEvernote } from "react-icons/fa";
+import { FaEvernote } from "react-icons/fa";
+import { BiSolidToggleLeft, BiSolidToggleRight } from "react-icons/bi";
 import rengokuPng from "../../media/rengoku.png";
 import LoadingSpinner from "../LoadingSpinner";
 import animeReviewData from "./animeReviewsBak.json";
@@ -68,7 +69,10 @@ export default function ReviewSection() {
       {!reviewsVisible ? (
         <div className="review-toggle d-flex a-center j-center">
           <span>Show reviews</span>
-          <FaToggleOff onClick={() => setReviewsVisible(true)} size={25} />
+          <BiSolidToggleLeft
+            onClick={() => setReviewsVisible(true)}
+            size={25}
+          />
         </div>
       ) : (
         <div className="review-section d-flex">
@@ -93,7 +97,7 @@ export default function ReviewSection() {
               </div>
               <div className="review-toggle d-flex a-center j-center">
                 <span>Show reviews</span>
-                <FaToggleOn
+                <BiSolidToggleRight
                   onClick={() => setReviewsVisible(false)}
                   size={30}
                   style={{ color: "var(--theme)" }}
