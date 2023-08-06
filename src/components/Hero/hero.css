@@ -194,8 +194,9 @@
     font-size: 14px;
     padding: 10px 18px;
   }
+
   .anime-info::after {
-    background: transparent;
+    display: none;
   }
   .carousel-img {
     width: 100%;

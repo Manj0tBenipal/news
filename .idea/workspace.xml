@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Review section finished. Minor adjustments in other components">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/ReviewSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewSection/ReviewSection.jsx" afterDir="false" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Featured section completed">
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationSidebar/nav-sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationSidebar/nav-sidebar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/review-section.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewSection/review-section.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/manjo/eclipse-workspace/Assignment3",
+    "last_opened_file_path": "C:/Users/manjo/HTML/warding",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,6 +66,7 @@
       <workItem from="1690604090970" duration="37000" />
       <workItem from="1691086260717" duration="162000" />
       <workItem from="1691243059101" duration="92000" />
+      <workItem from="1691297943625" duration="892000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -245,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691086338016</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Featured section completed">
+      <created>1691297979950</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1691297979950</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +287,7 @@
     <MESSAGE value="Side menu added to navbar" />
     <MESSAGE value="Logic change in how navsidebar works" />
     <MESSAGE value="Reviews section ata fetching from api  added. Files renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reviews section ata fetching from api  added. Files renamed" />
+    <MESSAGE value="Featured section completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Featured section completed" />
   </component>
 </project>

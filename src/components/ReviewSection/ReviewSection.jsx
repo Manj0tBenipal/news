@@ -78,17 +78,17 @@ export default function ReviewSection() {
             <div className="review-section-toolbar d-flex a-center">
               <div className="review-type">
                 <button
-                  className={`${!animeReviewIsSelected ? "selected" : ""}`}
-                  onClick={() => setAnimeReviewIsSelected(false)}
-                >
-                  Manga
-                </button>
-                <button
                   className={`${animeReviewIsSelected ? "selected" : ""}`}
                   onClick={() => setAnimeReviewIsSelected(true)}
                 >
                   {" "}
                   Anime
+                </button>
+                <button
+                  className={`${!animeReviewIsSelected ? "selected" : ""}`}
+                  onClick={() => setAnimeReviewIsSelected(false)}
+                >
+                  Manga
                 </button>
               </div>
               <div className="review-toggle d-flex a-center j-center">
