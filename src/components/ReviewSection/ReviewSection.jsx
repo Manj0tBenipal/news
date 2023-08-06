@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaToggleOff, FaToggleOn, FaEvernote, FaVideo} from "react-icons/fa";
+import { FaToggleOff, FaToggleOn, FaEvernote } from "react-icons/fa";
 import rengokuPng from "../../media/rengoku.png";
 import LoadingSpinner from "../LoadingSpinner";
 import animeReviewData from "./animeReviewsBak.json";
@@ -20,11 +20,11 @@ export default function ReviewSection() {
   const reviewType = animeReviewIsSelected ? animeReviews : mangaReviews;
   const reviewCards = reviewType.map((el, idx) => {
     return (
-      <SwiperSlide className="review-card">
+      <SwiperSlide className="review-card" key={el.mal_id}>
         <div className="review-card-header">
           <div className="user-profile d-flex a-center ">
             <img src={el.user.images.webp.image_url} alt="23" />
-            <a rel="noreferrer"  target="_blank" href={el.user.url}>
+            <a rel="noreferrer" target="_blank" href={el.user.url}>
               {el.user.username}
             </a>
           </div>
@@ -81,14 +81,14 @@ export default function ReviewSection() {
                   className={`${!animeReviewIsSelected ? "selected" : ""}`}
                   onClick={() => setAnimeReviewIsSelected(false)}
                 >
-                  Manga 
+                  Manga
                 </button>
                 <button
                   className={`${animeReviewIsSelected ? "selected" : ""}`}
                   onClick={() => setAnimeReviewIsSelected(true)}
                 >
                   {" "}
-                  Anime 
+                  Anime
                 </button>
               </div>
               <div className="review-toggle d-flex a-center j-center">
@@ -104,7 +104,7 @@ export default function ReviewSection() {
               modules={[Scrollbar]}
               slidesPerView={"auto"}
               scrollbar={{ draggable: true }}
-              className="review-list "
+              className="review-list"
               spaceBetween={30}
             >
               {reviewsLoaded ? reviewCards : <LoadingSpinner />}

@@ -15,7 +15,7 @@ export default function Hero(props) {
     const item = el.attributes;
     return (
       <div
-        key={item.mal_id}
+        key={item.titles.en}
         className={`carousel-item ${idx === 0 ? "active" : ""}`}
         data-bs-interval="2300"
         

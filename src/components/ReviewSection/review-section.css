@@ -8,9 +8,8 @@
   border-radius: 20px;
   background: linear-gradient(
     180deg,
-    var(--dark),
-    var(--grey-dark),
-    rgba(255, 255, 255, 0.1)
+    rgba(142, 142, 142, 0.1),
+    rgba(251, 251, 251, 0)
   );
   font-size: 14px;
 }
@@ -114,7 +113,6 @@
     gap: 10px;
     font-size: 14px;
     padding-inline: 0;
-    
   }
   .review-section-wrapper {
     padding: 10px;
@@ -144,6 +142,6 @@
     display: none;
   }
   .review-section {
-    min-height: 250px;
+    min-height: 275px;
   }
 }
