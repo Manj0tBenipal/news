@@ -31,7 +31,6 @@ export default function NavBar(props) {
           />
           <div className="logo-wrapper a-center d-flex">
             <img src={logo} className="logo" alt="logo" />
-            
           </div>
         </div>
         <div className="search-wrapper">
@@ -52,17 +51,29 @@ export default function NavBar(props) {
           />
         </div>
         <div className="social-links-wrapper">
-          <span style={{ backgroundColor: "#6f85d5" }}>
-            <FaDiscord size={25} />
+          <span
+            style={{ backgroundColor: "#6f85d5" }}
+            className="d-flex a-center j-center"
+          >
+            <FaDiscord size={22} />
           </span>
-          <span style={{ backgroundColor: "#ff3c1f" }}>
-            <FaRedditAlien size={25} />
+          <span
+            style={{ backgroundColor: "#ff3c1f" }}
+            className="d-flex a-center j-center"
+          >
+            <FaRedditAlien size={22} />
           </span>
-          <span style={{ backgroundColor: "#08c" }}>
-            <FaTelegramPlane size={25} />
+          <span
+            style={{ backgroundColor: "#08c" }}
+            className="d-flex a-center j-center"
+          >
+            <FaTelegramPlane size={22} />
           </span>
-          <span style={{ backgroundColor: "#1d9bf0" }}>
-            <FaTwitter size={25} />
+          <span
+            style={{ backgroundColor: "#1d9bf0" }}
+            className="d-flex a-center j-center"
+          >
+            <FaTwitter size={22} />
           </span>
         </div>
         <div className="nav-actions f-poppins text-light trans-c-03">
