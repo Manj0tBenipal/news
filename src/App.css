@@ -17,7 +17,7 @@
   --height-medium: 500px;
   --height-large: 600px;
   --light: #ffffff;
-  --theme: rgb(0, 255, 213);
+  --theme: rgb(0, 255, 251);
   --random-colors: #ff5733, #33ff57, #5733ff, #ff33a8, #33a8ff, #a833ff, #ff33ff,
     #33ffc2, #a8ff33, #ffc233;
 }
@@ -86,9 +86,9 @@
 }
 @keyframes rotate {
   from {
-    transform: rotate(0deg); /* Starting rotation angle */
+    transform: rotate(0deg); 
   }
   to {
-    transform: rotate(360deg); /* Ending rotation angle */
+    transform: rotate(360deg); 
   }
 }

@@ -8,6 +8,7 @@ import ReviewSection from "./components/ReviewSection/ReviewSection";
 import topAnimeData from "./backupData.json";
 import LoadingSpinner from "./components/LoadingSpinner";
 import Share from "./components/Share/Share";
+import Featured from "./components/Featured/Featured";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ export default function App() {
 
     fetchData();
   }, []);
+  console.log("App rendered");
   return isLoading ? (
     <LoadingSpinner />
   ) : (
@@ -54,6 +56,7 @@ export default function App() {
       <Trending topAnime={topAnime} />
       <Share />
       <ReviewSection />
+      <Featured />
     </div>
   );
 }

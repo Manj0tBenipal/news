@@ -33,7 +33,7 @@
 
   color: white;
 }
-.anime-info::after {
+.carousel-item .anime-info::after {
   content: "";
   position: absolute;
   top: 0;
@@ -79,15 +79,15 @@
   background-color: var(--theme);
   color: black;
   padding: 2px 4px;
-  border-radius: 5px;
+  border-radius: 2px;
   font-size: 0.7rem;
 }
 .episode-count {
   color: black;
   padding: 2px 4px;
-  border-radius: 7px;
+  border-radius: 2px;
   font-size: 0.7rem;
-  background-color: yellow;
+  background-color: rgb(255, 191, 0);
 }
 .anime-statistics {
   display: flex;
@@ -102,11 +102,12 @@
 
   margin-bottom: 1rem;
 }
-.title {
+.carousel-item .title {
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 7px;
 }
+
 .hero-button {
   padding: 10px 20px;
   border: none;
@@ -130,7 +131,7 @@
   position: relative !important;
   width: 45px;
   height: 45px;
-  background: var(--grey-dark) ;
+  background: var(--grey-dark);
   color: rgb(255, 255, 255);
   border-radius: 7px;
   opacity: 1 !important;

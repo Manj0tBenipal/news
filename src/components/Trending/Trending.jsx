@@ -11,7 +11,7 @@ export default function Trending(props) {
   const anime = props.topAnime.map((el, idx) => {
     const item = el.attributes;
     return (
-      <SwiperSlide>
+      <SwiperSlide key={item.titles.en_jp}>
         <div className="trending-slide">
           <div className="trending-item-sidebar">
             <p className="f-poppins">
