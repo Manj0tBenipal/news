@@ -11,6 +11,7 @@ import Share from "./components/Share/Share";
 import Featured from "./components/Featured/Featured";
 
 export default function App() {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [topAnime, setTopAnime] = useState(topAnimeData.data);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
@@ -30,8 +31,23 @@ export default function App() {
 
       setIsLoading(false);
     };
-
     fetchData();
+
+    const handleScroll = () => {
+      const scrollPosition =
+        window.scrollY || document.documentElement.scrollTop;
+      if (scrollPosition > 0 && isScrolled === false) {
+        setIsScrolled(true);
+        
+      } else if (scrollPosition === 0) {
+        setIsScrolled(false);
+        
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   console.log("App rendered");
   return isLoading ? (
@@ -45,6 +61,7 @@ export default function App() {
       }}
     >
       <Navbar
+        isScrolled={isScrolled}
         sidebarIsOpen={sidebarIsOpen}
         setSidebarIsOpen={setSidebarIsOpen}
       />
