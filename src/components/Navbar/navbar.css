@@ -1,7 +1,5 @@
 .navigation-bar {
   position: fixed !important;
-  background: #343a4065;
-  backdrop-filter: blur(100px);
   height: 65px;
   width: 100%;
   z-index: 11;
@@ -9,6 +7,14 @@
   max-width: 2500px;
   margin: auto;
   gap: 40px;
+}
+.navigation-bar.transparent {
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+}
+.navigation-bar.dark {
+  background: #272a2ca4;
+  backdrop-filter: blur(10px);
 }
 .burger-icon {
   color: white;
