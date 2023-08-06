@@ -69,7 +69,7 @@
   align-items: center;
   justify-content: center;
 }
-.social-links-wrapper > * {
+.social-links-wrapper > span {
   padding: 5px;
   border-radius: 50%;
 }

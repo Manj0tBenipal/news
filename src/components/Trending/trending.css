@@ -5,7 +5,7 @@
 .trending-section-wrapper h2 {
   padding: 20px;
 }
-.swiper {
+.trending-section-wrapper .swiper {
   padding: 20px 60px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .swiper {
+  .trending-section-wrapper .swiper {
     padding: 0;
   }
   .trending-slide {
@@ -103,4 +103,7 @@
   .trending-swiper-navigation {
     display: none;
   }
+  .trending-item-sidebar span {
+  background-color: var(--dark);
+}
 }

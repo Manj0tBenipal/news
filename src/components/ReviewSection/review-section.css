@@ -62,6 +62,7 @@
   color: white;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 .review-type .selected {
   border: 2px solid var(--theme);
@@ -107,7 +108,7 @@
 @media screen and (max-width: 600px) {
   .review-type button {
     font-size: 14px;
-    padding: 5px 7px;
+    padding: 7px 14px;
   }
   .review-card {
     background: linear-gradient(
@@ -126,7 +127,7 @@
     padding: 10px;
   }
   .review-toggle svg {
-    height: 25px;
+    height: 30px;
   }
   .review-type .selected {
     border: none;
