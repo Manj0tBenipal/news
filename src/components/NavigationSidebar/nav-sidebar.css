@@ -87,7 +87,7 @@
   transition: all 0.1s ease;
 }
 .genre-list span:hover {
-  transform: translateY(1px);
+  transform: translateY(-2px);
 }
 
 .genre-list span:nth-of-type(7n + 1) {

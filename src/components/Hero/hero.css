@@ -13,9 +13,6 @@
 
 .carousel {
   height: var(--height-large);
-  width: 100%;
-  overflow-x: hidden;
-  position: relative;
 }
 .carousel-inner {
   height: var(--height-large);
@@ -102,16 +99,18 @@
 
   margin-bottom: 1rem;
 }
-.carousel-item .title {
+.carousel-item .anime-title {
   font-weight: 500;
   font-size: 40px;
-  letter-spacing: 7px;
+  letter-spacing: 3px;
 }
 
 .hero-button {
   padding: 10px 20px;
   border: none;
+  font-size: 15px;
   border-radius: 30px;
+  font-family: "Poppins", sans-serif;
 }
 .anime-info .button-wrapper {
   display: flex;
@@ -136,6 +135,9 @@
   border-radius: 7px;
   opacity: 1 !important;
   z-index: 10 !important;
+  user-select: none;
+  border: none;
+  cursor: pointer;
 }
 
 .carousel-controls:hover {
@@ -150,7 +152,19 @@
   gap: 2px;
   flex-direction: column;
 }
+.swiper-pagination-bullet {
+  background-color: var(--light) !important;
+  height: 9px !important;
+  width: 9px !important;
 
+  opacity: 1 !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets {
+  display: none !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--theme) !important;
+}
 @media screen and (max-width: 1220px) {
   .anime-info {
     height: var(--height-medium);
@@ -176,6 +190,9 @@
   }
   .description {
     font-size: 14px;
+  }
+  .carousel-item .anime-title {
+    font-size: 30px;
   }
 }
 
@@ -226,5 +243,29 @@
   }
   .carousel {
     height: var(--height-medium);
+  }
+  .rank {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .carousel-item .anime-title {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets {
+    /* bottom: var(--swiper-pagination-bottom, 8px); */
+    bottom: 0;
+    right: 10px !important ;
+    left: auto !important;
+    width: 20px !important;
+    bottom: 5px !important;
+    display: flex !important;
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    flex-direction: column;
   }
 }

@@ -71,7 +71,7 @@ export default function ReviewSection() {
           <span>Show reviews</span>
           <BiSolidToggleLeft
             onClick={() => setReviewsVisible(true)}
-            size={25}
+            size={35}
           />
         </div>
       ) : (
@@ -82,14 +82,18 @@ export default function ReviewSection() {
             <div className="review-section-toolbar d-flex a-center">
               <div className="review-type">
                 <button
-                  className={`${animeReviewIsSelected ? "selected" : ""}`}
+                  className={`${
+                    animeReviewIsSelected ? "selected" : ""
+                  } f-poppins`}
                   onClick={() => setAnimeReviewIsSelected(true)}
                 >
                   {" "}
                   Anime
                 </button>
                 <button
-                  className={`${!animeReviewIsSelected ? "selected" : ""}`}
+                  className={`${
+                    !animeReviewIsSelected ? "selected" : ""
+                  } f-poppins`}
                   onClick={() => setAnimeReviewIsSelected(false)}
                 >
                   Manga
@@ -99,7 +103,7 @@ export default function ReviewSection() {
                 <span>Show reviews</span>
                 <BiSolidToggleRight
                   onClick={() => setReviewsVisible(false)}
-                  size={30}
+                  size={35}
                   style={{ color: "var(--theme)" }}
                 />
               </div>
