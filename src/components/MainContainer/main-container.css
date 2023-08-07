@@ -1,0 +1,25 @@
+.main-container {
+  padding: 30px 20px;
+}
+.collections-wrapper {
+  gap: 40px;
+}
+.anime-collection-wrapper h2 {
+  padding-block: 30px;
+  color: var(--theme);
+}
+
+.card-wrapper {
+  width: 70%;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+@media screen and (max-width: 1080px) {
+  .card-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
+}

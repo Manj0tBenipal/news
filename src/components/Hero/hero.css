@@ -69,8 +69,8 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  
 }
 .quality {
   background-color: var(--theme);
@@ -78,6 +78,7 @@
   padding: 2px 4px;
   border-radius: 2px;
   font-size: 0.7rem;
+  font-weight: 600;
 }
 .episode-count {
   color: black;
@@ -85,6 +86,7 @@
   border-radius: 2px;
   font-size: 0.7rem;
   background-color: rgb(255, 191, 0);
+   font-weight: 600;
 }
 .anime-statistics {
   display: flex;
