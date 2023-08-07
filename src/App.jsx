@@ -9,12 +9,14 @@ import topAnimeData from "./backupData.json";
 import LoadingSpinner from "./components/LoadingSpinner";
 import Share from "./components/Share/Share";
 import Featured from "./components/Featured/Featured";
+import MainContainer from "./components/MainContainer/MainContainer";
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [topAnime, setTopAnime] = useState(topAnimeData.data);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
+  const [featuredDataFetched, setFeaturedDataFetched] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,10 +40,8 @@ export default function App() {
         window.scrollY || document.documentElement.scrollTop;
       if (scrollPosition > 0 && isScrolled === false) {
         setIsScrolled(true);
-        
       } else if (scrollPosition === 0) {
         setIsScrolled(false);
-        
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -73,7 +73,8 @@ export default function App() {
       <Trending topAnime={topAnime} />
       <Share />
       <ReviewSection />
-      <Featured />
+      <Featured dataFetched={setFeaturedDataFetched} />
+      {featuredDataFetched && <MainContainer />}
     </div>
   );
 }
