@@ -9,12 +9,12 @@
 }
 .anime-card-img-wrapper {
   position: relative;
-  height: 330px;
+  height: 310px;
   width: 100%;
 }
 .anime-card-img-wrapper img {
   width: 100% !important;
-  height: 330px;
+  height: 310px;
   object-fit: cover;
 }
 .anime-card-img-wrapper .rating {
@@ -58,16 +58,22 @@
 }
 @media screen and (max-width: 2000px) {
   .anime-card-img-wrapper {
-    height: 280px;
+    height: 270px;
   }
   .anime-card-img-wrapper img {
-    height: 280px;
+    height: 270px;
   }
 }
 
-@media screen and (max-width: 1590px) {
+@media screen and (max-width: 1390px) {
   .anime-card {
     width: calc(100% / 4 - 1rem);
+  }
+  .anime-card-img-wrapper {
+    height: 260px;
+  }
+  .anime-card-img-wrapper img {
+    height: 260px;
   }
 }
 @media screen and (max-width: 800px) {

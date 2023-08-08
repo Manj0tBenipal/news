@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaEvernote } from "react-icons/fa";
 import { BiSolidToggleLeft, BiSolidToggleRight } from "react-icons/bi";
-import rengokuPng from "../../media/rengoku.png";
+import rengokuPng from "../../media/muichiro.png";
 import LoadingSpinner from "../LoadingSpinner";
 import animeReviewData from "./animeReviewsBak.json";
 import mangaReviewData from "./mangaReviewsBak.json";

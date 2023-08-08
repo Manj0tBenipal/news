@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "./trending.css";
 
 export default function Trending(props) {
-  const anime = props.topAnime.map((el, idx) => {
+  const anime = props.topAnime.data.map((el, idx) => {
     const item = el.attributes;
     return (
       <SwiperSlide key={item.titles.en_jp}>
