@@ -21,11 +21,12 @@ export default function Card(props) {
         <div className="card-statistics">
           <span>
             {anime.duration === "Unknown"
-              ? "TBA"
+              ? `${anime.season || "S:NA"}   ${anime.year || "Y:NA"}`
               : anime.duration.length > 7
               ? anime.duration.slice(0, 7)
               : anime.duration || "23m"}
           </span>
+          <div className="dot"></div>
           <span>{anime.type || "TV"}</span>
         </div>
       </div>

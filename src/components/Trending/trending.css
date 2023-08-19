@@ -42,13 +42,14 @@
   transform: rotate(270deg);
   white-space: nowrap;
   font-size: 17px;
+  width: 100px;
 }
 .trending-item-sidebar span {
   color: var(--theme);
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 600;
-  margin-top: 10px;
+  
 }
 .trending-swiper-navigation {
   display: flex;
@@ -104,6 +105,6 @@
     display: none;
   }
   .trending-item-sidebar span {
-  background-color: var(--dark);
-}
+    background-color: var(--dark);
+  }
 }

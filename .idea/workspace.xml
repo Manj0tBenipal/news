@@ -4,27 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Navbar social icons centered">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-08-06_6_18_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-08-06_6_18_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="top ten section added to main sidebar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card/card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backupData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card/Card.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card/card.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/ContentList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/content-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/content-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/featured.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/AnimeCollection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/AnimeCollection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainContainer/MainContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/MainContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/data/topOva.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/data/topOva.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/data/topSpecials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/data/topSpecials.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/data/upcoming.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/data/upcoming.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/ReviewSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewSection/ReviewSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/animeReviewsBak.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/mangaReviewsBak.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopTen/TopTenAnime.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopTen/TopTenAnime.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopTen/top-ten.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopTen/top-ten.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topAnime.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Hero_component_migrating_from_bootstrap_to_Swiper" />
+        <entry key="$PROJECT_DIR$" value="Main_Container" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,22 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/manjo/semester3/Assignment3_Manjot_Singh&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/manjo/HTML/warding",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,6 +92,9 @@
       <workItem from="1691243059101" duration="92000" />
       <workItem from="1691297943625" duration="4192000" />
       <workItem from="1691462649019" duration="636000" />
+      <workItem from="1691584240054" duration="1229000" />
+      <workItem from="1691894480654" duration="1450000" />
+      <workItem from="1692470061296" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -362,6 +372,7 @@
     <MESSAGE value="::after removed from hero + review type selector chnges" />
     <MESSAGE value="Changes toggle icon for reviews" />
     <MESSAGE value="Navbar social icons centered" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar social icons centered" />
+    <MESSAGE value="top ten section added to main sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="top ten section added to main sidebar" />
   </component>
 </project>

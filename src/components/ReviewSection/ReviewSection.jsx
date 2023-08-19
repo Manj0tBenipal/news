@@ -1,25 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaEvernote } from "react-icons/fa";
 import { BiSolidToggleLeft, BiSolidToggleRight } from "react-icons/bi";
 import rengokuPng from "../../media/muichiro.png";
 import LoadingSpinner from "../LoadingSpinner";
-import animeReviewData from "./animeReviewsBak.json";
-import mangaReviewData from "./mangaReviewsBak.json";
+import { Scrollbar } from "swiper/modules";
+import { useAnimeReviews, useMangaReviews } from "../../hooks/jikan";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/pagination";
 import "./review-section.css";
-import { Scrollbar } from "swiper/modules";
+import { animeReviewsData, mangaReviewsData } from "../../data/reviews";
 export default function ReviewSection() {
+  console.log(useAnimeReviews());
   const [reviewsVisible, setReviewsVisible] = useState(true);
-  const [animeReviews, setAnimeReviews] = useState(animeReviewData.data);
-  const [mangaReviews, setMangaReviews] = useState(mangaReviewData.data);
-  const [reviewsLoaded, setReviewsLoaded] = useState(false);
   const [animeReviewIsSelected, setAnimeReviewIsSelected] = useState(true);
 
-  const reviewType = animeReviewIsSelected ? animeReviews : mangaReviews;
-  const reviewCards = reviewType.map((el, idx) => {
+  const animeReviews = useAnimeReviews();
+  const mangaReviews = useMangaReviews();
+  const animeList = animeReviews.data?.data;
+  const mangaList = mangaReviews.data?.data;
+  const isLoading = mangaReviews.isLoading && animeReviewIsSelected.isLoading;
+
+  const reviewType = animeReviewIsSelected ? animeList : mangaList;
+  const reviewCards = reviewType?.data.map((el, idx) => {
     return (
       <SwiperSlide className="review-card" key={el.mal_id}>
         <div className="review-card-header">
@@ -39,31 +43,6 @@ export default function ReviewSection() {
     );
   });
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch("https://api.jikan.moe/v4/reviews/anime");
-        const result = await response.json();
-        setAnimeReviews(result.data);
-      } catch (error) {
-        console.log(error);
-      }
-
-      try {
-        const response = await fetch("https://api.jikan.moe/v4/reviews/manga");
-        const result = await response.json();
-        setMangaReviews(result.data);
-      } catch (error) {
-        console.log(error);
-      }
-
-      setReviewsLoaded(true);
-    }
-    fetchData();
-    return () => {
-      setReviewsLoaded(false);
-    };
-  }, [animeReviewIsSelected]);
   return (
     <div className="review-section-wrapper d-flex a-center j-center">
       {!reviewsVisible ? (
@@ -115,7 +94,7 @@ export default function ReviewSection() {
               className="review-list"
               spaceBetween={30}
             >
-              {reviewsLoaded ? reviewCards : <LoadingSpinner />}
+              {isLoading ? <LoadingSpinner /> : reviewCards}
             </Swiper>
           </div>
         </div>

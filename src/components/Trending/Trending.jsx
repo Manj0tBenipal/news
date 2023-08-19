@@ -2,22 +2,28 @@ import React from "react";
 import { Navigation } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { useTrendingAnime } from "../../hooks/useKitsu";
+import topAnimeData from "../../data/topAnime";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./trending.css";
+import LoadingSpinner from "../LoadingSpinner";
 
-export default function Trending(props) {
-  const anime = props.topAnime.data.map((el, idx) => {
+export default function Trending() {
+  const { isLoading, isError, data } = useTrendingAnime();
+  const anime = isError || data === undefined ? topAnimeData : data?.data;
+
+  const animeCard = anime?.data.map((el, idx) => {
     const item = el.attributes;
+    const title = item.titles.en || item.titles.en_jp;
     return (
       <SwiperSlide key={item.titles.en_jp}>
         <div className="trending-slide">
           <div className="trending-item-sidebar">
             <p className="f-poppins">
-              {item.titles.en_jp.slice(0, 16) + "..."}
+              {title.length > 22 ? title.slice(0, 22) + "..." : title}
             </p>
-            <span>0{idx + 1}</span>
+            <span>{idx > 8 ? idx + 1 : "0" + (idx + 1)}</span>
           </div>
           <a href="/">
             <img
@@ -30,7 +36,9 @@ export default function Trending(props) {
       </SwiperSlide>
     );
   });
-  return (
+  return isLoading ? (
+    <LoadingSpinner />
+  ) : (
     <div className="trending-section-wrapper">
       <h2 className="section-header">Trending</h2>
       <Swiper
@@ -71,7 +79,7 @@ export default function Trending(props) {
           prevEl: ".btn-prevTwo",
         }}
       >
-        {anime}
+        {animeCard}
         <div className="trending-swiper-navigation trans-c-03">
           <div className="btn-nextTwo swiper-controls d-flex a-center j-center ">
             <FaChevronRight size={20} />

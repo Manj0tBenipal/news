@@ -8,7 +8,7 @@
 }
 .img-wrapper {
   height: var(--height-large);
-  width: 100vw;
+  width: 100%;
 }
 
 .carousel {
@@ -22,7 +22,7 @@
   position: absolute;
   height: var(--height-large);
   width: 100%;
-  top: 0px;
+  bottom: 0px;
   left: 0px;
   background: linear-gradient(0deg, #242428 0%, #24242800 35%, #24242800 100%);
 
@@ -37,7 +37,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #242428 0%, #242428 22%, #24242800 60%);
+  background: linear-gradient(
+    90deg,
+    #242428e3 0%,
+    #242428d4 22%,
+    #24242800 60%
+  );
 }
 .carousel-control-next {
   z-index: 99;
@@ -78,6 +83,7 @@
   border-radius: 2px;
   font-size: 0.7rem;
   font-weight: 600;
+  gap: 2px;
 }
 .episode-count {
   color: black;
@@ -93,7 +99,6 @@
 }
 .rank {
   color: var(--theme);
-
 }
 .description {
   color: rgb(177, 177, 177);
@@ -131,7 +136,7 @@
   position: relative !important;
   width: 45px;
   height: 45px;
-  background:  var(--theme);
+  background: var(--theme);
   color: rgb(0, 0, 0);
   border-radius: 7px;
   opacity: 1 !important;

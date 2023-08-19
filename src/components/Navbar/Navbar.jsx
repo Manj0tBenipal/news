@@ -20,11 +20,10 @@ import {
 export default function NavBar(props) {
   const setSidebarIsOpen = props.setSidebarIsOpen;
   const pageIsScrolled = props.isScrolled;
-  console.log(pageIsScrolled);
   return (
     <nav
       className={`navigation-bar a-center d-flex ${
-        pageIsScrolled ? "dark" : "transparent"
+        pageIsScrolled ? "blur" : "dark"
       }`}
     >
       <div className="menu-group a-center d-flex">

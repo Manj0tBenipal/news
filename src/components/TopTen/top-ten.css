@@ -14,7 +14,7 @@
   text-align: center;
 }
 .top-ten-wrapper ul li .top-three {
-  border-bottom: 3px solid yellow;
+  border-bottom: 4px solid var(--theme);
   color: white;
 }
 .top-ten-wrapper ul li img {

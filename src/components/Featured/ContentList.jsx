@@ -1,6 +1,6 @@
 import React from "react";
 import "./content-list.css";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight, FaStar } from "react-icons/fa";
 export default function CategorieContainer(props) {
   const list = props.data.data.map((el, idx) => {
     return (
@@ -19,7 +19,11 @@ export default function CategorieContainer(props) {
           </span>
           <div className="episode-info d-flex f-ubuntu">
             <span className="episode-count">CC:{el.episodes || "NA"}</span>{" "}
-            <span className="quality">{el.score}</span>
+            <span className="quality d-flex a-center j-center">
+              <FaStar />
+              {el.score}
+            </span>
+            <div className="dot"></div>
             <div className="show-type">{el.type}</div>
           </div>
         </div>

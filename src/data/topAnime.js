@@ -1,4 +1,8 @@
-let data = {
+const data = {
+  pagination: {
+    last_visible_page: 1,
+    has_next_page: true,
+  },
   data: [
     {
       id: "12",

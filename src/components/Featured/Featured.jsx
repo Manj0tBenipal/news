@@ -5,68 +5,55 @@ import moviesData from "./data/movies.json";
 import popularData from "./data/popular.json";
 import LoadingSpinner from "../LoadingSpinner";
 import ContentList from "./ContentList";
-import "./featured.css";
+import fetchData from "../../hooks/useKitsu";
+
 export default function Featured(props) {
   const [dataIsLoaded, setDataIsLoaded] = useState(false);
   const [topAiring, setTopAiring] = useState([]);
   const [mostPopular, setMostPopular] = useState([]);
   const [mostFavorite, setMostFavorite] = useState([]);
   const [movies, setMovies] = useState([]);
-  useEffect(() => {
-    let timeout1, timeout2, timeout3, timeout4;
+  // useEffect(() => {
+  //   let timeout1, timeout2, timeout3, timeout4;
+  //   timeout1 = setTimeout(async () => {
+  //     await fetchData(
+  //       "https://api.jikan.moe/v4/top/anime?filter=airing&limit=5",
+  //       setTopAiring,
+  //       topAiringData
+  //     );
+  //   }, 400);
 
-    const fetchData = async (url, setData, defaultData) => {
-      try {
-        const response = await fetch(url);
-        const result = await response.json();
-        if (response?.status !== 200) {
-          throw new Error();
-        }
-        setData(result);
-      } catch (error) {
-        setData(defaultData);
-      }
-    };
+  //   timeout2 = setTimeout(async () => {
+  //     await fetchData(
+  //       "https://api.jikan.moe/v4/top/anime?filter=bypopularity&limit=5",
+  //       setMostPopular,
+  //       popularData
+  //     );
+  //   }, 800);
 
-    timeout1 = setTimeout(async () => {
-      await fetchData(
-        "https://api.jikan.moe/v4/top/anime?filter=airing&limit=5",
-        setTopAiring,
-        topAiringData
-      );
-    }, 400);
+  //   timeout3 = setTimeout(async () => {
+  //     await fetchData(
+  //       "https://api.jikan.moe/v4/top/anime?filter=favorite&limit=5",
+  //       setMostFavorite,
+  //       favoriteData
+  //     );
+  //   }, 1200);
 
-    timeout2 = setTimeout(async () => {
-      await fetchData(
-        "https://api.jikan.moe/v4/top/anime?filter=bypopularity&limit=5",
-        setMostPopular,
-        popularData
-      );
-    }, 800);
+  //   timeout4 = setTimeout(async () => {
+  //     await fetchData(
+  //       "https://api.jikan.moe/v4/top/anime?type=movie&filter=bypopularity&limit=5",
+  //       setMovies,
+  //       moviesData
+  //     );
+  //   }, 1600);
 
-    timeout3 = setTimeout(async () => {
-      await fetchData(
-        "https://api.jikan.moe/v4/top/anime?filter=favorite&limit=5",
-        setMostFavorite,
-        favoriteData
-      );
-    }, 1200);
-
-    timeout4 = setTimeout(async () => {
-      await fetchData(
-        "https://api.jikan.moe/v4/top/anime?type=movie&filter=bypopularity&limit=5",
-        setMovies,
-        moviesData
-      );
-    }, 1600);
-
-    return () => {
-      clearTimeout(timeout1);
-      clearTimeout(timeout2);
-      clearTimeout(timeout3);
-      clearTimeout(timeout4);
-    };
-  }, []);
+  //   return () => {
+  //     clearTimeout(timeout1);
+  //     clearTimeout(timeout2);
+  //     clearTimeout(timeout3);
+  //     clearTimeout(timeout4);
+  //   };
+  // }, []);
   if (
     topAiring.data?.length > 0 &&
     mostFavorite.data?.length > 0 &&

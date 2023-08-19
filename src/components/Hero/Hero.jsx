@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./hero.css";
+import topAnimeData from "../../data/topAnime";
 import {
   FaCalendar,
   FaChevronLeft,
@@ -9,13 +10,17 @@ import {
   FaPlayCircle,
 } from "react-icons/fa";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { useTrendingAnime } from "../../hooks/useKitsu";
+import LoadingSpinner from "../LoadingSpinner";
 
-export default function Hero(props) {
-  const heroSlide = props.topAnime.data.map((el, idx) => {
+export default function Hero() {
+  const { isLoading, isError, data } = useTrendingAnime();
+  const anime = isError || data === undefined ? topAnimeData : data?.data;
+  const heroSlide = anime?.data.map((el, idx) => {
     const item = el.attributes;
     return (
-      <SwiperSlide key={item.title} data-bs-interval="2300">
-        <div className={`carousel-item`}>
+      <SwiperSlide key={item.titles.en} data-bs-interval="2300">
+        <div key={item.titles.en} className={`carousel-item`}>
           <div className="anime-info">
             <div className="anime-info-content">
               <span className="rank">#{idx + 1} Spotlight</span>
@@ -66,7 +71,9 @@ export default function Hero(props) {
     );
   });
 
-  return (
+  return isLoading ? (
+    <LoadingSpinner />
+  ) : (
     <div className="carousel slide" style={{ position: "relative" }}>
       <Swiper
         slidesPerView={1}

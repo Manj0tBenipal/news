@@ -9,14 +9,19 @@
   gap: 40px;
   transition: all 0.2s ease;
 }
-.navigation-bar.transparent {
-  background: linear-gradient(180deg, #242428 0%, #24242861 65%, #24242800 100%);
-
+.navigation-bar.dark {
+  background: var(--dark);
   backdrop-filter: blur(0px);
 }
-.navigation-bar.dark {
-  background: #272a2ca4;
-  backdrop-filter: blur(10px);
+.navigation-bar.blur {
+  background: linear-gradient(
+    180deg,
+    #242428 0%,
+    #242428af 65%,
+    #2424289f 100%
+  );
+
+  backdrop-filter: blur(60px);
 }
 .burger-icon {
   color: white;
