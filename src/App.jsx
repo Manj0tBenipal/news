@@ -50,11 +50,11 @@ export default function App() {
         setSidebarIsOpen={setSidebarIsOpen}
       />
       <Hero sidebarIsOpen={sidebarIsOpen} />
-      <Trending /> 
+      <Trending />
       <Share />
       <ReviewSection />
-      {/* <Featured dataFetched={setFeaturedDataFetched} />
-      <MainContainer topAnime={topAnime} /> */}
+      <Featured />
+      {/* <MainContainer topAnime={topAnime} /> */}
     </div>
   );
 }

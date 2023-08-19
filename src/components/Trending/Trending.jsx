@@ -10,7 +10,7 @@ import "./trending.css";
 import LoadingSpinner from "../LoadingSpinner";
 
 export default function Trending() {
-  const { isLoading, isError, data } = useTrendingAnime();
+  const { isError, data } = useTrendingAnime();
   const anime = isError || data === undefined ? topAnimeData : data?.data;
 
   const animeCard = anime?.data.map((el, idx) => {
@@ -36,9 +36,7 @@ export default function Trending() {
       </SwiperSlide>
     );
   });
-  return isLoading ? (
-    <LoadingSpinner />
-  ) : (
+  return (
     <div className="trending-section-wrapper">
       <h2 className="section-header">Trending</h2>
       <Swiper

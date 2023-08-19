@@ -2,9 +2,9 @@ import React from "react";
 import "./content-list.css";
 import { FaChevronRight, FaStar } from "react-icons/fa";
 export default function CategorieContainer(props) {
-  const list = props.data.data.map((el, idx) => {
+  const list = props.data?.data.map((el, idx) => {
     return (
-      <li className="d-flex a-center">
+      <li key={el.mal_id} className="d-flex a-center">
         <img src={el.images.webp.image_url} alt="poster" />
         <div className="anime-details d-flex-fd-column">
           <span className="title">

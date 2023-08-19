@@ -4,34 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="top ten section added to main sidebar">
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Hero, Trending and Review Migrated to react-query successfully">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card/Card.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card/card.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Featured/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/ContentList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Featured/content-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/content-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Featured/featured.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/AnimeCollection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/AnimeCollection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/MainContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/MainContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/data/favorite.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/data/movies.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/data/popular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/data/topAiring.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/ReviewSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewSection/ReviewSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/animeReviewsBak.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/mangaReviewsBak.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopTen/TopTenAnime.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopTen/TopTenAnime.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopTen/top-ten.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopTen/top-ten.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topAnime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/jikan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/jikan.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +81,7 @@
       <workItem from="1691462649019" duration="636000" />
       <workItem from="1691584240054" duration="1229000" />
       <workItem from="1691894480654" duration="1450000" />
-      <workItem from="1692470061296" duration="679000" />
+      <workItem from="1692470061296" duration="1730000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -299,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691360508058</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Hero, Trending and Review Migrated to react-query successfully">
+      <created>1692479376595</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1692479376595</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +305,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Migrating_to_react_query" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="Main_Container" />
@@ -336,7 +335,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Main_Container" />
+                        <option value="Migrating_to_react_query" />
                       </list>
                     </value>
                   </entry>
@@ -373,6 +372,7 @@
     <MESSAGE value="Changes toggle icon for reviews" />
     <MESSAGE value="Navbar social icons centered" />
     <MESSAGE value="top ten section added to main sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="top ten section added to main sidebar" />
+    <MESSAGE value="Hero, Trending and Review Migrated to react-query successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hero, Trending and Review Migrated to react-query successfully" />
   </component>
 </project>

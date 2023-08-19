@@ -12,7 +12,6 @@ import "swiper/css/pagination";
 import "./review-section.css";
 import { animeReviewsData, mangaReviewsData } from "../../data/reviews";
 export default function ReviewSection() {
-  console.log(useAnimeReviews());
   const [reviewsVisible, setReviewsVisible] = useState(true);
   const [animeReviewIsSelected, setAnimeReviewIsSelected] = useState(true);
 

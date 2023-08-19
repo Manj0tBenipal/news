@@ -6015,6 +6015,3 @@ export const mangaReviewsData = {
     },
   ],
 };
-;
-
-

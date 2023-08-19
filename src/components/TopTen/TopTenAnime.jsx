@@ -1,7 +1,11 @@
 import React from "react";
 import "./top-ten.css";
-export default function TopTenAnime({ topAnime }) {
-  const list = topAnime.data.map((el, idx) => {
+import { useTrendingAnime } from "../../hooks/useKitsu";
+import topAnimeData from "../../data/topAnime";
+export default function TopTenAnime() {
+  const { isError, data } = useTrendingAnime();
+  const anime = isError || data === undefined ? topAnimeData : data?.data;
+  const list = anime.data.map((el, idx) => {
     const title = el.attributes.titles.en || el.attributes.titles.en_jp;
     return (
       <li className="d-flex a-center">
