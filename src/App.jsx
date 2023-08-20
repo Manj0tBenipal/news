@@ -54,7 +54,7 @@ export default function App() {
       <Share />
       <ReviewSection />
       <Featured />
-      {/* <MainContainer topAnime={topAnime} /> */}
+      <MainContainer />
     </div>
   );
 }

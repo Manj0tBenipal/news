@@ -19,55 +19,58 @@ export default function Hero() {
   const heroSlide = anime?.data.map((el, idx) => {
     const item = el.attributes;
     return (
-      <SwiperSlide key={item.titles.en} data-bs-interval="2300">
-        <div key={item.titles.en} className={`carousel-item`}>
-          <div className="anime-info">
-            <div className="anime-info-content">
-              <span className="rank">#{idx + 1} Spotlight</span>
-              <h1 className="anime-title">
-                {item.titles.en || item.titles.en_jp}
-              </h1>
-              <div className="anime-statistics">
-                <span className="anime-st-item">
-                  <FaPlayCircle size={14} />
-                  {item.subtype}
-                </span>
-                <span className="anime-st-item">
-                  <FaClock size={14} />
-                  {item.episodeLength + "m"}
-                </span>
-
-                <span className="anime-st-item">
-                  <FaCalendar size={13} /> {item.startDate}
-                </span>
-                <span className="anime-st-item">
-                  <span className="quality">HD</span>
-                  <span className="episode-count">
-                    CC:{item.episodeCount || "Unknown"}
+      <div key={el.id + el.attributes.createdAt}>
+        <SwiperSlide data-bs-interval="2300">
+          <div key={item.titles.en} className={`carousel-item`}>
+            <div className="anime-info">
+              <div className="anime-info-content">
+                <span className="rank">#{idx + 1} Spotlight</span>
+                <h1 className="anime-title">
+                  {item.titles.en || item.titles.en_jp}
+                </h1>
+                <div className="anime-statistics">
+                  <span className="anime-st-item">
+                    <FaPlayCircle size={14} />
+                    {item.subtype}
                   </span>
-                </span>
-              </div>
-              <p className="description">
-                {(item.background && item.description.slice(0, 200) + "...") ||
-                  (item.synopsis && item.synopsis.slice(0, 200) + "...")}
-              </p>
-              <div className="button-wrapper">
-                <button className="watch-button hero-button">
-                  <FaPlayCircle size={12} /> Watch Now
-                </button>
-                <button className="details-button hero-button">
-                  Details <FaChevronRight size={12} />
-                </button>
+                  <span className="anime-st-item">
+                    <FaClock size={14} />
+                    {item.episodeLength + "m"}
+                  </span>
+
+                  <span className="anime-st-item">
+                    <FaCalendar size={13} /> {item.startDate}
+                  </span>
+                  <span className="anime-st-item">
+                    <span className="quality">HD</span>
+                    <span className="episode-count">
+                      CC:{item.episodeCount || "Unknown"}
+                    </span>
+                  </span>
+                </div>
+                <p className="description">
+                  {(item.background &&
+                    item.description.slice(0, 200) + "...") ||
+                    (item.synopsis && item.synopsis.slice(0, 200) + "...")}
+                </p>
+                <div className="button-wrapper">
+                  <button className="watch-button hero-button">
+                    <FaPlayCircle size={12} /> Watch Now
+                  </button>
+                  <button className="details-button hero-button">
+                    Details <FaChevronRight size={12} />
+                  </button>
+                </div>
               </div>
             </div>
+            <img
+              className="carousel-img"
+              src={item.coverImage.original}
+              alt={item.titles.en_jp || item.titles.en}
+            />
           </div>
-          <img
-            className="carousel-img"
-            src={item.coverImage.original}
-            alt={item.titles.en_jp || item.titles.en}
-          />
-        </div>
-      </SwiperSlide>
+        </SwiperSlide>
+      </div>
     );
   });
 

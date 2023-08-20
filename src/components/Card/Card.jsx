@@ -4,7 +4,7 @@ export default function Card(props) {
   const anime = props.data;
 
   return (
-    <div className="anime-card d-flex">
+    <div key={anime.mal_id} className="anime-card d-flex">
       <div className="anime-card-img-wrapper">
         <span className="rating">{anime.rating?.slice(0, 5)}</span>
         <span className="episode-count">CC:{anime.episodes || "Full"}</span>

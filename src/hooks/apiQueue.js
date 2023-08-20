@@ -1,8 +1,8 @@
 import PQueue from "p-queue";
 import axios from "axios";
 const queue = new PQueue({
-  concurrency: 2,
-  intervalCap: 2,
+  concurrency: 1,
+  intervalCap: 3,
   interval: 1500,
 });
 

@@ -14,22 +14,19 @@ import {
   useMostPopular,
   useTopAiring,
   useTopMovies,
+  useHandleJikanResponse,
 } from "../../hooks/jikan";
 
 export default function Featured(props) {
-  function handleResponse(response, backupData) {
-    const data = response.isError ? backupData : response.data?.data;
-    return data;
-  }
-  const topAiring = handleResponse(useTopAiring(), topAiringData);
-  const mostPopular = handleResponse(useMostPopular(), popularData);
-  const mostFavorite = handleResponse(useMostFavorite(), favoriteData);
-  const movies = handleResponse(useTopMovies(), moviesData);
+  const topAiring = useHandleJikanResponse(useTopAiring(), topAiringData);
+  const mostPopular = useHandleJikanResponse(useMostPopular(), popularData);
+  const mostFavorite = useHandleJikanResponse(useMostFavorite(), favoriteData);
+  const movies = useHandleJikanResponse(useTopMovies(), moviesData);
   const isLoading =
-    topAiring?.isLoading &&
-    mostPopular?.isLoading &&
-    mostFavorite?.isLoading &&
-    movies?.isLoading;
+    topAiring.isLoading &&
+    mostPopular.isLoading &&
+    mostFavorite.isLoading &&
+    movies.isLoading;
 
   return isLoading ? (
     <LoadingSpinner />

@@ -2,7 +2,7 @@ import React from "react";
 import "./content-list.css";
 import { FaChevronRight, FaStar } from "react-icons/fa";
 export default function CategorieContainer(props) {
-  const list = props.data?.data.map((el, idx) => {
+  const list = props.data.data?.data.map((el, idx) => {
     return (
       <li key={el.mal_id} className="d-flex a-center">
         <img src={el.images.webp.image_url} alt="poster" />
@@ -34,7 +34,7 @@ export default function CategorieContainer(props) {
     <div className="category-container d-flex-fd-column">
       <h4>{props.heading}</h4>
       <ul>{list}</ul>
-      <a href="/">
+      <a href="/" className="view-more-link">
         View More
         <FaChevronRight size={14} />
       </a>

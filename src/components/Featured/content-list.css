@@ -42,7 +42,9 @@
   text-decoration: none;
   font-size: 14px;
   color: white;
+  
 }
+
 .category-container a:hover {
   color: var(--theme);
 }
@@ -53,6 +55,9 @@
     background: rgba(255,255,255,.3);
     display: inline-block;
     margin: 3px 6px;
+}
+.view-more-link{
+  padding: 10px;
 }
 @media screen and (max-width: 1500px) {
   .category-container h4 {

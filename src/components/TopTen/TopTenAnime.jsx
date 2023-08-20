@@ -8,7 +8,7 @@ export default function TopTenAnime() {
   const list = anime.data.map((el, idx) => {
     const title = el.attributes.titles.en || el.attributes.titles.en_jp;
     return (
-      <li className="d-flex a-center">
+      <li key={title} className="d-flex a-center">
         <span
           className={`rank ${0 < idx + 1 && idx + 1 <= 3 ? "top-three" : ""}`}
         >

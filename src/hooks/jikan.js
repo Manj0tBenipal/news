@@ -15,6 +15,11 @@ function useMakeQuery(queryKey, endpoint) {
   );
 }
 
+export function useHandleJikanResponse(response, backupData) {
+  const data = response.isError ? backupData : response.data?.data;
+  return { data: data, isLoading: response.isLoading };
+}
+
 export function useMangaReviews() {
   return useMakeQuery("top-manga-reviews", "reviews/manga");
 }
@@ -36,4 +41,25 @@ export function useTopMovies() {
     "top-movies",
     "top/anime?type=movie&filter=bypopularity&limit=5"
   );
+}
+export function useTopOVAs() {
+  return useMakeQuery(
+    "top-OVAs",
+    "top/anime?type=ova&filter=bypopularity&limit=12"
+  );
+}
+export function useTopONAs() {
+  return useMakeQuery(
+    "top-ONAs",
+    "top/anime?type=ona&filter=bypopularity&limit=12"
+  );
+}
+export function useTopSpecials() {
+  return useMakeQuery(
+    "top-specials",
+    "top/anime?type=special&filter=bypopularity&limit=12"
+  );
+}
+export function useTopUpcoming() {
+  return useMakeQuery("top-upcoming", "top/anime?filter=upcoming&limit=12");
 }
