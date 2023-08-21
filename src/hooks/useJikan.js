@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { queueRequest } from "./apiQueue";
 const queryConfig = {
-  staleTime: 30 * 60 * 1000,
+  staleTime: 2 * 60 * 1000,
   cacheTime: 30 * 60 * 1000,
 };
 
@@ -16,7 +16,10 @@ function useMakeQuery(queryKey, endpoint) {
 }
 
 export function useHandleJikanResponse(response, backupData) {
-  const data = response.isError ? backupData : response.data?.data;
+  const data =
+    response.isError || response.data === undefined || response.data === null
+      ? backupData
+      : response.data?.data;
   return { data: data, isLoading: response.isLoading };
 }
 
@@ -62,4 +65,10 @@ export function useTopSpecials() {
 }
 export function useTopUpcoming() {
   return useMakeQuery("top-upcoming", "top/anime?filter=upcoming&limit=12");
+}
+export function useGenre() {
+  return useMakeQuery("genre", "genres/anime");
+}
+export function useTopCharacters() {
+  return useMakeQuery("top-characters", "top/characters?limit=5");
 }

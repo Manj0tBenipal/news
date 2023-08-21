@@ -1,0 +1,68 @@
+.genre-wrapper h2 {
+  color: var(--theme);
+  padding-block: 30px;
+}
+.genre-wrapper {
+}
+.genre-list {
+  flex-wrap: wrap;
+ 
+  padding-top: 20px;
+  column-gap: 10px;
+}
+.genre-list button {
+
+  flex-grow: 1;
+  padding: 10px;
+  margin-block: 10px;
+  background: rgba(255, 255, 255, 0.383);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.genre-list button:hover {
+  color: var(--theme);
+}
+.genre-list a {
+  text-decoration: none;
+  width: 90px;
+
+  padding-block: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0 !important;
+  border: none !important;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.genre-list a:hover {
+  transform: translateY(-2px);
+  background: transparent !important;
+}
+
+.genre-list a:nth-of-type(7n + 1) {
+  color: #d0e6a5;
+}
+.genre-list a:nth-of-type(7n + 2) {
+  color: #ffdd95;
+}
+.genre-list a:nth-of-type(7n + 3) {
+  color: #fc887b;
+}
+.genre-list a:nth-of-type(7n + 4) {
+  color: #ccabda;
+}
+.genre-list a:nth-of-type(7n + 5) {
+  color: #abccd8;
+}
+.genre-list a:nth-of-type(7n + 6) {
+  color: #d8b2ab;
+}
+.genre-list a:nth-of-type(7n) {
+  color: #86e3ce;
+}

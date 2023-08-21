@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./top-ten.css";
 import { useTrendingAnime } from "../../hooks/useKitsu";
-import topAnimeData from "../../data/topAnime";
+import { FaStar } from "react-icons/fa";
 export default function TopTenAnime() {
-  const { isError, data } = useTrendingAnime();
-  const anime = isError || data === undefined ? topAnimeData : data?.data;
-  const list = anime.data.map((el, idx) => {
+  const { data } = useTrendingAnime();
+  const [period, setPeriod] = useState(2);
+  const animeList = [...data];
+  const sortedList = animeList?.sort(
+    (a, b) =>
+      b.attributes.ratingFrequencies[`${period}`] -
+      a.attributes.ratingFrequencies[`${period}`]
+  );
+  const list = sortedList.map((el, idx) => {
     const title = el.attributes.titles.en || el.attributes.titles.en_jp;
     return (
       <li key={title} className="d-flex a-center">
+        
         <span
           className={`rank ${0 < idx + 1 && idx + 1 <= 3 ? "top-three" : ""}`}
         >
@@ -18,13 +25,20 @@ export default function TopTenAnime() {
           <img src={el.attributes.posterImage.tiny} alt="poster" />
           <div className="anime-details d-flex-fd-column">
             <span className="title">
-              <span className="trans-03">
-                {title.length > 30 ? title.slice(0, 30) : title}
-              </span>
+              <a
+                href={`https://www.youtube.com/watch?v=${el.attributes.youtubeVideoId}`}
+                className="trans-03"
+              >
+                {title}
+              </a>
             </span>
             <div className="episode-info d-flex ">
-              <span className="episode-count">CC:{el.episodes || "NA"}</span>
-              <span className="quality">
+              <span className="episode-count">
+                EP:
+                {el.attributes.episodeCount || "NA"}
+              </span>
+              <span className="quality d-flex a-center j-center">
+                <FaStar />
                 {(parseFloat(el.attributes.averageRating) / 10).toFixed(2)}
               </span>
               <div className="show-type">{el.attributes.subtype}</div>
@@ -39,8 +53,30 @@ export default function TopTenAnime() {
       <div className="top-ten-header d-flex a-center">
         <h2>Top 10</h2>
         <div className="top-ten-tabs">
-          <button>Anime</button>
-          <button>Manga</button>
+          <button
+            onClick={() => setPeriod(2)}
+            className={`${
+              period === 2 ? "selected" : ""
+            } period-selector f-poppins`}
+          >
+            Today
+          </button>
+          <button
+            onClick={() => setPeriod(8)}
+            className={`${
+              period === 8 ? "selected" : ""
+            } period-selector f-poppins`}
+          >
+            Week
+          </button>
+          <button
+            onClick={() => setPeriod(20)}
+            className={`${
+              period === 20 ? "selected" : ""
+            } period-selector f-poppins`}
+          >
+            Month
+          </button>
         </div>
       </div>
       <ul>{list}</ul>

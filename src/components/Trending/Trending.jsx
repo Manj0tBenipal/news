@@ -3,17 +3,14 @@ import { Navigation } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useTrendingAnime } from "../../hooks/useKitsu";
-import topAnimeData from "../../data/topAnime";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./trending.css";
-import LoadingSpinner from "../LoadingSpinner";
 
 export default function Trending() {
-  const { isError, data } = useTrendingAnime();
-  const anime = isError || data === undefined ? topAnimeData : data?.data;
+  const { data } = useTrendingAnime();
 
-  const animeCard = anime?.data.map((el, idx) => {
+  const animeCard = data?.map((el, idx) => {
     const item = el.attributes;
     const title = item.titles.en || item.titles.en_jp;
     return (

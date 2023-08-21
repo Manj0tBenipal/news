@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./hero.css";
-import topAnimeData from "../../data/topAnime";
+import { nanoid } from "nanoid";
 import {
   FaCalendar,
   FaChevronLeft,
@@ -14,14 +14,16 @@ import { useTrendingAnime } from "../../hooks/useKitsu";
 import LoadingSpinner from "../LoadingSpinner";
 
 export default function Hero() {
-  const { isLoading, isError, data } = useTrendingAnime();
-  const anime = isError || data === undefined ? topAnimeData : data?.data;
-  const heroSlide = anime?.data.map((el, idx) => {
+  const { isLoading, data } = useTrendingAnime();
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const heroSlide = data?.map((el, idx) => {
     const item = el.attributes;
+    const key = el.id;
+
     return (
-      <div key={el.id + el.attributes.createdAt}>
+      <div key={key + nanoid()}>
         <SwiperSlide data-bs-interval="2300">
-          <div key={item.titles.en} className={`carousel-item`}>
+          <div className={`carousel-item`}>
             <div className="anime-info">
               <div className="anime-info-content">
                 <span className="rank">#{idx + 1} Spotlight</span>
@@ -65,7 +67,11 @@ export default function Hero() {
             </div>
             <img
               className="carousel-img"
-              src={item.coverImage.original}
+              src={
+                screenWidth < 500
+                  ? item.posterImage.original
+                  : item.coverImage.original
+              }
               alt={item.titles.en_jp || item.titles.en}
             />
           </div>

@@ -1,42 +1,47 @@
 import AnimeCollection from "./AnimeCollection";
 import LoadingSpinner from "../LoadingSpinner";
-import TopTenAnime from "../TopTen/TopTenAnime";
+
 import {
   useHandleJikanResponse,
   useTopONAs,
   useTopOVAs,
   useTopSpecials,
   useTopUpcoming,
-} from "../../hooks/jikan";
+} from "../../hooks/useJikan";
 import {
   onaData,
   ovaData,
   specialsData,
   upcomingData,
 } from "../../data/mainSection";
+import MainSidebar from "./MainSidebar";
+
 export default function MainContainer() {
+  let isLoading = true;
   const ova = useHandleJikanResponse(useTopOVAs(), ovaData);
   const ona = useHandleJikanResponse(useTopONAs(), onaData);
-  const specials = useHandleJikanResponse(useTopSpecials(), specialsData);
   const upcoming = useHandleJikanResponse(useTopUpcoming(), upcomingData);
-  const isLoading = true;
+  const specials = useHandleJikanResponse(useTopSpecials(), specialsData);
 
   if (
-    upcoming.data?.length > 0 &&
-    ova.data?.length > 0 &&
-    specials.data?.length > 0
+    !(
+      ova.isLoading &&
+      ona.isLoading &&
+      specials.isLoading &&
+      upcoming.isLoading
+    )
   ) {
     isLoading = false;
   }
 
   return (
     <div className="main-container d-flex">
-      {isLoading ? (
+      {!isLoading ? (
         <>
           <div className="sidebar-wrapper">
-            <TopTenAnime />
+            <MainSidebar />
           </div>
-          <div className="collections-wrapper d-flex-fd-column a-center j-center">
+          <div className="collections-wrapper d-flex-fd-column a-center ">
             <AnimeCollection collectionName="Top Upcoming" data={upcoming} />
             <AnimeCollection collectionName="Specials" data={specials} />
             <AnimeCollection collectionName="Top OVA's" data={ova} />

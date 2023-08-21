@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="implemented rate-limiting on jikan. Implemented react-query to review and featured section" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Implemented react-query in Main container" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +66,7 @@
       <workItem from="1691462649019" duration="636000" />
       <workItem from="1691584240054" duration="1229000" />
       <workItem from="1691894480654" duration="1450000" />
-      <workItem from="1692470061296" duration="2373000" />
+      <workItem from="1692470061296" duration="3055000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -285,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692488442653</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Implemented react-query in Main container">
+      <created>1692492501933</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1692492501933</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +347,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Styled navbar and made it responsive" />
     <MESSAGE value="added external stylesheet for navbar" />
     <MESSAGE value="Fetched data from api" />
     <MESSAGE value="added default image for urlToImage=null from APi" />
@@ -365,6 +371,7 @@
     <MESSAGE value="top ten section added to main sidebar" />
     <MESSAGE value="Hero, Trending and Review Migrated to react-query successfully" />
     <MESSAGE value="implemented rate-limiting on jikan. Implemented react-query to review and featured section" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented rate-limiting on jikan. Implemented react-query to review and featured section" />
+    <MESSAGE value="Implemented react-query in Main container" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented react-query in Main container" />
   </component>
 </project>

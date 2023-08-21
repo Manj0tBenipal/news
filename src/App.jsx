@@ -8,14 +8,11 @@ import ReviewSection from "./components/ReviewSection/ReviewSection";
 import Share from "./components/Share/Share";
 import Featured from "./components/Featured/Featured";
 import MainContainer from "./components/MainContainer/MainContainer";
-import { useAnimeReviews, useMangaReviews } from "./hooks/jikan";
+
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
-  const [featuredDataFetched, setFeaturedDataFetched] = useState(false);
-  const animeReviews = useAnimeReviews();
-  const mangaReviews = useMangaReviews();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +28,7 @@ export default function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isScrolled]);
 
   return (
     <div
@@ -55,6 +52,7 @@ export default function App() {
       <ReviewSection />
       <Featured />
       <MainContainer />
+      
     </div>
   );
 }

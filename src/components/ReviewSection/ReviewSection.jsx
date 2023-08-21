@@ -4,13 +4,12 @@ import { BiSolidToggleLeft, BiSolidToggleRight } from "react-icons/bi";
 import rengokuPng from "../../media/muichiro.png";
 import LoadingSpinner from "../LoadingSpinner";
 import { Scrollbar } from "swiper/modules";
-import { useAnimeReviews, useMangaReviews } from "../../hooks/jikan";
+import { useAnimeReviews, useMangaReviews } from "../../hooks/useJikan";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/pagination";
 import "./review-section.css";
-import { animeReviewsData, mangaReviewsData } from "../../data/reviews";
 export default function ReviewSection() {
   const [reviewsVisible, setReviewsVisible] = useState(true);
   const [animeReviewIsSelected, setAnimeReviewIsSelected] = useState(true);

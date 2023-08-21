@@ -15,7 +15,7 @@ import {
   useTopAiring,
   useTopMovies,
   useHandleJikanResponse,
-} from "../../hooks/jikan";
+} from "../../hooks/useJikan";
 
 export default function Featured(props) {
   const topAiring = useHandleJikanResponse(useTopAiring(), topAiringData);

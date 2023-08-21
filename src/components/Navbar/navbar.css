@@ -10,7 +10,12 @@
   transition: all 0.2s ease;
 }
 .navigation-bar.dark {
-  background: var(--dark);
+    background: linear-gradient(
+    180deg,
+    #242428 20%,
+    #24242895 65%,
+    #24242800 100%
+  );
   backdrop-filter: blur(0px);
 }
 .navigation-bar.blur {
@@ -18,7 +23,7 @@
     180deg,
     #242428 0%,
     #242428af 65%,
-    #2424289f 100%
+    #24242800 100%
   );
 
   backdrop-filter: blur(60px);
@@ -32,7 +37,7 @@
   color: var(--theme);
 }
 .logo {
-  height: 60px;
+  height: 40px;
   margin-inline: 10px;
 }
 .logo-text {
@@ -145,9 +150,7 @@
     background: var(--dark);
   }
   .logo {
-    height: 40px;
-  }
-  .logo-text {
     height: 30px;
   }
+
 }
