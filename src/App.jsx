@@ -5,16 +5,18 @@ import React, { useState, useEffect } from "react";
 import Trending from "./components/Trending/Trending";
 import NavSidebar from "./components/NavigationSidebar/NavSidebar";
 import ReviewSection from "./components/ReviewSection/ReviewSection";
-import topAnimeData from "./backupData.json";
+import topAnimeData from "./topAnime";
 import LoadingSpinner from "./components/LoadingSpinner";
 import Share from "./components/Share/Share";
 import Featured from "./components/Featured/Featured";
+import MainContainer from "./components/MainContainer/MainContainer";
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [topAnime, setTopAnime] = useState(topAnimeData.data);
+  const [topAnime, setTopAnime] = useState(topAnimeData);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
+  const [featuredDataFetched, setFeaturedDataFetched] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,10 +25,14 @@ export default function App() {
       try {
         const response = await fetch(url);
         const result = await response.json();
-        setTopAnime(result.data);
+        if (response?.status === 200) {
+          setTopAnime(result);
+        } else {
+          throw new Error();
+        }
       } catch (error) {
         console.error(error);
-        setTopAnime((prevData) => prevData);
+        setTopAnime(topAnimeData);
       }
 
       setIsLoading(false);
@@ -38,10 +44,8 @@ export default function App() {
         window.scrollY || document.documentElement.scrollTop;
       if (scrollPosition > 0 && isScrolled === false) {
         setIsScrolled(true);
-        
       } else if (scrollPosition === 0) {
         setIsScrolled(false);
-        
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -73,7 +77,8 @@ export default function App() {
       <Trending topAnime={topAnime} />
       <Share />
       <ReviewSection />
-      <Featured />
+      <Featured dataFetched={setFeaturedDataFetched} />
+       <MainContainer topAnime={topAnime} />
     </div>
   );
 }

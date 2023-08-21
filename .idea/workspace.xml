@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Navbar social icons centered">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-08-06_6_18_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-08-06_6_18_p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backupData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/MainContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/MainContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/data/topOva.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/data/topOva.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/data/topSpecials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/data/topSpecials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContainer/data/upcoming.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer/data/upcoming.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReviewSection/ReviewSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReviewSection/ReviewSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopTen/TopTenAnime.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopTen/TopTenAnime.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Main_Container" />
+        <entry key="$PROJECT_DIR$" value="Hero_component_migrating_from_bootstrap_to_Swiper" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,6 +84,7 @@
       <workItem from="1691086260717" duration="162000" />
       <workItem from="1691243059101" duration="92000" />
       <workItem from="1691297943625" duration="4192000" />
+      <workItem from="1691462649019" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -284,6 +304,11 @@
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="Main_Container" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
                 </option>
               </RecentGroup>
             </list>

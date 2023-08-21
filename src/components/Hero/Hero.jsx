@@ -11,7 +11,7 @@ import {
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 export default function Hero(props) {
-  const heroSlide = props.topAnime.map((el, idx) => {
+  const heroSlide = props.topAnime.data.map((el, idx) => {
     const item = el.attributes;
     return (
       <SwiperSlide key={item.title} data-bs-interval="2300">
@@ -43,8 +43,8 @@ export default function Hero(props) {
                 </span>
               </div>
               <p className="description">
-                {(item.background && item.description.slice(0, 300) + "...") ||
-                  (item.synopsis && item.synopsis.slice(0, 300) + "...")}
+                {(item.background && item.description.slice(0, 200) + "...") ||
+                  (item.synopsis && item.synopsis.slice(0, 200) + "...")}
               </p>
               <div className="button-wrapper">
                 <button className="watch-button hero-button">
@@ -58,7 +58,7 @@ export default function Hero(props) {
           </div>
           <img
             className="carousel-img"
-            src={item.posterImage.original}
+            src={item.coverImage.original}
             alt={item.titles.en_jp || item.titles.en}
           />
         </div>

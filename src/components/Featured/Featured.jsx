@@ -6,7 +6,7 @@ import popularData from "./data/popular.json";
 import LoadingSpinner from "../LoadingSpinner";
 import ContentList from "./ContentList";
 import "./featured.css";
-export default function Featured() {
+export default function Featured(props) {
   const [dataIsLoaded, setDataIsLoaded] = useState(false);
   const [topAiring, setTopAiring] = useState([]);
   const [mostPopular, setMostPopular] = useState([]);
@@ -34,7 +34,7 @@ export default function Featured() {
         setTopAiring,
         topAiringData
       );
-    }, 500);
+    }, 400);
 
     timeout2 = setTimeout(async () => {
       await fetchData(
@@ -42,7 +42,7 @@ export default function Featured() {
         setMostPopular,
         popularData
       );
-    }, 1000);
+    }, 800);
 
     timeout3 = setTimeout(async () => {
       await fetchData(
@@ -50,7 +50,7 @@ export default function Featured() {
         setMostFavorite,
         favoriteData
       );
-    }, 1500);
+    }, 1200);
 
     timeout4 = setTimeout(async () => {
       await fetchData(
@@ -58,7 +58,7 @@ export default function Featured() {
         setMovies,
         moviesData
       );
-    }, 2000);
+    }, 1600);
 
     return () => {
       clearTimeout(timeout1);
@@ -75,6 +75,7 @@ export default function Featured() {
     dataIsLoaded === false
   ) {
     setDataIsLoaded(true);
+    props.dataFetched(true);
   }
 
   return (
