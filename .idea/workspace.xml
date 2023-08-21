@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="logo changed + react query implimented to remaining components. Genre and Top characters added">
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopCharacters/TopCharacters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopCharacters/TopCharacters.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/apiQueue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/apiQueue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
       <workItem from="1691462649019" duration="636000" />
       <workItem from="1691584240054" duration="1229000" />
       <workItem from="1691894480654" duration="1450000" />
-      <workItem from="1692470061296" duration="4188000" />
+      <workItem from="1692470061296" duration="4805000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -301,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692581201206</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary=".">
+      <created>1692581799527</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1692581799527</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +365,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fetched data from api" />
     <MESSAGE value="added default image for urlToImage=null from APi" />
     <MESSAGE value="Chnaged Api from NewsApi to mediastack" />
     <MESSAGE value="Chnaged Api from  mediastack to NewsData" />
@@ -381,6 +389,7 @@
     <MESSAGE value="implemented rate-limiting on jikan. Implemented react-query to review and featured section" />
     <MESSAGE value="Implemented react-query in Main container" />
     <MESSAGE value="logo changed + react query implimented to remaining components. Genre and Top characters added" />
-    <option name="LAST_COMMIT_MESSAGE" value="logo changed + react query implimented to remaining components. Genre and Top characters added" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

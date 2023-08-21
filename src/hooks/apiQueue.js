@@ -9,8 +9,6 @@ const queue = new PQueue({
 const baseURL = "https://api.jikan.moe/v4/";
 export async function queueRequest(endpoint) {
   return queue.add(async () => {
-    return await axios.get(`${baseURL + endpoint}`).catch((error) => {
-      console.log(error + Date.now());
-    });
+    return await axios.get(`${baseURL + endpoint}`).catch((error) => {});
   });
 }

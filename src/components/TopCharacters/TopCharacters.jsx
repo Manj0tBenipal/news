@@ -13,7 +13,6 @@ export default function TopPosts() {
   };
 
   //Elements inherit css from TopTenAnime -- Same list Style
-  console.log(data);
   const list = data?.data.map((el, idx) => {
     return (
       <li key={el.mal_id} className="d-flex a-center">
