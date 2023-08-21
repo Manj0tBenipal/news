@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Implemented react-query in Main container" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="logo changed + react query implimented to remaining components. Genre and Top characters added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Main_Container" />
+        <entry key="$PROJECT_DIR$" value="Using_react_query" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +68,7 @@
       <workItem from="1691462649019" duration="636000" />
       <workItem from="1691584240054" duration="1229000" />
       <workItem from="1691894480654" duration="1450000" />
-      <workItem from="1692470061296" duration="3055000" />
+      <workItem from="1692470061296" duration="4188000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -292,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692492501933</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="logo changed + react query implimented to remaining components. Genre and Top characters added">
+      <created>1692581201206</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1692581201206</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +356,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added external stylesheet for navbar" />
     <MESSAGE value="Fetched data from api" />
     <MESSAGE value="added default image for urlToImage=null from APi" />
     <MESSAGE value="Chnaged Api from NewsApi to mediastack" />
@@ -372,6 +380,7 @@
     <MESSAGE value="Hero, Trending and Review Migrated to react-query successfully" />
     <MESSAGE value="implemented rate-limiting on jikan. Implemented react-query to review and featured section" />
     <MESSAGE value="Implemented react-query in Main container" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented react-query in Main container" />
+    <MESSAGE value="logo changed + react query implimented to remaining components. Genre and Top characters added" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo changed + react query implimented to remaining components. Genre and Top characters added" />
   </component>
 </project>
