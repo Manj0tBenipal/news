@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./hero.css";
-import { nanoid } from "nanoid";
 import {
   FaCalendar,
   FaChevronLeft,
@@ -10,17 +9,12 @@ import {
   FaPlayCircle,
 } from "react-icons/fa";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { useTrendingAnime } from "../../hooks/useKitsu";
-import LoadingSpinner from "../LoadingSpinner";
 
-export default function Hero() {
-  const { isLoading, data } = useTrendingAnime();
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const heroSlide = data?.map((el, idx) => {
+export default function Hero(props) {
+  const heroSlide = props.topAnime.data.map((el, idx) => {
     const item = el.attributes;
-
     return (
-      <SwiperSlide data-bs-interval="2300" key={el.id + nanoid()}>
+      <SwiperSlide key={item.title} data-bs-interval="2300">
         <div className={`carousel-item`}>
           <div className="anime-info">
             <div className="anime-info-content">
@@ -49,8 +43,8 @@ export default function Hero() {
                 </span>
               </div>
               <p className="description">
-                {(item.background && item.description.slice(0, 250) + "...") ||
-                  (item.synopsis && item.synopsis.slice(0, 250) + "...")}
+                {(item.background && item.description.slice(0, 200) + "...") ||
+                  (item.synopsis && item.synopsis.slice(0, 200) + "...")}
               </p>
               <div className="button-wrapper">
                 <button className="watch-button hero-button">
@@ -64,11 +58,7 @@ export default function Hero() {
           </div>
           <img
             className="carousel-img"
-            src={
-              screenWidth < 500
-                ? item.posterImage.original
-                : item.coverImage.original
-            }
+            src={item.coverImage.original}
             alt={item.titles.en_jp || item.titles.en}
           />
         </div>
@@ -76,9 +66,7 @@ export default function Hero() {
     );
   });
 
-  return isLoading ? (
-    <LoadingSpinner />
-  ) : (
+  return (
     <div className="carousel slide" style={{ position: "relative" }}>
       <Swiper
         slidesPerView={1}
