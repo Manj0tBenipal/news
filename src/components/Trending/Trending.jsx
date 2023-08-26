@@ -18,7 +18,7 @@ export default function Trending() {
         <div className="trending-slide">
           <div className="trending-item-sidebar">
             <p className="f-poppins">
-              {title.length > 22 ? title.slice(0, 22) + "..." : title}
+              {title.length > 15 ? title.slice(0, 15) + "..." : title}
             </p>
             <span>{idx > 8 ? idx + 1 : "0" + (idx + 1)}</span>
           </div>

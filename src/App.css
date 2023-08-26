@@ -2,6 +2,9 @@
 .f-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
+html {
+  scroll-behavior:auto;
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +26,7 @@ body {
   --dark: #242428;
   --height-small: 400px;
   --height-medium: 500px;
-  --height-large: 675px;
+  --height-large: 625px;
   --light: #ffffff;
   --theme: rgb(83, 255, 134);
 
@@ -44,10 +47,10 @@ body {
   justify-content: center;
 }
 .trans-c-03 > * {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .trans-03 {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .app-container {
   max-width: 2500px;
@@ -90,7 +93,7 @@ body {
 }
 
 .spinner {
-  animation: rotate 2s linear infinite;
+  animation: rotate 800ms linear infinite;
 }
 @keyframes rotate {
   from {

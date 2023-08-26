@@ -7,15 +7,13 @@ import {
   FaFilter,
   FaDiscord,
   FaRedditAlien,
-  FaRandom,
   FaBars,
   FaTelegramPlane,
-  FaLanguage,
-  FaComments,
   FaBell,
   FaTwitter,
-  FaBroadcastTower,
+
 } from "react-icons/fa";
+import Actions from "./Actions";
 
 export default function NavBar(props) {
   const setSidebarIsOpen = props.setSidebarIsOpen;
@@ -71,24 +69,7 @@ export default function NavBar(props) {
           <FaTwitter size={22} />
         </span>
       </div>
-      <div className="nav-actions f-poppins text-light trans-c-03">
-        <span>
-          <FaBroadcastTower size={20} />
-          <p>Watch Togather</p>
-        </span>
-        <span>
-          <FaRandom size={20} />
-          <p>Random</p>
-        </span>
-        <span>
-          <FaLanguage size={20} />
-          <p>Anime Name</p>
-        </span>
-        <span>
-          <FaComments size={20} />
-          <p>Community</p>
-        </span>
-      </div>
+      <Actions isInSidebar={false} /> 
       <div className="user-profile-nots a-center j-center d-flex trans-c-03">
         <FaBell size={20} />
         <img className="profile-icon" src={profileIcon} alt="profile-icon" />

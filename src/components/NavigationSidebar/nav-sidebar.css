@@ -11,6 +11,9 @@
   z-index: -1;
   transition: all 0.2s ease-in-out;
 }
+.close-menu {
+  cursor: pointer;
+}
 .navigation-list {
   position: fixed;
   top: 0;
@@ -29,16 +32,16 @@
 }
 .button-group {
   padding-top: 20px;
-  padding-inline: 20px;
 }
 .button-group > * {
-  padding: 7px 15px;
+  padding: 10px 15px;
   border-radius: 20px;
   background: var(--dark);
   text-align: center;
   text-decoration: none;
   margin-bottom: 10px;
   font-size: 12px;
+  margin-inline: 20px;
 }
 .button-group label {
   padding-block: 10px;

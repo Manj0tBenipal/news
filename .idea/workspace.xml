@@ -4,10 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment=".">
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Removed extra log messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopCharacters/TopCharacters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopCharacters/TopCharacters.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Genre/genre.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genre/genre.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationSidebar/NavSidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationSidebar/NavSidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationSidebar/nav-sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationSidebar/nav-sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/apiQueue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/apiQueue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useJikan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useJikan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/pikachu.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/rengoku.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,22 +46,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/manjo/HTML/warding",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/manjo/HTML/warding&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +85,8 @@
       <workItem from="1691462649019" duration="636000" />
       <workItem from="1691584240054" duration="1229000" />
       <workItem from="1691894480654" duration="1450000" />
-      <workItem from="1692470061296" duration="4805000" />
+      <workItem from="1692470061296" duration="7377000" />
+      <workItem from="1693081163276" duration="1234000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -310,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692581799527</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Removed extra log messages">
+      <created>1692582370024</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1692582370024</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added default image for urlToImage=null from APi" />
     <MESSAGE value="Chnaged Api from NewsApi to mediastack" />
     <MESSAGE value="Chnaged Api from  mediastack to NewsData" />
     <MESSAGE value="Changes the theme of website from general news to anime" />
@@ -390,6 +412,7 @@
     <MESSAGE value="Implemented react-query in Main container" />
     <MESSAGE value="logo changed + react query implimented to remaining components. Genre and Top characters added" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Removed extra log messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed extra log messages" />
   </component>
 </project>

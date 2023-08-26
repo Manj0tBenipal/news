@@ -2,6 +2,7 @@ import React from "react";
 import { FaChevronLeft, FaComments } from "react-icons/fa";
 import "./nav-sidebar.css";
 import Genre from "../Genre/Genre";
+import Actions from "../Navbar/Actions";
 export default function NavSidebar(props) {
   return (
     <div
@@ -18,19 +19,21 @@ export default function NavSidebar(props) {
         }}
       >
         <div className="button-group d-flex-fd-column">
-          <label
-            htmlFor="menu"
+          <div
+            className="d-flex a-center j-center close-menu"
             style={{ width: "60%" }}
             onClick={() => props.setSidebarIsOpen()}
           >
             <FaChevronLeft size={12} />
             Close Menu
-          </label>
+          </div>
+          <Actions isInSidebar={true} />
           <a href="/" className="d-flex a-center j-center">
             <FaComments size={14} />
             Community
           </a>
         </div>
+
         <div className="navigation-link-list">
           <ul>
             <li>
@@ -62,11 +65,6 @@ export default function NavSidebar(props) {
             </li>
             <li>
               <a href="/">Events</a>
-            </li>
-
-            <li style={{ padding: "20px" }}>
-              Genre
-              <Genre isInNavbar={true} />
             </li>
           </ul>
         </div>

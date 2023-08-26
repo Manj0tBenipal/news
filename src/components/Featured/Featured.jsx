@@ -17,7 +17,7 @@ import {
   useHandleJikanResponse,
 } from "../../hooks/useJikan";
 
-export default function Featured(props) {
+export default function Featured() {
   const topAiring = useHandleJikanResponse(useTopAiring(), topAiringData);
   const mostPopular = useHandleJikanResponse(useMostPopular(), popularData);
   const mostFavorite = useHandleJikanResponse(useMostFavorite(), favoriteData);

@@ -31,18 +31,18 @@ export function useAnimeReviews() {
 }
 
 export function useTopAiring() {
-  return useMakeQuery("top-airing", "top/anime?filter=airing&limit=5");
+  return useMakeQuery("top-airing", "top/anime?filter=airing&limit=4");
 }
 export function useMostPopular() {
-  return useMakeQuery("most-popular", "top/anime?filter=bypopularity&limit=5");
+  return useMakeQuery("most-popular", "top/anime?filter=bypopularity&limit=4");
 }
 export function useMostFavorite() {
-  return useMakeQuery("most-favorite", "top/anime?filter=favorite&limit=5");
+  return useMakeQuery("most-favorite", "top/anime?filter=favorite&limit=4");
 }
 export function useTopMovies() {
   return useMakeQuery(
     "top-movies",
-    "top/anime?type=movie&filter=bypopularity&limit=5"
+    "top/anime?type=movie&filter=bypopularity&limit=4"
   );
 }
 export function useTopOVAs() {
