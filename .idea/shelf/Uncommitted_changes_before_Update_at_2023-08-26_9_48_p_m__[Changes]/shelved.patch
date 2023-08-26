@@ -1,0 +1,28 @@
+Index: src/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport ReactDOM from \"react-dom/client\";\r\nimport App from \"./App\";\r\n\r\nconst root = ReactDOM.createRoot(document.getElementById(\"root\"));\r\nroot.render(<App />);\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/index.js b/src/index.js
+--- a/src/index.js	(revision 1c56c25c27b17e29b694b8992b5d044700bf1ff0)
++++ b/src/index.js	(date 1693100872831)
+@@ -1,6 +1,14 @@
+ import React from "react";
+ import ReactDOM from "react-dom/client";
+-import App from "./App";
++import App from "./App.jsx";
+ 
+-const root = ReactDOM.createRoot(document.getElementById("root"));
+-root.render(<App />);
++import { QueryClientProvider, QueryClient } from "react-query";
++import { ReactQueryDevtools } from "react-query/devtools";
++
++const queryClient = new QueryClient();
++ReactDOM.createRoot(document.getElementById("root")).render(
++    <QueryClientProvider client={queryClient}>
++        <App />
++        <ReactQueryDevtools initialIsOpem={false} position="bottom-right" />
++    </QueryClientProvider>
++);
