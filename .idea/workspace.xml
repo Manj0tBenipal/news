@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Navbar social icons centered" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="logo for homescreen shortcuts added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Using_react_query" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +33,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/manjo/semester3/Assignment3_Manjot_Singh&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/manjo/HTML/warding&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,6 +64,10 @@
       <workItem from="1691243059101" duration="92000" />
       <workItem from="1691297943625" duration="4192000" />
       <workItem from="1691462649019" duration="636000" />
+      <workItem from="1691584240054" duration="1229000" />
+      <workItem from="1691894480654" duration="1450000" />
+      <workItem from="1692470061296" duration="7377000" />
+      <workItem from="1693081163276" duration="1234000" />
     </task>
     <task id="LOCAL-00001" summary="Project modified. Styling added for news cards and news card wrapper">
       <created>1690151449296</created>
@@ -268,7 +272,56 @@
       <option name="project" value="LOCAL" />
       <updated>1691360508058</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Hero, Trending and Review Migrated to react-query successfully">
+      <created>1692479376595</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1692479376595</updated>
+    </task>
+    <task id="LOCAL-00031" summary="implemented rate-limiting on jikan. Implemented react-query to review and featured section">
+      <created>1692488442653</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1692488442653</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Implemented react-query in Main container">
+      <created>1692492501933</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1692492501933</updated>
+    </task>
+    <task id="LOCAL-00033" summary="logo changed + react query implimented to remaining components. Genre and Top characters added">
+      <created>1692581201206</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1692581201206</updated>
+    </task>
+    <task id="LOCAL-00034" summary=".">
+      <created>1692581799527</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1692581799527</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Removed extra log messages">
+      <created>1692582370024</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1692582370024</updated>
+    </task>
+    <task id="LOCAL-00036" summary="logo for homescreen shortcuts added">
+      <created>1693084299490</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1693084299490</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +333,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Migrating_to_react_query" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="Main_Container" />
@@ -305,7 +363,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Main_Container" />
+                        <option value="Migrating_to_react_query" />
                       </list>
                     </value>
                   </entry>
@@ -318,12 +376,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Project modified. Styling added for news cards and news card wrapper" />
-    <MESSAGE value="Styled navbar and made it responsive" />
-    <MESSAGE value="added external stylesheet for navbar" />
-    <MESSAGE value="Fetched data from api" />
-    <MESSAGE value="added default image for urlToImage=null from APi" />
-    <MESSAGE value="Chnaged Api from NewsApi to mediastack" />
     <MESSAGE value="Chnaged Api from  mediastack to NewsData" />
     <MESSAGE value="Changes the theme of website from general news to anime" />
     <MESSAGE value="Started using a new component for anime card and news component will be used somewhere else" />
@@ -341,6 +393,14 @@
     <MESSAGE value="::after removed from hero + review type selector chnges" />
     <MESSAGE value="Changes toggle icon for reviews" />
     <MESSAGE value="Navbar social icons centered" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar social icons centered" />
+    <MESSAGE value="top ten section added to main sidebar" />
+    <MESSAGE value="Hero, Trending and Review Migrated to react-query successfully" />
+    <MESSAGE value="implemented rate-limiting on jikan. Implemented react-query to review and featured section" />
+    <MESSAGE value="Implemented react-query in Main container" />
+    <MESSAGE value="logo changed + react query implimented to remaining components. Genre and Top characters added" />
+    <MESSAGE value="Removed extra log messages" />
+    <MESSAGE value="." />
+    <MESSAGE value="logo for homescreen shortcuts added" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo for homescreen shortcuts added" />
   </component>
 </project>
