@@ -10,7 +10,7 @@
 }
 
 .trending-slide {
-  height: 255px;
+  height: 225px;
   position: relative;
   padding: 10px;
 }
@@ -42,13 +42,13 @@
   transform: rotate(270deg);
   white-space: nowrap;
   font-size: 17px;
+  width: 100px;
 }
 .trending-item-sidebar span {
   color: var(--theme);
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 600;
-  margin-top: 10px;
 }
 .trending-swiper-navigation {
   display: flex;
@@ -60,24 +60,29 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  padding: 30px 30px;
+  padding: 30px 10px;
   background-color: var(--dark);
   z-index: 4;
   gap: 10px;
 }
 .swiper-controls {
   flex-grow: 1;
-  background-color: var(--grey-dark);
+  background: rgba(255, 255, 255, 0.5);
   padding: 0px 7px;
   border-radius: 7px;
   cursor: pointer;
   user-select: none;
+  color: var(--dark);
 }
 .swiper-controls:hover {
   background: var(--theme);
+  
 }
 
 @media screen and (max-width: 600px) {
+  .trending-section-wrapper {
+    padding: 0;
+  }
   .trending-section-wrapper .swiper {
     padding: 0;
   }
@@ -104,6 +109,6 @@
     display: none;
   }
   .trending-item-sidebar span {
-  background-color: var(--dark);
-}
+    background-color: var(--dark);
+  }
 }

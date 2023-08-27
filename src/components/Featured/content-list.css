@@ -35,14 +35,29 @@
 }
 .category-container ul li .show-type {
   font-weight: 400;
+  color: grey;
+  font-size: 0.7rem;
 }
 .category-container a {
   text-decoration: none;
   font-size: 14px;
   color: white;
+  
 }
+
 .category-container a:hover {
   color: var(--theme);
+}
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.3);
+    display: inline-block;
+    margin: 3px 6px;
+}
+.view-more-link{
+  padding: 10px;
 }
 @media screen and (max-width: 1500px) {
   .category-container h4 {
