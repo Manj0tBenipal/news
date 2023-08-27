@@ -2,25 +2,22 @@ import React from "react";
 import { Navigation } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useTrendingAnime } from "../../hooks/useKitsu";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "./trending.css";
 
-export default function Trending() {
-  const { data } = useTrendingAnime();
-
-  const animeCard = data?.map((el, idx) => {
+export default function Trending(props) {
+  const anime = props.topAnime.data.map((el, idx) => {
     const item = el.attributes;
-    const title = item.titles.en || item.titles.en_jp;
     return (
       <SwiperSlide key={item.titles.en_jp}>
         <div className="trending-slide">
           <div className="trending-item-sidebar">
             <p className="f-poppins">
-              {title.length > 15 ? title.slice(0, 15) + "..." : title}
+              {item.titles.en_jp.slice(0, 16) + "..."}
             </p>
-            <span>{idx > 8 ? idx + 1 : "0" + (idx + 1)}</span>
+            <span>0{idx + 1}</span>
           </div>
           <a href="/">
             <img
@@ -74,7 +71,7 @@ export default function Trending() {
           prevEl: ".btn-prevTwo",
         }}
       >
-        {animeCard}
+        {anime}
         <div className="trending-swiper-navigation trans-c-03">
           <div className="btn-nextTwo swiper-controls d-flex a-center j-center ">
             <FaChevronRight size={20} />
