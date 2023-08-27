@@ -2,7 +2,6 @@
   position: absolute;
   right: 0;
   object-fit: cover;
-  object-position: top;
   width: 100%;
   height: var(--height-large);
 }

@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useQuery } from "react-query";
 import topAnimeData from "../data/topAnime";
-import postsData from "../data/posts";
 export function useTrendingAnime() {
   const queryObj = useQuery("trending-anime", async () => {
     return await axios

@@ -6,23 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Removed extra log messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Genre/genre.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genre/genre.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingSpinner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationSidebar/NavSidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationSidebar/NavSidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationSidebar/nav-sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationSidebar/nav-sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/apiQueue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/apiQueue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useJikan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useJikan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/pikachu.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/rengoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/featured.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/featured.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useKitsu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useKitsu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
