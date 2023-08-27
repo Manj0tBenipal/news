@@ -12,4 +12,3 @@ export function useTrendingAnime() {
   const data = queryObj.isError ? topAnimeData.data : queryObj.data?.data.data;
   return { isLoading: queryObj.isLoading, data: data };
 }
-
