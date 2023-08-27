@@ -45,15 +45,15 @@ export default function Trending() {
             spaceBetween: 15,
           },
           1600: {
-            slidesPerView: 7,
+            slidesPerView: 8,
             spaceBetween: 15,
           },
           1450: {
-            slidesPerView: 6,
+            slidesPerView: 7,
             spaceBetween: 15,
           },
           1200: {
-            slidesPerView: 5,
+            slidesPerView: 6,
             spaceBetween: 10,
           },
           900: {

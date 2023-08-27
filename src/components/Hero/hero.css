@@ -169,7 +169,7 @@
 
 .carousel-controls-wrapper {
   position: absolute;
-  right: 2rem;
+  right: 40px;
   bottom: 3rem;
   display: flex;
   gap: 10px;
