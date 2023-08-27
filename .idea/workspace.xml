@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Finalised style of all components of the page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="First route set / =&gt; &lt;App /&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -342,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693168573177</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="First route set / =&gt; &lt;App /&gt;">
+      <created>1693170206631</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1693170206631</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +359,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="react_router" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="master" />
@@ -397,7 +407,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Started using a new component for anime card and news component will be used somewhere else" />
     <MESSAGE value="font family changed for some elements" />
     <MESSAGE value="Added hero component" />
     <MESSAGE value="extra files deleted" />
@@ -422,6 +431,7 @@
     <MESSAGE value="item limit set to 4 in Featured section. Code cleanup" />
     <MESSAGE value="logo for homescreen shortcuts added" />
     <MESSAGE value="Finalised style of all components of the page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalised style of all components of the page" />
+    <MESSAGE value="First route set / =&gt; &lt;App /&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="First route set / =&gt; &lt;App /&gt;" />
   </component>
 </project>
