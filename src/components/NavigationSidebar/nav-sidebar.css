@@ -11,9 +11,6 @@
   z-index: -1;
   transition: all 0.2s ease-in-out;
 }
-.close-menu {
-  cursor: pointer;
-}
 .navigation-list {
   position: fixed;
   top: 0;
@@ -32,16 +29,16 @@
 }
 .button-group {
   padding-top: 20px;
+  padding-inline: 20px;
 }
 .button-group > * {
-  padding: 10px 15px;
+  padding: 7px 15px;
   border-radius: 20px;
   background: var(--dark);
   text-align: center;
   text-decoration: none;
   margin-bottom: 10px;
   font-size: 12px;
-  margin-inline: 20px;
 }
 .button-group label {
   padding-block: 10px;
@@ -74,4 +71,43 @@
 .navigation-link-list ul li a:hover {
   color: var(--theme);
   background-color: var(--dark);
+}
+
+.genre-list {
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.genre-list span {
+  width: 100px;
+  padding-block: 10px;
+  font-size: 13px;
+  font-weight: 400;
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.genre-list span:hover {
+  transform: translateY(-2px);
+}
+
+.genre-list span:nth-of-type(7n + 1) {
+  color: #d0e6a5;
+}
+.genre-list span:nth-of-type(7n + 2) {
+  color: #ffdd95;
+}
+.genre-list span:nth-of-type(7n + 3) {
+  color: #fc887b;
+}
+.genre-list span:nth-of-type(7n + 4) {
+  color: #ccabda;
+}
+.genre-list span:nth-of-type(7n + 5) {
+  color: #abccd8;
+}
+.genre-list span:nth-of-type(7n + 6) {
+  color: #d8b2ab;
+}
+.genre-list span:nth-of-type(7n) {
+  color: #86e3ce;
 }

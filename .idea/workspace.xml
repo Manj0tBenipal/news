@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Removed extra log messages">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/featured.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/featured.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useKitsu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useKitsu.js" afterDir="false" />
-    </list>
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="logo for homescreen shortcuts added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -319,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692582370024</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="logo for homescreen shortcuts added">
+      <created>1693084299490</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1693084299490</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +376,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Chnaged Api from NewsApi to mediastack" />
     <MESSAGE value="Chnaged Api from  mediastack to NewsData" />
     <MESSAGE value="Changes the theme of website from general news to anime" />
     <MESSAGE value="Started using a new component for anime card and news component will be used somewhere else" />
@@ -397,8 +398,9 @@
     <MESSAGE value="implemented rate-limiting on jikan. Implemented react-query to review and featured section" />
     <MESSAGE value="Implemented react-query in Main container" />
     <MESSAGE value="logo changed + react query implimented to remaining components. Genre and Top characters added" />
-    <MESSAGE value="." />
     <MESSAGE value="Removed extra log messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed extra log messages" />
+    <MESSAGE value="." />
+    <MESSAGE value="logo for homescreen shortcuts added" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo for homescreen shortcuts added" />
   </component>
 </project>

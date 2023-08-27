@@ -7,7 +7,7 @@
 }
 .img-wrapper {
   height: var(--height-large);
-  width: 100%;
+  width: 100vw;
 }
 
 .carousel {
@@ -21,16 +21,14 @@
   position: absolute;
   height: var(--height-large);
   width: 100%;
-  bottom: 0px;
+  top: 0px;
   left: 0px;
-  background: linear-gradient(0deg, #242428 0%, #24242800 15%, #24242800 60%);
+  background: linear-gradient(0deg, #242428 0%, #24242800 35%, #24242800 100%);
 
   z-index: 4;
 
   color: white;
 }
-
-/* Gradient from left to right */
 .carousel-item .anime-info::after {
   content: "";
   position: absolute;
@@ -38,31 +36,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #242428 5%, #242428d4 15%, #24242800 60%);
+  background: linear-gradient(90deg, #242428 0%, #242428 22%, #24242800 60%);
 }
-
-/* Gradient from navbar to bottom */
-.carousel-item .anime-info::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #242428 5%, #242428d4 15%, #24242800 60%);
-}
-
-/* Gradient from right to left */
-.carousel-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(270deg, #242428 5%, #242428d4 15%, #24242800 60%);
-}
-
 .carousel-control-next {
   z-index: 99;
 }
@@ -71,6 +46,9 @@
   z-index: 99;
 }
 
+.carousel-control-next-icon {
+  background: black;
+}
 .carousel-item {
   width: 100%;
   height: 100%;
@@ -99,14 +77,13 @@
   border-radius: 2px;
   font-size: 0.7rem;
   font-weight: 600;
-  gap: 2px;
 }
 .episode-count {
   color: black;
   padding: 2px 4px;
   border-radius: 2px;
   font-size: 0.7rem;
-  background-color: rgb(255, 166, 0);
+  background-color: rgb(255, 191, 0);
   font-weight: 600;
 }
 .anime-statistics {
@@ -115,6 +92,7 @@
 }
 .rank {
   color: var(--theme);
+
 }
 .description {
   color: rgb(177, 177, 177);
@@ -150,9 +128,9 @@
 
 .carousel-controls {
   position: relative !important;
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.5);
+  width: 45px;
+  height: 45px;
+  background:  var(--theme);
   color: rgb(0, 0, 0);
   border-radius: 7px;
   opacity: 1 !important;
@@ -163,15 +141,16 @@
 }
 
 .carousel-controls:hover {
-  background: var(--theme);
+  background: var(--dark);
+  color: white;
 }
 
 .carousel-controls-wrapper {
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   bottom: 3rem;
   display: flex;
-  gap: 10px;
+  gap: 2px;
   flex-direction: column;
 }
 .swiper-pagination-bullet {
@@ -214,23 +193,11 @@
     font-size: 14px;
   }
   .carousel-item .anime-title {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .carousel-item .anime-info::before {
-    display: none;
-  }
-  /* Gradient from right to left */
-  .carousel-item::after {
-    background: linear-gradient(
-      270deg,
-      #242428 2%,
-      #242428d4 4%,
-      #24242800 10%
-    );
-  }
   .anime-statistics {
     display: none;
   }
