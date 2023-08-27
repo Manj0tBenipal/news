@@ -5,17 +5,16 @@ import { FaStar } from "react-icons/fa";
 export default function TopTenAnime() {
   const { data } = useTrendingAnime();
   const [period, setPeriod] = useState(2);
-  const animeList = [...data];
+  const animeList = data && [...data];
   const sortedList = animeList?.sort(
     (a, b) =>
       b.attributes.ratingFrequencies[`${period}`] -
       a.attributes.ratingFrequencies[`${period}`]
   );
-  const list = sortedList.map((el, idx) => {
+  const list = sortedList?.map((el, idx) => {
     const title = el.attributes.titles.en || el.attributes.titles.en_jp;
     return (
       <li key={title} className="d-flex a-center">
-        
         <span
           className={`rank ${0 < idx + 1 && idx + 1 <= 3 ? "top-three" : ""}`}
         >

@@ -7,7 +7,6 @@ export default function Genre() {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const genre = useHandleJikanResponse(useGenre(), genreData);
   const list = isCollapsed ? genre.data?.data.slice(0, 18) : genre.data?.data;
-
   const genreList = list?.map((el) => {
     return (
       <a
