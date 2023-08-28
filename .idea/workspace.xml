@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Separate page created for homepage instead of nesting every element inside App">
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Links added to genres which direct to a grid of all anime belonging to that genre">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Actions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Actions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopTen/top-ten.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopTen/top-ten.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/posts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useJikan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useJikan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Grid.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Grid.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693172091257</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Links added to genres which direct to a grid of all anime belonging to that genre">
+      <created>1693188872314</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1693188872314</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added hero component" />
     <MESSAGE value="extra files deleted" />
     <MESSAGE value="logo files added" />
     <MESSAGE value="Added: a new Logo and name, a new theme color and a search element" />
@@ -459,6 +460,7 @@
     <MESSAGE value="Finalised style of all components of the page" />
     <MESSAGE value="First route set / =&gt; &lt;App /&gt;" />
     <MESSAGE value="Separate page created for homepage instead of nesting every element inside App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separate page created for homepage instead of nesting every element inside App" />
+    <MESSAGE value="Links added to genres which direct to a grid of all anime belonging to that genre" />
+    <option name="LAST_COMMIT_MESSAGE" value="Links added to genres which direct to a grid of all anime belonging to that genre" />
   </component>
 </project>

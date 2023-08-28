@@ -16,8 +16,13 @@ export default function Grid() {
   );
 
   return (
-    <div className="app-container f-poppins">
-      <div className=" main-container d-flex ">
+    
+      <div
+        className=" main-container d-flex "
+        style={
+          window.innerWidth < 500 ? { flexDirection: "column-reverse" } : {}
+        }
+      >
         {!anime.isLoading ? (
           <>
             <div className="sidebar-wrapper d-flex-fd-column">
@@ -32,6 +37,6 @@ export default function Grid() {
           <LoadingSpinner />
         )}
       </div>
-    </div>
+    
   );
 }

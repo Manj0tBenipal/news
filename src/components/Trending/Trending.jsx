@@ -42,18 +42,18 @@ export default function Trending() {
         breakpoints={{
           1700: {
             slidesPerView: 8,
-            spaceBetween: 15,
+            spaceBetween: 10,
           },
           1600: {
-            slidesPerView: 8,
-            spaceBetween: 15,
+            slidesPerView: 7,
+            spaceBetween: 10,
           },
           1450: {
-            slidesPerView: 7,
-            spaceBetween: 15,
+            slidesPerView: 6,
+            spaceBetween: 10,
           },
           1200: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 10,
           },
           900: {

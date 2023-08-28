@@ -10,11 +10,18 @@ export default function Genre() {
   const list = isCollapsed ? genre.data?.data.slice(0, 18) : genre.data?.data;
   const genreList = list?.map((el) => {
     return (
-      <Link key={el.mal_id} to={`/grid/${el.mal_id}/${el.name}`}>
+      <Link
+        key={el.mal_id}
+        to={`/grid/${el.mal_id}/${el.name}`}
+        onClick={() => scrollToTop()}
+      >
         {el.name}
       </Link>
     );
   });
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   return genre.isLoading ? (
     <LoadingSpinner />
   ) : (
