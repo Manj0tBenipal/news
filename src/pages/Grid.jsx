@@ -6,8 +6,7 @@ import { useGetAnimeByGenre, useHandleJikanResponse } from "../hooks/useJikan";
 import { topAiringData } from "../data/featured";
 import AnimeCollection from "../components/MainContainer/AnimeCollection";
 import LoadingSpinner from "../components/LoadingSpinner";
-import Genre from "../components/Genre/Genre";
-import TopTenAnime from "../components/TopTen/TopTenAnime";
+
 export default function Grid() {
   const params = useParams();
   const anime = useHandleJikanResponse(
@@ -15,28 +14,11 @@ export default function Grid() {
     topAiringData
   );
 
-  return (
-    
-      <div
-        className=" main-container d-flex "
-        style={
-          window.innerWidth < 500 ? { flexDirection: "column-reverse" } : {}
-        }
-      >
-        {!anime.isLoading ? (
-          <>
-            <div className="sidebar-wrapper d-flex-fd-column">
-              <Genre />
-              <TopTenAnime />
-            </div>
-            <div className="collections-wrapper d-flex-fd-column a-center ">
-              <AnimeCollection collectionName={params.name} data={anime} />
-            </div>
-          </>
-        ) : (
-          <LoadingSpinner />
-        )}
-      </div>
-    
+  return !anime.isLoading ? (
+    <div className="collections-wrapper d-flex-fd-column a-center ">
+      <AnimeCollection collectionName={params.name} data={anime} />
+    </div>
+  ) : (
+    <LoadingSpinner />
   );
 }

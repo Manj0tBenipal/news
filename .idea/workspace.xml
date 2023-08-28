@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Links added to genres which direct to a grid of all anime belonging to that genre">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopTen/top-ten.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopTen/top-ten.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Grid.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Grid.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main.css" afterDir="false" />
-    </list>
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Nested route added to render common elements on desired routes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -376,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693188872314</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Nested route added to render common elements on desired routes">
+      <created>1693232431698</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1693232431698</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="extra files deleted" />
     <MESSAGE value="logo files added" />
     <MESSAGE value="Added: a new Logo and name, a new theme color and a search element" />
     <MESSAGE value="adjusted height of logo-text and added logo files" />
@@ -461,6 +459,7 @@
     <MESSAGE value="First route set / =&gt; &lt;App /&gt;" />
     <MESSAGE value="Separate page created for homepage instead of nesting every element inside App" />
     <MESSAGE value="Links added to genres which direct to a grid of all anime belonging to that genre" />
-    <option name="LAST_COMMIT_MESSAGE" value="Links added to genres which direct to a grid of all anime belonging to that genre" />
+    <MESSAGE value="Nested route added to render common elements on desired routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nested route added to render common elements on desired routes" />
   </component>
 </project>
