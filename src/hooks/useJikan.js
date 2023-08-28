@@ -72,3 +72,6 @@ export function useGenre() {
 export function useTopCharacters() {
   return useMakeQuery("top-characters", "top/characters?limit=5");
 }
+export function useGetAnimeByGenre(mal_id) {
+  return useMakeQuery(`anime-by-genre-${mal_id}`, `anime?genres=${mal_id}`);
+}

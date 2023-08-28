@@ -6,7 +6,6 @@ import { useTrendingAnime } from "../../hooks/useKitsu";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./trending.css";
-import { Link } from "react-router-dom";
 
 export default function Trending() {
   const { data } = useTrendingAnime();
@@ -36,9 +35,7 @@ export default function Trending() {
   });
   return (
     <div className="trending-section-wrapper">
-      <h2 className="section-header">
-        <Link to="/trending">Trending</Link>
-      </h2>
+      <h2 className="section-header">Trending</h2>
       <Swiper
         className="swiper"
         modules={[Navigation]}

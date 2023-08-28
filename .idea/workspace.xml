@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="First route set / =&gt; &lt;App /&gt;" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Separate page created for homepage instead of nesting every element inside App">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genre/Genre.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Actions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Actions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/posts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useJikan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useJikan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.jsx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -347,7 +360,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693170206631</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Separate page created for homepage instead of nesting every element inside App">
+      <created>1693172084409</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1693172084409</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Separate page created for homepage instead of nesting every element inside App">
+      <created>1693172091257</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1693172091257</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="font family changed for some elements" />
     <MESSAGE value="Added hero component" />
     <MESSAGE value="extra files deleted" />
     <MESSAGE value="logo files added" />
@@ -432,6 +458,7 @@
     <MESSAGE value="logo for homescreen shortcuts added" />
     <MESSAGE value="Finalised style of all components of the page" />
     <MESSAGE value="First route set / =&gt; &lt;App /&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="First route set / =&gt; &lt;App /&gt;" />
+    <MESSAGE value="Separate page created for homepage instead of nesting every element inside App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separate page created for homepage instead of nesting every element inside App" />
   </component>
 </project>

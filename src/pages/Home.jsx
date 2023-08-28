@@ -1,13 +1,13 @@
-import "./Home.css";
-import Hero from "../../components/Hero/Hero";
-import Navbar from "../../components/Navbar/Navbar";
+import "./main.css";
+import Hero from "../components/Hero/Hero";
+import Navbar from "../components/Navbar/Navbar";
 import React, { useState, useEffect } from "react";
-import Trending from "../../components/Trending/Trending";
-import NavSidebar from "../../components/NavigationSidebar/NavSidebar";
-import ReviewSection from "../../components/ReviewSection/ReviewSection";
-import Share from "../../components/Share/Share";
-import Featured from "../../components/Featured/Featured";
-import MainContainer from "../../components/MainContainer/MainContainer";
+import Trending from "../components/Trending/Trending";
+import NavSidebar from "../components/NavigationSidebar/NavSidebar";
+import ReviewSection from "../components/ReviewSection/ReviewSection";
+import Share from "../components/Share/Share";
+import Featured from "../components/Featured/Featured";
+import MainContainer from "../components/MainContainer/MainContainer";
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,7 +45,7 @@ export default function App() {
         sidebarIsOpen={sidebarIsOpen}
         setSidebarIsOpen={setSidebarIsOpen}
       />
-      <Hero sidebarIsOpen={sidebarIsOpen} />
+      <Hero />
       <Trending />
       <Share />
       <ReviewSection />

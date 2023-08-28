@@ -71,6 +71,11 @@
   padding: 5px;
   border-radius: 50%;
 }
+.social-links-wrapper span a {
+  text-decoration: none;
+  color: white;
+  line-height: 2px;
+}
 .nav-actions {
   display: flex;
   align-items: center;
@@ -84,8 +89,12 @@
 .nav-actions svg {
   color: var(--theme);
 }
-.nav-actions > *:hover {
+.nav-actions *:hover {
   color: var(--theme);
+}
+.nav-actions a {
+  color: white;
+  text-decoration: none;
 }
 .nav-actions p {
   margin: 0;
@@ -131,7 +140,6 @@
     background: var(--dark) !important;
   }
 
-  
   .logo {
     height: 30px;
   }

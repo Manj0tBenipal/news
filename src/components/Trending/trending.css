@@ -68,7 +68,7 @@
 .swiper-controls {
   flex-grow: 1;
   background: rgba(255, 255, 255, 0.5);
-  padding: 0px 7px;
+  padding: 0px 9px;
   border-radius: 7px;
   cursor: pointer;
   user-select: none;

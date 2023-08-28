@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap");
+
 .f-ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
 html {
-  scroll-behavior:auto;
+  scroll-behavior: auto;
 }
 * {
   margin: 0;
@@ -19,7 +22,7 @@ body {
 }
 
 .f-poppins {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 :root {
   --grey-dark: #343a40;
