@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Nested route added to render common elements on desired routes" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="created separate layout for navbar and the sidebar used in pages using grid-view" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -375,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693232431698</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="created separate layout for navbar and the sidebar used in pages using grid-view">
+      <created>1693241247232</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1693241247232</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +442,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="logo files added" />
     <MESSAGE value="Added: a new Logo and name, a new theme color and a search element" />
     <MESSAGE value="adjusted height of logo-text and added logo files" />
     <MESSAGE value="Carousel auto-scrolling interval changed to 2.3s from 3s" />
@@ -460,6 +466,7 @@
     <MESSAGE value="Separate page created for homepage instead of nesting every element inside App" />
     <MESSAGE value="Links added to genres which direct to a grid of all anime belonging to that genre" />
     <MESSAGE value="Nested route added to render common elements on desired routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nested route added to render common elements on desired routes" />
+    <MESSAGE value="created separate layout for navbar and the sidebar used in pages using grid-view" />
+    <option name="LAST_COMMIT_MESSAGE" value="created separate layout for navbar and the sidebar used in pages using grid-view" />
   </component>
 </project>
