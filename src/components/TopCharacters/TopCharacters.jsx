@@ -25,7 +25,7 @@ export default function TopPosts() {
           <img
             style={characterDpStyles}
             className="character-dp"
-            src={el.images.jpg.image_url}
+            src={el.images.webp.image_url}
             alt="poster"
           />
           <div className="anime-details d-flex-fd-column">

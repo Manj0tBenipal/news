@@ -6,9 +6,12 @@ export default function Card(props) {
   return (
     <div key={anime.mal_id} className="anime-card d-flex">
       <div className="anime-card-img-wrapper">
-        <span className="rating">{anime.rating?.slice(0, 5)}</span>
-        <span className="episode-count">CC:{anime.episodes || "Full"}</span>
-        <img src={anime.images.webp.large_image_url} alt="anime-card" />
+        <div className="tick-item">
+          <span className="rating">{anime.rating?.slice(0, 5) || "PG-13"}</span>
+          <span className="episode-count">CC:{anime.episodes || "Full"}</span>
+        </div>
+
+        <img src={anime.images.webp.image_url} alt="anime-card" />
       </div>
       <div className="card-details">
         <span className="card-title">

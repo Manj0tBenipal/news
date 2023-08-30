@@ -5,7 +5,7 @@ export default function CategorieContainer(props) {
   const list = props.data.data?.data.map((el, idx) => {
     return (
       <li key={el.mal_id} className="d-flex a-center">
-        <img src={el.images.webp.image_url} alt="poster" />
+        <img src={el.images.webp.small_image_url} alt="poster" />
         <div className="anime-details d-flex-fd-column">
           <span className="title">
             <a

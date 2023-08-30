@@ -66,9 +66,8 @@ export default function Hero() {
             className="carousel-img"
             src={
               screenWidth < 500
-                ? item.posterImage.original
-                : item.coverImage.original
-            }
+                ? item.posterImage.medium
+                : item.coverImage.small            }
             alt={item.titles.en_jp || item.titles.en}
           />
         </div>

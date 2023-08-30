@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="created separate layout for navbar and the sidebar used in pages using grid-view" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="search bar width adjusted" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -382,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693241247232</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="search bar width adjusted">
+      <created>1693246577963</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1693246577963</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added: a new Logo and name, a new theme color and a search element" />
     <MESSAGE value="adjusted height of logo-text and added logo files" />
     <MESSAGE value="Carousel auto-scrolling interval changed to 2.3s from 3s" />
     <MESSAGE value="Side menu added to navbar" />
@@ -467,6 +473,7 @@
     <MESSAGE value="Links added to genres which direct to a grid of all anime belonging to that genre" />
     <MESSAGE value="Nested route added to render common elements on desired routes" />
     <MESSAGE value="created separate layout for navbar and the sidebar used in pages using grid-view" />
-    <option name="LAST_COMMIT_MESSAGE" value="created separate layout for navbar and the sidebar used in pages using grid-view" />
+    <MESSAGE value="search bar width adjusted" />
+    <option name="LAST_COMMIT_MESSAGE" value="search bar width adjusted" />
   </component>
 </project>

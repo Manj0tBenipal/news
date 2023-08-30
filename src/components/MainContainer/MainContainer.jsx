@@ -45,7 +45,7 @@ export default function MainContainer() {
             <AnimeCollection collectionName="Top Upcoming" data={upcoming} />
             <AnimeCollection collectionName="Specials" data={specials} />
             <AnimeCollection collectionName="Top OVA's" data={ova} />
-            <AnimeCollection collectionName="Top ONA's" data={ona} />
+            {/* <AnimeCollection collectionName="Top ONA's" data={ona} /> */}
           </div>
         </>
       ) : (

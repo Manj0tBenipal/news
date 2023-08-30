@@ -1,8 +1,7 @@
 import { useQuery } from "react-query";
 import { queueRequest } from "./apiQueue";
 const queryConfig = {
-  staleTime: 2 * 60 * 1000,
-  cacheTime: 30 * 60 * 1000,
+  staleTime: 2.1 * 60 * 1000,
 };
 
 function useMakeQuery(queryKey, endpoint) {
