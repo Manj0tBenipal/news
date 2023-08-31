@@ -14,8 +14,10 @@
 }
 .category-container ul li img {
   height: 90px;
+  min-width: 64px;
   border-radius: 5px;
   overflow: hidden;
+  object-fit: cover;
 }
 .category-container {
   flex: 1;
@@ -26,7 +28,8 @@
   padding-block: 20px;
 }
 .category-container ul li .anime-details {
-  gap: 5px;
+  gap: 10px;
+ 
 }
 .category-container ul li .episode-info {
   gap: 5px;
@@ -40,7 +43,8 @@
 }
 .category-container a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 16px;
   color: white;
   
 }

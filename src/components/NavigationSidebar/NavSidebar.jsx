@@ -1,5 +1,6 @@
 import React from "react";
 import { FaChevronLeft, FaComments } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./nav-sidebar.css";
 import Actions from "../Navbar/Actions";
 export default function NavSidebar(props) {
@@ -36,34 +37,34 @@ export default function NavSidebar(props) {
         <div className="navigation-link-list">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/">Subbed Anime</a>
+              <Link to="/grid?type=subbed">Subbed Anime</Link>
             </li>
             <li>
-              <a href="/">Dubbed Anime</a>
+              <Link href="/">Dubbed Anime</Link>
             </li>
             <li>
-              <a href="/">Most Popular</a>
+              <Link href="/">Most Popular</Link>
             </li>
             <li>
-              <a href="/">Movies</a>
+              <Link href="/">Movies</Link>
             </li>
             <li>
-              <a href="/">TV Series</a>
+              <Link href="/">TV Series</Link>
             </li>
             <li>
-              <a href="/">OVAs</a>
+              <Link href="/">OVAs</Link>
             </li>
             <li>
-              <a href="/">ONAs</a>
+              <Link href="/">ONAs</Link>
             </li>
             <li>
-              <a href="/">Specials</a>
+              <Link href="/">Specials</Link>
             </li>
             <li>
-              <a href="/">Events</a>
+              <Link href="/">Events</Link>
             </li>
           </ul>
         </div>

@@ -50,10 +50,10 @@ body {
   justify-content: center;
 }
 .trans-c-03 > * {
-  transition: all 0.2s ease;
+  transition: all 100ms ease;
 }
 .trans-03 {
-  transition: all 0.2s ease;
+  transition: all 100ms ease;
 }
 .app-container {
   max-width: 2500px;

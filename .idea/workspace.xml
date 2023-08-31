@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="search bar width adjusted" />
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Image size adjusted across the website to improve loading time and performance">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Details/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Details/Details.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Featured/content-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/content-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationSidebar/NavSidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationSidebar/NavSidebar.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -389,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693246577963</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Image size adjusted across the website to improve loading time and performance">
+      <created>1693417780640</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1693417780640</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adjusted height of logo-text and added logo files" />
     <MESSAGE value="Carousel auto-scrolling interval changed to 2.3s from 3s" />
     <MESSAGE value="Side menu added to navbar" />
     <MESSAGE value="Logic change in how navsidebar works" />
@@ -474,6 +487,7 @@
     <MESSAGE value="Nested route added to render common elements on desired routes" />
     <MESSAGE value="created separate layout for navbar and the sidebar used in pages using grid-view" />
     <MESSAGE value="search bar width adjusted" />
-    <option name="LAST_COMMIT_MESSAGE" value="search bar width adjusted" />
+    <MESSAGE value="Image size adjusted across the website to improve loading time and performance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image size adjusted across the website to improve loading time and performance" />
   </component>
 </project>

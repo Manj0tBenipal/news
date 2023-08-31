@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  favoriteData,
-  topAiringData,
-  moviesData,
-  popularData,
-} from "../../data/featured";
 
 import LoadingSpinner from "../LoadingSpinner";
 import ContentList from "./ContentList";
@@ -14,20 +8,19 @@ import {
   useMostPopular,
   useTopAiring,
   useTopMovies,
-  useHandleJikanResponse,
 } from "../../hooks/useJikan";
 
 export default function Featured() {
-  const topAiring = useHandleJikanResponse(useTopAiring(), topAiringData);
-  const mostPopular = useHandleJikanResponse(useMostPopular(), popularData);
-  const mostFavorite = useHandleJikanResponse(useMostFavorite(), favoriteData);
-  const movies = useHandleJikanResponse(useTopMovies(), moviesData);
+  const topAiring = useTopAiring();
+  const mostPopular = useMostPopular();
+  const mostFavorite = useMostFavorite();
+  const movies = useTopMovies();
   const isLoading =
     topAiring.isLoading &&
     mostPopular.isLoading &&
     mostFavorite.isLoading &&
     movies.isLoading;
-
+  console.log(topAiring);
   return isLoading ? (
     <LoadingSpinner />
   ) : (

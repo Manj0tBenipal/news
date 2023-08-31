@@ -12,7 +12,7 @@
   backdrop-filter: blur(0px);
 }
 .navigation-bar.blur {
-  backdrop-filter: blur(60px);
+  backdrop-filter: blur(6px);
 }
 .burger-icon {
   color: white;

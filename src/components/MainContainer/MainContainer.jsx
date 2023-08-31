@@ -8,20 +8,15 @@ import {
   useTopSpecials,
   useTopUpcoming,
 } from "../../hooks/useJikan";
-import {
-  onaData,
-  ovaData,
-  specialsData,
-  upcomingData,
-} from "../../data/mainSection";
+
 import MainSidebar from "./MainSidebar";
 
 export default function MainContainer() {
   let isLoading = true;
-  const ova = useHandleJikanResponse(useTopOVAs(), ovaData);
-  const ona = useHandleJikanResponse(useTopONAs(), onaData);
-  const upcoming = useHandleJikanResponse(useTopUpcoming(), upcomingData);
-  const specials = useHandleJikanResponse(useTopSpecials(), specialsData);
+  const ova = useTopOVAs();
+  const ona = useTopONAs();
+  const upcoming = useTopUpcoming();
+  const specials = useTopSpecials();
 
   if (
     !(

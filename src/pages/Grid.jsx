@@ -9,10 +9,9 @@ import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function Grid() {
   const params = useParams();
-  const anime = useHandleJikanResponse(
-    useGetAnimeByGenre(params.mal_id),
-    topAiringData
-  );
+  const anime = useGetAnimeByGenre(params.mal_id)
+    
+
 
   return !anime.isLoading ? (
     <div className="collections-wrapper d-flex-fd-column a-center ">

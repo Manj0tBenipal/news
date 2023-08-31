@@ -6,6 +6,7 @@ import Share from "../components/Share/Share";
 export default function GenreSidebar() {
   return (
     <>
+      <Share style={{ padding: 0, marginTop: 80 + "px", marginBottom: 0 }} />
       <div
         className=" main-container d-flex  "
         style={
@@ -18,7 +19,6 @@ export default function GenreSidebar() {
         </div>
         <Outlet />
       </div>
-      <Share />
     </>
   );
 }
