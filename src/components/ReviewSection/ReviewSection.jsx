@@ -16,8 +16,8 @@ export default function ReviewSection() {
 
   const animeReviews = useAnimeReviews();
   const mangaReviews = useMangaReviews();
-  const animeList = animeReviews.data?.data;
-  const mangaList = mangaReviews.data?.data;
+  const animeList = animeReviews.data;
+  const mangaList = mangaReviews.data;
   const isLoading = mangaReviews.isLoading && animeReviewIsSelected.isLoading;
 
   const reviewType = animeReviewIsSelected ? animeList : mangaList;

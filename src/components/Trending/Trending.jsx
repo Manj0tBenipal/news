@@ -6,6 +6,7 @@ import { useTrendingAnime } from "../../hooks/useKitsu";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./trending.css";
+import { Link } from "react-router-dom";
 
 export default function Trending() {
   const { data } = useTrendingAnime();
@@ -22,13 +23,13 @@ export default function Trending() {
             </p>
             <span>{idx > 8 ? idx + 1 : "0" + (idx + 1)}</span>
           </div>
-          <a href="/">
+          <Link to={`/details/kitsu/${el.id}`}  >
             <img
               src={item.posterImage.small}
               className="trending-slide-img "
               alt="item.title"
             />
-          </a>
+          </Link>
         </div>
       </SwiperSlide>
     );
@@ -42,18 +43,18 @@ export default function Trending() {
         breakpoints={{
           1700: {
             slidesPerView: 8,
-            spaceBetween: 15,
+            spaceBetween: 10,
           },
           1600: {
-            slidesPerView: 8,
-            spaceBetween: 15,
+            slidesPerView: 7,
+            spaceBetween: 10,
           },
           1450: {
-            slidesPerView: 7,
-            spaceBetween: 15,
+            slidesPerView: 6,
+            spaceBetween: 10,
           },
           1200: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 10,
           },
           900: {

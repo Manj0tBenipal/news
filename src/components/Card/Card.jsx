@@ -1,22 +1,29 @@
 import React from "react";
 import "./card.css";
+import { Link } from "react-router-dom";
 export default function Card(props) {
   const anime = props.data;
 
   return (
-    <div key={anime.mal_id} className="anime-card d-flex">
+    <Link
+      to={`/details/jikan/${anime.mal_id}`}
+      key={anime.mal_id}
+      className="anime-card d-flex"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    >
       <div className="anime-card-img-wrapper">
-        <span className="rating">{anime.rating?.slice(0, 5)}</span>
-        <span className="episode-count">CC:{anime.episodes || "Full"}</span>
-        <img src={anime.images.webp.large_image_url} alt="anime-card" />
+        <div className="tick-item">
+          <span className="rating">{anime.rating?.slice(0, 5) || "PG-13"}</span>
+          <span className="episode-count">CC:{anime.episodes || "Full"}</span>
+        </div>
+
+        <img src={anime.images.webp.image_url} alt="anime-card" />
       </div>
       <div className="card-details">
         <span className="card-title">
-          <a href={anime.trailer.url || "/"}>
-            {anime.title_english?.length > 25
-              ? anime.title_english?.slice(0, 25) + "..."
-              : anime.title_english || anime.title}
-          </a>
+          {anime.title_english?.length > 25
+            ? anime.title_english?.slice(0, 25) + "..."
+            : anime.title_english || anime.title}
         </span>
         <div className="card-statistics">
           <span>
@@ -30,6 +37,6 @@ export default function Card(props) {
           <span>{anime.type || "TV"}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

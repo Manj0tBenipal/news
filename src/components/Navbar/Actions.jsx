@@ -16,17 +16,35 @@ export default function Actions({ isInSidebar }) {
       }
     >
       <span>
-        <FaBroadcastTower size={20} />
-        <p>Watch Togather</p>
+        <a
+          href="https://aniwatch.to/watch2gether"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaBroadcastTower size={20} />
+          <p>Watch Togather</p>
+        </a>
       </span>
       <span>
-        <FaRandom size={20} />
-        <p>Random</p>
+        <a
+          href="https://twitter.com/AniWatchGo"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaRandom size={20} />
+          <p>Random</p>
+        </a>
       </span>
       {!isInSidebar && (
         <span>
-          <FaComments size={20} />
-          <p>Community</p>
+          <a
+            href="https://aniwatch.to/community/board"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaComments size={20} />
+            <p>Community</p>
+          </a>
         </span>
       )}
     </div>

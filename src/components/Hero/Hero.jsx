@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./hero.css";
-import { nanoid } from "nanoid";
 import {
   FaCalendar,
   FaChevronLeft,
@@ -10,17 +9,18 @@ import {
   FaPlayCircle,
 } from "react-icons/fa";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { useTrendingAnime } from "../../hooks/useKitsu";
+import { useRecentAnime, useTrendingAnime } from "../../hooks/useKitsu";
 import LoadingSpinner from "../LoadingSpinner";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
-  const { isLoading, data } = useTrendingAnime();
+  const { isLoading, data } = useRecentAnime();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const heroSlide = data?.map((el, idx) => {
     const item = el.attributes;
 
     return (
-      <SwiperSlide data-bs-interval="2300" key={el.id + nanoid()}>
+      <SwiperSlide data-bs-interval="1500" key={el.id}>
         <div className={`carousel-item`}>
           <div className="anime-info">
             <div className="anime-info-content">
@@ -53,21 +53,26 @@ export default function Hero() {
                   (item.synopsis && item.synopsis.slice(0, 250) + "...")}
               </p>
               <div className="button-wrapper">
-                <button className="watch-button hero-button">
+                <button className="btn-primary hero-button">
                   <FaPlayCircle size={12} /> Watch Now
                 </button>
-                <button className="details-button hero-button">
+                <Link
+                  to={`/details/kitsu/${el.id}`}
+                  className="btn-secondary hero-button"
+                >
+                  {" "}
                   Details <FaChevronRight size={12} />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
           <img
             className="carousel-img"
             src={
-              screenWidth < 500
-                ? item.posterImage.original
-                : item.coverImage.original
+              item.posterImage?.original ||
+              item.posterImage?.large ||
+              item.posterImage?.small ||
+              item.posterImage?.medium
             }
             alt={item.titles.en_jp || item.titles.en}
           />
@@ -81,7 +86,7 @@ export default function Hero() {
     }
     const listener = window.addEventListener("resize", handleChange);
     return () => window.removeEventListener(listener, handleChange);
-  },[]);
+  }, []);
 
   return isLoading ? (
     <LoadingSpinner />

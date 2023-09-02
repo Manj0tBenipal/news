@@ -10,15 +10,18 @@
 }
 
 .trending-slide {
-  height: 225px;
+  height: 260px;
   position: relative;
   padding: 10px;
+    color: white;
+  display: block;
 }
 .trending-slide a {
   width: auto;
   position: absolute;
   top: 0;
   bottom: 0;
+
   left: 40px;
 }
 .trending-slide-img {
@@ -68,7 +71,7 @@
 .swiper-controls {
   flex-grow: 1;
   background: rgba(255, 255, 255, 0.5);
-  padding: 0px 7px;
+  padding: 0px 9px;
   border-radius: 7px;
   cursor: pointer;
   user-select: none;

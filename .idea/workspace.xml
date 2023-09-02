@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="logo for homescreen shortcuts added">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-08-26_9_48_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-08-26_9_48_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
-    </list>
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Routes added for nav links and featured section's view More link" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +18,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Using_react_query" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -338,7 +333,91 @@
       <option name="project" value="LOCAL" />
       <updated>1693101200171</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Finalised style of all components of the page">
+      <created>1693168573177</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1693168573177</updated>
+    </task>
+    <task id="LOCAL-00039" summary="First route set / =&gt; &lt;App /&gt;">
+      <created>1693170206631</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1693170206631</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Separate page created for homepage instead of nesting every element inside App">
+      <created>1693172084409</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1693172084409</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Separate page created for homepage instead of nesting every element inside App">
+      <created>1693172091257</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1693172091257</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Links added to genres which direct to a grid of all anime belonging to that genre">
+      <created>1693188872314</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1693188872314</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Nested route added to render common elements on desired routes">
+      <created>1693232431698</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1693232431698</updated>
+    </task>
+    <task id="LOCAL-00044" summary="created separate layout for navbar and the sidebar used in pages using grid-view">
+      <created>1693241247232</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1693241247232</updated>
+    </task>
+    <task id="LOCAL-00045" summary="search bar width adjusted">
+      <created>1693246577963</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1693246577963</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Image size adjusted across the website to improve loading time and performance">
+      <created>1693417780640</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1693417780640</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Details page added with header component">
+      <created>1693510410641</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1693510410641</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Details page headeer complete for both APIs. hero component uses more filtered data">
+      <created>1693679749018</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1693679749018</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Routes added for nav links and featured section's view More link">
+      <created>1693687979769</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1693687979769</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,17 +431,22 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="react_router" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="Migrating_to_react_query" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="Main_Container" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
                 </option>
               </RecentGroup>
             </list>
@@ -393,17 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changes the theme of website from general news to anime" />
-    <MESSAGE value="Started using a new component for anime card and news component will be used somewhere else" />
-    <MESSAGE value="font family changed for some elements" />
-    <MESSAGE value="Added hero component" />
-    <MESSAGE value="extra files deleted" />
-    <MESSAGE value="logo files added" />
-    <MESSAGE value="Added: a new Logo and name, a new theme color and a search element" />
-    <MESSAGE value="adjusted height of logo-text and added logo files" />
-    <MESSAGE value="Carousel auto-scrolling interval changed to 2.3s from 3s" />
-    <MESSAGE value="Side menu added to navbar" />
-    <MESSAGE value="Logic change in how navsidebar works" />
     <MESSAGE value="Reviews section ata fetching from api  added. Files renamed" />
     <MESSAGE value="Featured section completed" />
     <MESSAGE value="::after removed from hero + review type selector chnges" />
@@ -418,6 +491,17 @@
     <MESSAGE value="." />
     <MESSAGE value="item limit set to 4 in Featured section. Code cleanup" />
     <MESSAGE value="logo for homescreen shortcuts added" />
-    <option name="LAST_COMMIT_MESSAGE" value="logo for homescreen shortcuts added" />
+    <MESSAGE value="Finalised style of all components of the page" />
+    <MESSAGE value="First route set / =&gt; &lt;App /&gt;" />
+    <MESSAGE value="Separate page created for homepage instead of nesting every element inside App" />
+    <MESSAGE value="Links added to genres which direct to a grid of all anime belonging to that genre" />
+    <MESSAGE value="Nested route added to render common elements on desired routes" />
+    <MESSAGE value="created separate layout for navbar and the sidebar used in pages using grid-view" />
+    <MESSAGE value="search bar width adjusted" />
+    <MESSAGE value="Image size adjusted across the website to improve loading time and performance" />
+    <MESSAGE value="Details page added with header component" />
+    <MESSAGE value="Details page headeer complete for both APIs. hero component uses more filtered data" />
+    <MESSAGE value="Routes added for nav links and featured section's view More link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Routes added for nav links and featured section's view More link" />
   </component>
 </project>

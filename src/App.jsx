@@ -1,58 +1,31 @@
-import "./App.css";
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
-import React, { useState, useEffect } from "react";
-import Trending from "./components/Trending/Trending";
-import NavSidebar from "./components/NavigationSidebar/NavSidebar";
-import ReviewSection from "./components/ReviewSection/ReviewSection";
-import Share from "./components/Share/Share";
-import Featured from "./components/Featured/Featured";
-import MainContainer from "./components/MainContainer/MainContainer";
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Genre from "./pages/Genre";
+import Layout from "./Layouts/Nav";
+import GenreSidebar from "./Layouts/GenreSidebar";
+import AnimeInfoKitsu from "./components/AnimeInfo/AnimeInfoKitsu";
+import AnimeInfoJikan from "./components/AnimeInfo/AnimeInfoJikan";
+import AnimeByFilter from "./pages/AnimeByFilter";
+import "./main.css";
+import AnimeByType from "./pages/AnimeByType";
+import RecommendedTopTen from "./Layouts/RecommendedTopTen";
 export default function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition =
-        window.scrollY || document.documentElement.scrollTop;
-      if (scrollPosition > 0 && isScrolled === false) {
-        setIsScrolled(true);
-      } else if (scrollPosition === 0) {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [isScrolled]);
-
   return (
-    <div
-      className="app-container f-poppins"
-      style={{
-        height: sidebarIsOpen ? "100vh" : "auto",
-      }}
-    >
-      <Navbar
-        isScrolled={isScrolled}
-        sidebarIsOpen={sidebarIsOpen}
-        setSidebarIsOpen={setSidebarIsOpen}
-      />
-      <NavSidebar
-        sidebarIsOpen={sidebarIsOpen}
-        setSidebarIsOpen={setSidebarIsOpen}
-      />
-      <Hero sidebarIsOpen={sidebarIsOpen} />
-      <Trending />
-      <Share />
-      <ReviewSection />
-      <Featured />
-      <MainContainer />
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="details" element={<RecommendedTopTen />}>
+            <Route path="kitsu/:id" element={<AnimeInfoKitsu />} />
+            <Route path="jikan/:id" element={<AnimeInfoJikan />} />
+          </Route>
+          <Route path="grid" element={<GenreSidebar />}>
+            <Route path="genre" element={<Genre />} />
+            <Route path="filter" element={<AnimeByFilter />} />
+            <Route path="type" element={<AnimeByType />} />
+          </Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
