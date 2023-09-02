@@ -1,14 +1,55 @@
 import React, { useState } from "react";
 import LoadingSpinner from "../LoadingSpinner";
 import "./AnimeInfo.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaEye, FaHeart, FaMedal, FaPlayCircle, FaPlus } from "react-icons/fa";
 import Share from "../Share/Share";
-export default function Details({ isLoading, data }) {
+import { useGetAnimeByMalId } from "../../hooks/useJikan";
+
+export default function Details() {
+  const params = useParams();
+  const { data, isLoading } = useGetAnimeByMalId(params.id);
+  const animeObj = data?.data;
   const [descIsCollapsed, setDescIsCollapsed] = useState(true);
-  const synonyms = data?.attributes?.abbreviatedTitles?.map((title) => (
+  const genre = animeObj?.genres.map((genre) => {
+    return (
+      <Link
+        className="genre-button"
+        to={`/genre/${genre.mal_id}/${genre.name}`}
+      >
+        {genre.name}
+      </Link>
+    );
+  });
+
+  const licensors = animeObj?.licensors?.map((licensor) => {
+    return (
+      <Link to={`/grid/${licensor.mal_id}/${licensor.name}`}>
+        {licensor.name + ", "}
+      </Link>
+    );
+  });
+
+  const producers = animeObj?.producers?.map((producer) => {
+    return (
+      <Link to={`/grid/${producer.mal_id}/${producer.name}`}>
+        {producer.name + ", "}
+      </Link>
+    );
+  });
+
+  const studios = animeObj?.studios?.map((studio) => {
+    return (
+      <Link to={`/grid/${studio.mal_id}/${studio.name}`}>
+        {studio.name + ", "}
+      </Link>
+    );
+  });
+
+  const synonyms = animeObj?.title_synonyms?.map((title) => (
     <span key={title}>{title},</span>
   ));
+
   return !isLoading ? (
     <div className="details-container">
       <div className="details-header">
@@ -16,44 +57,39 @@ export default function Details({ isLoading, data }) {
           <img
             className="details-container-background"
             src={
-              data.attributes.coverImage?.small ||
-              data.attributes.coverImage?.original ||
-              data.attributes.coverImage?.large ||
-              data.attributes.posterImage?.small ||
-              data.attributes.posterImage?.original ||
-              data.attributes.posterImage?.large
+              animeObj.images.webp.image_url ||
+              animeObj.images.webp.large_image_url ||
+              animeObj.images.webp.large_small_url ||
+              animeObj.images.jpg.large_image_url ||
+              "NA"
             }
           />
           <div className="anime-details d-flex">
             <img
               className="anime-details-poster"
               src={
-                data.attributes.posterImage?.small ||
-                data.attributes.posterImage?.original ||
-                data.attributes.posterImage?.large ||
-                data.attributes.coverImage?.small ||
-                data.attributes.coverImage?.original ||
-                data.attributes.coverImage?.large
+                animeObj.images.webp.image_url ||
+                animeObj.images.webp.large_image_url ||
+                animeObj.images.webp.large_small_url
               }
             />
 
             <div className="anime-details-content d-flex-fd-column">
               <h1 className="title-large">
-                {data.attributes.titles.en || data.attributes.titles.en_jp}
+                {animeObj.title || animeObj.title_english}
               </h1>
               <div className="anime-statistics-tiles-wrapper d-flex a-center">
                 <span className="anime-statistics-tile d-flex a-center j-center">
-                  {data.attributes.ageRating || "NA"}
+                  {animeObj.rating || "NA"}
                 </span>
                 <span className="anime-statistics-tile d-flex a-center j-center">
-                  <FaMedal /> - {data.attributes.popularityRank || "NA"}
+                  <FaMedal /> - {animeObj.rank || "NA"}
                 </span>
                 <span className="anime-statistics-tile d-flex a-center j-center">
-                  <FaHeart /> -{data.attributes.favoritesCount || "NA"}
+                  <FaHeart /> -{animeObj.favorites || "NA"}
                 </span>
                 <span className="anime-statistics-tile d-flex a-center j-center">
-                  {" "}
-                  <FaEye /> -{data.attributes.userCount || "NA"}
+                  <FaEye /> -{animeObj.members | "NA"}
                 </span>
                 <span className="anime-statistics-tile d-flex a-center j-center">
                   HD
@@ -69,8 +105,8 @@ export default function Details({ isLoading, data }) {
               </div>
               <p>
                 {descIsCollapsed
-                  ? data.attributes.description.slice(0, 350) + "..."
-                  : data.attributes.description}
+                  ? animeObj.synopsis?.slice(0, 350) + "..."
+                  : animeObj.synopsis}
                 <span
                   style={{ cursor: "pointer" }}
                   onClick={() => setDescIsCollapsed((prev) => !prev)}
@@ -82,30 +118,51 @@ export default function Details({ isLoading, data }) {
             </div>
           </div>
         </div>
+
         <div className="details-header-secondary">
           <div className="details-header-statistics">
             <p>
-              <b>Japanese:</b> {data.attributes.titles.ja_jp}
+              <b>Japanese:</b> {animeObj.title_japanese}
             </p>
             <p>
               <b>Synonyms:</b> {synonyms.length > 0 ? synonyms : "N/A"}
             </p>
             <p>
               <b>Aired:</b>
-              {data.attributes.startDate + " to " + data.attributes.endDate ||
-                "?"}
+              {animeObj.aired.string || "?"}
             </p>
             <p>
-              <b>Duration:</b> {data.attributes.episodeLength || "?" + " min"}
+              <b>Duration:</b> {animeObj.duration || "NA"}
             </p>
             <p>
-              <b>Score:</b> {(data.attributes.averageRating / 10).toFixed(2)}
+              <b>Score:</b> {animeObj.score}
+            </p>
+            <p>
+              <b>Status:</b> {animeObj.status}
+            </p>
+            <p>
+              <b>Premiered:</b> {animeObj.season || "Season: ?" + " "}
+              {animeObj.year || "Year: ?"}
             </p>
           </div>
           <div className="details-header-genre">
             <p>
               <b>Genre: </b>
-              <Link className="genre-button" to="/grid/1/Action">Action</Link>
+              {genre}
+            </p>
+          </div>
+          <div className="details-header-studio">
+            <p>
+              <b>Producers: </b>
+              {producers}
+            </p>
+            <p>
+              <b>Licensors: </b>
+              {licensors}
+            </p>
+            <p>
+              <b>Studios: </b>
+              {studios}
             </p>
           </div>
         </div>

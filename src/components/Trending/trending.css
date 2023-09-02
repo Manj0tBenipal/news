@@ -13,12 +13,15 @@
   height: 260px;
   position: relative;
   padding: 10px;
+    color: white;
+  display: block;
 }
 .trending-slide a {
   width: auto;
   position: absolute;
   top: 0;
   bottom: 0;
+
   left: 40px;
 }
 .trending-slide-img {

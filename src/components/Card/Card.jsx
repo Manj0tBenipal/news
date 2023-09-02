@@ -1,10 +1,15 @@
 import React from "react";
 import "./card.css";
+import { Link } from "react-router-dom";
 export default function Card(props) {
   const anime = props.data;
 
   return (
-    <div key={anime.mal_id} className="anime-card d-flex">
+    <Link
+      to={`/details/jikan/${anime.mal_id}`}
+      key={anime.mal_id}
+      className="anime-card d-flex"
+    >
       <div className="anime-card-img-wrapper">
         <div className="tick-item">
           <span className="rating">{anime.rating?.slice(0, 5) || "PG-13"}</span>
@@ -15,11 +20,9 @@ export default function Card(props) {
       </div>
       <div className="card-details">
         <span className="card-title">
-          <a href={anime.trailer.url || "/"}>
-            {anime.title_english?.length > 25
-              ? anime.title_english?.slice(0, 25) + "..."
-              : anime.title_english || anime.title}
-          </a>
+          {anime.title_english?.length > 25
+            ? anime.title_english?.slice(0, 25) + "..."
+            : anime.title_english || anime.title}
         </span>
         <div className="card-statistics">
           <span>
@@ -33,6 +36,6 @@ export default function Card(props) {
           <span>{anime.type || "TV"}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -20,7 +20,7 @@ export default function Featured() {
     mostPopular.isLoading &&
     mostFavorite.isLoading &&
     movies.isLoading;
-  console.log(topAiring);
+
   return isLoading ? (
     <LoadingSpinner />
   ) : (

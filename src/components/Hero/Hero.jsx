@@ -9,12 +9,12 @@ import {
   FaPlayCircle,
 } from "react-icons/fa";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { useTrendingAnime } from "../../hooks/useKitsu";
+import { useRecentAnime, useTrendingAnime } from "../../hooks/useKitsu";
 import LoadingSpinner from "../LoadingSpinner";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
-  const { isLoading, data } = useTrendingAnime();
+  const { isLoading, data } = useRecentAnime();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const heroSlide = data?.map((el, idx) => {
     const item = el.attributes;
@@ -57,7 +57,7 @@ export default function Hero() {
                   <FaPlayCircle size={12} /> Watch Now
                 </button>
                 <Link
-                  to={`/details/${el.id}/kitsu`}
+                  to={`/details/kitsu/${el.id}`}
                   className="btn-secondary hero-button"
                 >
                   {" "}
@@ -69,19 +69,10 @@ export default function Hero() {
           <img
             className="carousel-img"
             src={
-              screenWidth < 500
-                ? item.posterImage?.medium ||
-                  item.posterImage?.small ||
-                  item.posterImage?.large ||
-                  item.posterImage?.original ||
-                  item.coverImage?.small ||
-                  item.coverImage?.original
-                : item.coverImage?.small ||
-                  item.coverImage?.original ||
-                  item.posterImage?.original ||
-                  item.posterImage?.small ||
-                  item.posterImage?.large ||
-                  item.posterImage?.medium
+              item.posterImage?.original ||
+              item.posterImage?.large ||
+              item.posterImage?.small ||
+              item.posterImage?.medium
             }
             alt={item.titles.en_jp || item.titles.en}
           />

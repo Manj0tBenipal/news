@@ -2,8 +2,8 @@
   position: absolute;
   right: 0;
   object-fit: cover;
-  object-position: top;
-  width: 100%;
+
+  width: 70%;
   height: var(--height-large);
 }
 .img-wrapper {
@@ -39,7 +39,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #242428 5%, #242428d4 15%, #24242800 60%);
+  background: linear-gradient(90deg, #242428 30%, #242428d4 35%, #24242800 45%);
 }
 
 /* Gradient from navbar to bottom */
@@ -61,7 +61,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(270deg, #242428 5%, #242428d4 15%, #24242800 60%);
+  background: linear-gradient(270deg, #242428 2%, #242428d4 5%, #24242800 10%);
 }
 
 .carousel-control-next {
@@ -220,7 +220,7 @@
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 700px) {
   .carousel-item .anime-info::before {
     display: none;
   }

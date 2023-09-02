@@ -11,7 +11,7 @@ export default function Genre() {
     return (
       <Link
         key={el.mal_id}
-        to={`/grid/${el.mal_id}/${el.name}`}
+        to={`/genre/${el.mal_id}/${el.name}`}
         onClick={() => scrollToTop()}
       >
         {el.name}

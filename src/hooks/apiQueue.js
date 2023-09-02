@@ -1,10 +1,11 @@
 import PQueue from "p-queue";
 import axios from "axios";
-const queue = new PQueue({
+const jikanQueue = new PQueue({
   concurrency: 1,
   intervalCap: 1,
   interval: 800,
 });
+
 // function getCurrentTime() {
 //   const now = new Date();
 //   const hours = String(now.getHours()).padStart(2, "0");
@@ -16,7 +17,7 @@ const queue = new PQueue({
 
 const baseURL = "https://api.jikan.moe/v4/";
 export async function queueRequest(endpoint) {
-  return queue.add(async () => {
+  return jikanQueue.add(async () => {
     // console.log(endpoint + " *** executed  at: ***" + getCurrentTime());
     return await axios.get(`${baseURL + endpoint}`).catch((error) => {});
   });

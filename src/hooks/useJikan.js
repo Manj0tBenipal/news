@@ -32,10 +32,7 @@ function useExecuteQuery(queryKey, endpoint) {
 
 export function useHandleJikanResponse(queryKey, endpoint, backupData) {
   const res = useExecuteQuery(queryKey, endpoint);
-  const data =
-    res.isError || res.data === undefined || res.data === null
-      ? backupData
-      : res.data?.data;
+  const data = res.isError || res.data === null ? backupData : res.data?.data;
   return { data: data, isLoading: res.isLoading };
 }
 
@@ -114,7 +111,14 @@ export function useGenre() {
   return useHandleJikanResponse("genre", "genres/anime", genreData);
 }
 export function useTopCharacters() {
-  return useHandleJikanResponse("top-characters", "top/characters?limit=5", characterData);
+  return useHandleJikanResponse(
+    "top-characters",
+    "top/characters?limit=5",
+    characterData
+  );
+}
+export function useGetAnimeByMalId(id, toBeExecuted) {
+  return useHandleJikanResponse(`anime-${id}`, `anime/${id}`, null);
 }
 export function useGetAnimeByGenre(mal_id) {
   return useHandleJikanResponse(
