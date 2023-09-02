@@ -1,21 +1,19 @@
 import React from "react";
-import "./main.css";
 
-import { useParams } from "react-router-dom";
-import { useGetAnimeByGenre, useHandleJikanResponse } from "../hooks/useJikan";
-import { topAiringData } from "../data/featured";
+
+import { useSearchParams } from "react-router-dom";
+import { useGetAnimeByGenre } from "../hooks/useJikan";
+
 import AnimeCollection from "../components/MainContainer/AnimeCollection";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function Grid() {
-  const params = useParams();
-  const anime = useGetAnimeByGenre(params.mal_id)
-    
-
+  const [params, setParams] = useSearchParams();
+  const anime = useGetAnimeByGenre(params.get("id"));
 
   return !anime.isLoading ? (
     <div className="collections-wrapper d-flex-fd-column a-center ">
-      <AnimeCollection collectionName={params.name} data={anime} />
+      <AnimeCollection collectionName={params.get("name")} data={anime} />
     </div>
   ) : (
     <LoadingSpinner />

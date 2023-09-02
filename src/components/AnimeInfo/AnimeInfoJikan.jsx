@@ -15,7 +15,7 @@ export default function Details() {
     return (
       <Link
         className="genre-button"
-        to={`/genre/${genre.mal_id}/${genre.name}`}
+        to={`/grid/genre?id=${genre.mal_id}&name=${genre.name}`}
       >
         {genre.name}
       </Link>

@@ -3,10 +3,11 @@ import LoadingSpinner from "../LoadingSpinner";
 
 import {
   useHandleJikanResponse,
+  useTopMovies,
   useTopONAs,
   useTopOVAs,
   useTopSpecials,
-  useTopUpcoming,
+
 } from "../../hooks/useJikan";
 
 import MainSidebar from "./MainSidebar";
@@ -15,7 +16,7 @@ export default function MainContainer() {
   let isLoading = true;
   const ova = useTopOVAs();
   const ona = useTopONAs();
-  const upcoming = useTopUpcoming();
+  const movies = useTopMovies();
   const specials = useTopSpecials();
 
   if (
@@ -23,7 +24,7 @@ export default function MainContainer() {
       ova.isLoading &&
       ona.isLoading &&
       specials.isLoading &&
-      upcoming.isLoading
+      movies.isLoading
     )
   ) {
     isLoading = false;
@@ -37,7 +38,7 @@ export default function MainContainer() {
             <MainSidebar />
           </div>
           <div className="collections-wrapper d-flex-fd-column a-center ">
-            <AnimeCollection collectionName="Top Upcoming" data={upcoming} />
+            <AnimeCollection collectionName="Top Movies" data={movies} />
             <AnimeCollection collectionName="Specials" data={specials} />
             <AnimeCollection collectionName="Top OVA's" data={ova} />
             {/* <AnimeCollection collectionName="Top ONA's" data={ona} /> */}

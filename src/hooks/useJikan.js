@@ -75,7 +75,7 @@ export function useMostFavorite() {
 export function useTopMovies() {
   return useHandleJikanResponse(
     "top-movies",
-    "top/anime?type=movie&filter=bypopularity&limit=4",
+    "top/anime?type=movie&filter=bypopularity&limit=12",
     moviesData
   );
 }
@@ -103,7 +103,7 @@ export function useTopSpecials() {
 export function useTopUpcoming() {
   return useHandleJikanResponse(
     "top-upcoming",
-    "top/anime?filter=upcoming&limit=12",
+    "top/anime?filter=upcoming&limit=4",
     upcomingData
   );
 }
@@ -121,8 +121,19 @@ export function useGetAnimeByMalId(id, toBeExecuted) {
   return useHandleJikanResponse(`anime-${id}`, `anime/${id}`, null);
 }
 export function useGetAnimeByGenre(mal_id) {
+  return useHandleJikanResponse(`anime-by-genre-${mal_id}`, null);
+}
+export function useGetAnimeByFilter(filterName) {
   return useHandleJikanResponse(
-    `anime-by-genre-${mal_id}`,
-    `anime?genres=${mal_id}`
+    `anime-by-filter-${filterName}`,
+    `top/anime?filter=${filterName}`,
+    null
+  );
+}
+export function useGetAnimeByType(type) {
+  return useHandleJikanResponse(
+    `anime-by-type-${type}`,
+    `top/anime?type=${type}`,
+    null
   );
 }

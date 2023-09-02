@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../media/logo.png";
 import profileIcon from "../../media/profile.jpg";
@@ -13,11 +13,18 @@ import {
   FaBell,
   FaTwitter,
 } from "react-icons/fa";
+
 import Actions from "./Actions";
 
 export default function NavBar(props) {
+  const [searchForm, setSearchForm] = useState({});
+
   const setSidebarIsOpen = props.setSidebarIsOpen;
   const pageIsScrolled = props.isScrolled;
+  function handleSearchForm(event) {
+    const { name, value } = event.target;
+    setSearchForm((prev) => ({ ...prev, [name]: value }));
+  }
   return (
     <nav
       className={`navigation-bar a-center d-flex ${
@@ -41,6 +48,8 @@ export default function NavBar(props) {
           type="text"
           className="search-text f-poppins"
           placeholder="Search anime..."
+          name="name"
+          onChange={(e) => handleSearchForm(e)}
         />
         <FaSearch className="search-icon search-icons" size={20} color="grey" />
         <FaFilter className="filter-icon search-icons" size={20} color="grey" />

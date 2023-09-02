@@ -33,10 +33,14 @@ export default function CategorieContainer(props) {
     <div className="category-container d-flex-fd-column">
       <h4>{props.heading}</h4>
       <ul>{list}</ul>
-      <a href="/" className="view-more-link">
+      <Link
+        to={`/grid/filter?name=${props.filterName}&heading=${props.heading}`}
+        className="view-more-link"
+        onClick={() => window.scrollTo({ top: 0 })}
+      >
         View More
         <FaChevronRight size={14} />
-      </a>
+      </Link>
     </div>
   );
 }

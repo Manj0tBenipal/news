@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Details page added with header component">
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Details page headeer complete for both APIs. hero component uses more filtered data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AnimeInfo/AnimeInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnimeInfo/AnimeInfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AnimeInfo/AnimeInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnimeInfo/AnimeInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Featured/ContentList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/ContentList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Featured/Featured.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/Trending.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending/trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending/trending.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/apiQueue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/apiQueue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useJikan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useJikan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useKitsu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useKitsu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Details.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -415,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693510410641</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Details page headeer complete for both APIs. hero component uses more filtered data">
+      <created>1693679749018</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1693679749018</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Side menu added to navbar" />
     <MESSAGE value="Logic change in how navsidebar works" />
     <MESSAGE value="Reviews section ata fetching from api  added. Files renamed" />
     <MESSAGE value="Featured section completed" />
@@ -500,6 +496,7 @@
     <MESSAGE value="search bar width adjusted" />
     <MESSAGE value="Image size adjusted across the website to improve loading time and performance" />
     <MESSAGE value="Details page added with header component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Details page added with header component" />
+    <MESSAGE value="Details page headeer complete for both APIs. hero component uses more filtered data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Details page headeer complete for both APIs. hero component uses more filtered data" />
   </component>
 </project>

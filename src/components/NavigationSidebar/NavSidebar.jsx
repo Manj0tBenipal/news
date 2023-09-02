@@ -40,32 +40,26 @@ export default function NavSidebar(props) {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/grid?type=subbed">Subbed Anime</Link>
+              <Link to="/grid/filter?name=bypopularity&heading=Most Popular">
+                Most Popular
+              </Link>
             </li>
             <li>
-              <Link href="/">Dubbed Anime</Link>
+              <Link to="/grid/type?typeName=movie&heading=Movies">Movies</Link>
             </li>
             <li>
-              <Link href="/">Most Popular</Link>
+              <Link to="/grid/type?typeName=tv&heading=TV Series">TV Series</Link>
             </li>
             <li>
-              <Link href="/">Movies</Link>
+              <Link to="/grid/type?typeName=ova&heading=OVAs">OVAs</Link>
             </li>
             <li>
-              <Link href="/">TV Series</Link>
+              <Link to="/grid/type?typeName=ona&heading=ONAs">ONAs</Link>
             </li>
             <li>
-              <Link href="/">OVAs</Link>
+              <Link to="/grid/type?typeName=special&heading=Specials">Specials</Link>
             </li>
-            <li>
-              <Link href="/">ONAs</Link>
-            </li>
-            <li>
-              <Link href="/">Specials</Link>
-            </li>
-            <li>
-              <Link href="/">Events</Link>
-            </li>
+           
           </ul>
         </div>
       </div>

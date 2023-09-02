@@ -1,4 +1,4 @@
-import "./main.css";
+
 import Hero from "../components/Hero/Hero";
 
 import Trending from "../components/Trending/Trending";

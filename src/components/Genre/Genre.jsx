@@ -11,16 +11,14 @@ export default function Genre() {
     return (
       <Link
         key={el.mal_id}
-        to={`/genre/${el.mal_id}/${el.name}`}
-        onClick={() => scrollToTop()}
+        to={`/grid/genre?id=${el.mal_id}&name=${el.name}`}
+        onClick={() => window.scrollTo({ top: 0 })}
       >
         {el.name}
       </Link>
     );
   });
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+
   return genre.isLoading ? (
     <LoadingSpinner />
   ) : (
