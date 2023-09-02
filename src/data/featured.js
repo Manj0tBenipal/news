@@ -747,783 +747,604 @@ export const favoriteData = {
     },
   ],
 };
-export const moviesData = {
-  pagination: {
-    last_visible_page: 880,
-    has_next_page: true,
-    current_page: 1,
-    items: {
-      count: 5,
-      total: 4397,
-      per_page: 5,
-    },
-  },
-  data: [
-    {
-      mal_id: 28851,
-      url: "https://myanimelist.net/anime/28851/Koe_no_Katachi",
-      images: {
-        jpg: {
-          image_url: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
-          small_image_url:
-            "https://cdn.myanimelist.net/images/anime/1122/96435t.jpg",
-          large_image_url:
-            "https://cdn.myanimelist.net/images/anime/1122/96435l.jpg",
-        },
-        webp: {
-          image_url: "https://cdn.myanimelist.net/images/anime/1122/96435.webp",
-          small_image_url:
-            "https://cdn.myanimelist.net/images/anime/1122/96435t.webp",
-          large_image_url:
-            "https://cdn.myanimelist.net/images/anime/1122/96435l.webp",
-        },
-      },
-      trailer: {
-        youtube_id: "XBNWo25izJ8",
-        url: "https://www.youtube.com/watch?v=XBNWo25izJ8",
-        embed_url:
-          "https://www.youtube.com/embed/XBNWo25izJ8?enablejsapi=1&wmode=opaque&autoplay=1",
-        images: {
-          image_url: "https://img.youtube.com/vi/XBNWo25izJ8/default.jpg",
-          small_image_url:
-            "https://img.youtube.com/vi/XBNWo25izJ8/sddefault.jpg",
-          medium_image_url:
-            "https://img.youtube.com/vi/XBNWo25izJ8/mqdefault.jpg",
-          large_image_url:
-            "https://img.youtube.com/vi/XBNWo25izJ8/hqdefault.jpg",
-          maximum_image_url:
-            "https://img.youtube.com/vi/XBNWo25izJ8/maxresdefault.jpg",
-        },
-      },
-      approved: true,
-      titles: [
-        {
-          type: "Default",
-          title: "Koe no Katachi",
-        },
-        {
-          type: "Synonym",
-          title: "The Shape of Voice",
-        },
-        {
-          type: "Japanese",
-          title: "聲の形",
-        },
-        {
-          type: "English",
-          title: "A Silent Voice",
-        },
-        {
-          type: "German",
-          title: "A Silent Voice",
-        },
-        {
-          type: "Spanish",
-          title: "Una Voz Silenciosa",
-        },
-        {
-          type: "French",
-          title: "A Silent Voice",
-        },
-      ],
-      title: "Koe no Katachi",
-      title_english: "A Silent Voice",
-      title_japanese: "聲の形",
-      title_synonyms: ["The Shape of Voice"],
-      type: "Movie",
-      source: "Manga",
-      episodes: 1,
-      status: "Finished Airing",
-      airing: false,
-      aired: {
-        from: "2016-09-17T00:00:00+00:00",
-        to: null,
-        prop: {
-          from: {
-            day: 17,
-            month: 9,
-            year: 2016,
-          },
-          to: {
-            day: null,
-            month: null,
-            year: null,
-          },
-        },
-        string: "Sep 17, 2016",
-      },
-      duration: "2 hr 10 min",
-      rating: "PG-13 - Teens 13 or older",
-      score: 8.94,
-      scored_by: 1539403,
-      rank: 17,
-      popularity: 19,
-      members: 2217035,
-      favorites: 84068,
-      synopsis:
-        "As a wild youth, elementary school student Shouya Ishida sought to beat boredom in the cruelest ways. When the deaf Shouko Nishimiya transfers into his class, Shouya and the rest of his class thoughtlessly bully her for fun. However, when her mother notifies the school, he is singled out and blamed for everything done to her. With Shouko transferring out of the school, Shouya is left at the mercy of his classmates. He is heartlessly ostracized all throughout elementary and middle school, while teachers turn a blind eye.\n\nNow in his third year of high school, Shouya is still plagued by his wrongdoings as a young boy. Sincerely regretting his past actions, he sets out on a journey of redemption: to meet Shouko once more and make amends.\n\nKoe no Katachi tells the heartwarming tale of Shouya's reunion with Shouko and his honest attempts to redeem himself, all while being continually haunted by the shadows of his past.\n \n[Written by MAL Rewrite]",
-      background:
-        "Koe no Katachi won the following awards: Japanese Movie Critics Awards for Best Animation Feature Film in 2016; Japanese Academy Award for Excellent Animation of the Year in 2016; Tokyo Anime Award Festival for Anime of the Year (movie) & Best Screenplay / Original Story (Reiko Yoshida) in 2017; Japan Media Arts Festival for Animation Division - Excellence Award in 2017; Japan Movie Critics Awards for Best Animation of the Year in 2017; and Camera Japan Festival for Feature Film in 2017.",
-      season: null,
-      year: null,
-      broadcast: {
-        day: null,
-        time: null,
-        timezone: null,
-        string: null,
-      },
-      producers: [
-        {
-          mal_id: 109,
-          type: "anime",
-          name: "Shochiku",
-          url: "https://myanimelist.net/anime/producer/109/Shochiku",
-        },
-        {
-          mal_id: 144,
-          type: "anime",
-          name: "Pony Canyon",
-          url: "https://myanimelist.net/anime/producer/144/Pony_Canyon",
-        },
-        {
-          mal_id: 159,
-          type: "anime",
-          name: "Kodansha",
-          url: "https://myanimelist.net/anime/producer/159/Kodansha",
-        },
-        {
-          mal_id: 1500,
-          type: "anime",
-          name: "ABC Animation",
-          url: "https://myanimelist.net/anime/producer/1500/ABC_Animation",
-        },
-        {
-          mal_id: 1574,
-          type: "anime",
-          name: "Quaras",
-          url: "https://myanimelist.net/anime/producer/1574/Quaras",
-        },
-      ],
-      licensors: [
-        {
-          mal_id: 531,
-          type: "anime",
-          name: "Eleven Arts",
-          url: "https://myanimelist.net/anime/producer/531/Eleven_Arts",
-        },
-        {
-          mal_id: 595,
-          type: "anime",
-          name: "NYAV Post",
-          url: "https://myanimelist.net/anime/producer/595/NYAV_Post",
-        },
-      ],
-      studios: [
-        {
-          mal_id: 2,
-          type: "anime",
-          name: "Kyoto Animation",
-          url: "https://myanimelist.net/anime/producer/2/Kyoto_Animation",
-        },
-      ],
-      genres: [
-        {
-          mal_id: 46,
-          type: "anime",
-          name: "Award Winning",
-          url: "https://myanimelist.net/anime/genre/46/Award_Winning",
-        },
-        {
-          mal_id: 8,
-          type: "anime",
-          name: "Drama",
-          url: "https://myanimelist.net/anime/genre/8/Drama",
-        },
-      ],
-      explicit_genres: [],
-      themes: [
-        {
-          mal_id: 74,
-          type: "anime",
-          name: "Romantic Subtext",
-          url: "https://myanimelist.net/anime/genre/74/Romantic_Subtext",
-        },
-      ],
-      demographics: [
-        {
-          mal_id: 27,
-          type: "anime",
-          name: "Shounen",
-          url: "https://myanimelist.net/anime/genre/27/Shounen",
-        },
-      ],
-    },
-    {
-      mal_id: 199,
-      url: "https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi",
-      images: {
-        jpg: {
-          image_url: "https://cdn.myanimelist.net/images/anime/6/79597.jpg",
-          small_image_url:
-            "https://cdn.myanimelist.net/images/anime/6/79597t.jpg",
-          large_image_url:
-            "https://cdn.myanimelist.net/images/anime/6/79597l.jpg",
-        },
-        webp: {
-          image_url: "https://cdn.myanimelist.net/images/anime/6/79597.webp",
-          small_image_url:
-            "https://cdn.myanimelist.net/images/anime/6/79597t.webp",
-          large_image_url:
-            "https://cdn.myanimelist.net/images/anime/6/79597l.webp",
-        },
-      },
-      trailer: {
-        youtube_id: "ByXuk9QqQkk",
-        url: "https://www.youtube.com/watch?v=ByXuk9QqQkk",
-        embed_url:
-          "https://www.youtube.com/embed/ByXuk9QqQkk?enablejsapi=1&wmode=opaque&autoplay=1",
-        images: {
-          image_url: "https://img.youtube.com/vi/ByXuk9QqQkk/default.jpg",
-          small_image_url:
-            "https://img.youtube.com/vi/ByXuk9QqQkk/sddefault.jpg",
-          medium_image_url:
-            "https://img.youtube.com/vi/ByXuk9QqQkk/mqdefault.jpg",
-          large_image_url:
-            "https://img.youtube.com/vi/ByXuk9QqQkk/hqdefault.jpg",
-          maximum_image_url:
-            "https://img.youtube.com/vi/ByXuk9QqQkk/maxresdefault.jpg",
-        },
-      },
-      approved: true,
-      titles: [
-        {
-          type: "Default",
-          title: "Sen to Chihiro no Kamikakushi",
-        },
-        {
-          type: "Synonym",
-          title: "Sen and Chihiro's Spiriting Away",
-        },
-        {
-          type: "Japanese",
-          title: "千と千尋の神隠し",
-        },
-        {
-          type: "English",
-          title: "Spirited Away",
-        },
-        {
-          type: "German",
-          title: "Chihiros Reise ins Zauberland",
-        },
-        {
-          type: "Spanish",
-          title: "El viaje de Chihiro",
-        },
-        {
-          type: "French",
-          title: "Le Voyage de Chihiro",
-        },
-      ],
-      title: "Sen to Chihiro no Kamikakushi",
-      title_english: "Spirited Away",
-      title_japanese: "千と千尋の神隠し",
-      title_synonyms: ["Sen and Chihiro's Spiriting Away"],
-      type: "Movie",
-      source: "Original",
-      episodes: 1,
-      status: "Finished Airing",
-      airing: false,
-      aired: {
-        from: "2001-07-20T00:00:00+00:00",
-        to: null,
-        prop: {
-          from: {
-            day: 20,
-            month: 7,
-            year: 2001,
-          },
-          to: {
-            day: null,
-            month: null,
-            year: null,
-          },
-        },
-        string: "Jul 20, 2001",
-      },
-      duration: "2 hr 4 min",
-      rating: "PG - Children",
-      score: 8.78,
-      scored_by: 1246052,
-      rank: 39,
-      popularity: 44,
-      members: 1776928,
-      favorites: 31467,
-      synopsis:
-        "Stubborn, spoiled, and naïve, 10-year-old Chihiro Ogino is less than pleased when she and her parents discover an abandoned amusement park on the way to their new house. Cautiously venturing inside, she realizes that there is more to this place than meets the eye, as strange things begin to happen once dusk falls. Ghostly apparitions and food that turns her parents into pigs are just the start—Chihiro has unwittingly crossed over into the spirit world. Now trapped, she must summon the courage to live and work amongst spirits, with the help of the enigmatic Haku and the cast of unique characters she meets along the way.\n\nVivid and intriguing, Sen to Chihiro no Kamikakushi tells the story of Chihiro's journey through an unfamiliar world as she strives to save her parents and return home.\n\n[Written by MAL Rewrite]",
-      background:
-        'Sen to Chihiro no Kamikakushi held the record of being the highest-grossing film in Japanese history from 2001 until 2020. As of December 2020, it has amassed a total of 31.68 billion yen from Japanese box office sales and a total of $395.8 million worldwide. This critically acclaimed film has won numerous awards, including the Academy Award—more commonly known as the "Oscar"—for Best Animated Feature at the 75th Academy Awards in 2003 as well as the Golden Bear at the 2002 Berlin International Film Festival (alongside Bloody Sunday). It is also among the top 10 in the British Film Institute\'s list of the "50 films you should see by the age of 14." The English version of Sen to Chihiro no Kamikakushi was dubbed by Walt Disney Pictures and premiered in 2002. The film was released on DVD and VHS formats in North America by Buena Vista Home Entertainment in 2003.',
-      season: null,
-      year: null,
-      broadcast: {
-        day: null,
-        time: null,
-        timezone: null,
-        string: null,
-      },
-      producers: [
-        {
-          mal_id: 53,
-          type: "anime",
-          name: "Dentsu",
-          url: "https://myanimelist.net/anime/producer/53/Dentsu",
-        },
-        {
-          mal_id: 245,
-          type: "anime",
-          name: "Toho",
-          url: "https://myanimelist.net/anime/producer/245/Toho",
-        },
-        {
-          mal_id: 382,
-          type: "anime",
-          name: "Tokuma Shoten",
-          url: "https://myanimelist.net/anime/producer/382/Tokuma_Shoten",
-        },
-        {
-          mal_id: 577,
-          type: "anime",
-          name: "Tohokushinsha Film Corporation",
-          url: "https://myanimelist.net/anime/producer/577/Tohokushinsha_Film_Corporation",
-        },
-        {
-          mal_id: 1003,
-          type: "anime",
-          name: "Nippon Television Network",
-          url: "https://myanimelist.net/anime/producer/1003/Nippon_Television_Network",
-        },
-        {
-          mal_id: 1564,
-          type: "anime",
-          name: "Mitsubishi",
-          url: "https://myanimelist.net/anime/producer/1564/Mitsubishi",
-        },
-      ],
-      licensors: [
-        {
-          mal_id: 417,
-          type: "anime",
-          name: "Disney Platform Distribution",
-          url: "https://myanimelist.net/anime/producer/417/Disney_Platform_Distribution",
-        },
-        {
-          mal_id: 783,
-          type: "anime",
-          name: "GKIDS",
-          url: "https://myanimelist.net/anime/producer/783/GKIDS",
-        },
-      ],
-      studios: [
-        {
-          mal_id: 21,
-          type: "anime",
-          name: "Studio Ghibli",
-          url: "https://myanimelist.net/anime/producer/21/Studio_Ghibli",
-        },
-      ],
-      genres: [
-        {
-          mal_id: 2,
-          type: "anime",
-          name: "Adventure",
-          url: "https://myanimelist.net/anime/genre/2/Adventure",
-        },
-        {
-          mal_id: 46,
-          type: "anime",
-          name: "Award Winning",
-          url: "https://myanimelist.net/anime/genre/46/Award_Winning",
-        },
-        {
-          mal_id: 37,
-          type: "anime",
-          name: "Supernatural",
-          url: "https://myanimelist.net/anime/genre/37/Supernatural",
-        },
-      ],
-      explicit_genres: [],
-      themes: [
-        {
-          mal_id: 6,
-          type: "anime",
-          name: "Mythology",
-          url: "https://myanimelist.net/anime/genre/6/Mythology",
-        },
-      ],
-      demographics: [],
-    },
-    {
-      mal_id: 40456,
-      url: "https://myanimelist.net/anime/40456/Kimetsu_no_Yaiba_Movie__Mugen_Ressha-hen",
-      images: {
-        jpg: {
-          image_url: "https://cdn.myanimelist.net/images/anime/1704/106947.jpg",
-          small_image_url:
-            "https://cdn.myanimelist.net/images/anime/1704/106947t.jpg",
-          large_image_url:
-            "https://cdn.myanimelist.net/images/anime/1704/106947l.jpg",
-        },
-        webp: {
-          image_url:
-            "https://cdn.myanimelist.net/images/anime/1704/106947.webp",
-          small_image_url:
-            "https://cdn.myanimelist.net/images/anime/1704/106947t.webp",
-          large_image_url:
-            "https://cdn.myanimelist.net/images/anime/1704/106947l.webp",
-        },
-      },
-      trailer: {
-        youtube_id: "PrZ0O8Qp18s",
-        url: "https://www.youtube.com/watch?v=PrZ0O8Qp18s",
-        embed_url:
-          "https://www.youtube.com/embed/PrZ0O8Qp18s?enablejsapi=1&wmode=opaque&autoplay=1",
-        images: {
-          image_url: "https://img.youtube.com/vi/PrZ0O8Qp18s/default.jpg",
-          small_image_url:
-            "https://img.youtube.com/vi/PrZ0O8Qp18s/sddefault.jpg",
-          medium_image_url:
-            "https://img.youtube.com/vi/PrZ0O8Qp18s/mqdefault.jpg",
-          large_image_url:
-            "https://img.youtube.com/vi/PrZ0O8Qp18s/hqdefault.jpg",
-          maximum_image_url:
-            "https://img.youtube.com/vi/PrZ0O8Qp18s/maxresdefault.jpg",
-        },
-      },
-      approved: true,
-      titles: [
-        {
-          type: "Default",
-          title: "Kimetsu no Yaiba Movie: Mugen Ressha-hen",
-        },
-        {
-          type: "Synonym",
-          title: "Gekijouban Kimetsu no Yaiba: Mugen Ressha-hen",
-        },
-        {
-          type: "Synonym",
-          title: "Kimetsu no Yaiba: Infinity Train",
-        },
-        {
-          type: "Synonym",
-          title: "Demon Slayer Movie: Infinity Train",
-        },
-        {
-          type: "Japanese",
-          title: "劇場版 鬼滅の刃 無限列車編",
-        },
-        {
-          type: "English",
-          title: "Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train",
-        },
-        {
-          type: "Spanish",
-          title: "Guardianes De La Noche - Kimetsu No Yaiba - Tren Infinito",
-        },
-        {
-          type: "French",
-          title:
-            "Demon Slayer - Kimetsu no Yaiba - Le film : Le train de l'Infini",
-        },
-      ],
-      title: "Kimetsu no Yaiba Movie: Mugen Ressha-hen",
-      title_english: "Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train",
-      title_japanese: "劇場版 鬼滅の刃 無限列車編",
-      title_synonyms: [
-        "Gekijouban Kimetsu no Yaiba: Mugen Ressha-hen",
-        "Kimetsu no Yaiba: Infinity Train",
-        "Demon Slayer Movie: Infinity Train",
-      ],
-      type: "Movie",
-      source: "Manga",
-      episodes: 1,
-      status: "Finished Airing",
-      airing: false,
-      aired: {
-        from: "2020-10-16T00:00:00+00:00",
-        to: null,
-        prop: {
-          from: {
-            day: 16,
-            month: 10,
-            year: 2020,
-          },
-          to: {
-            day: null,
-            month: null,
-            year: null,
-          },
-        },
-        string: "Oct 16, 2020",
-      },
-      duration: "1 hr 56 min",
-      rating: "R - 17+ (violence & profanity)",
-      score: 8.61,
-      scored_by: 945938,
-      rank: 81,
-      popularity: 77,
-      members: 1430023,
-      favorites: 12913,
-      synopsis:
-        "After a string of mysterious disappearances begin to plague a train, the Demon Slayer Corps' multiple attempts to remedy the problem prove fruitless. To prevent further casualties, the Flame Pillar, Kyoujurou Rengoku, takes it upon himself to eliminate the threat. Accompanying him are some of the Corps' most promising new blood: Tanjirou Kamado, Zenitsu Agatsuma, and Inosuke Hashibira, who all hope to witness the fiery feats of this model demon slayer firsthand.\n\nUnbeknownst to them, the demonic forces responsible for the disappearances have already put their sinister plan in motion. Under this demonic presence, the group must muster every ounce of their willpower and draw their swords to save all two hundred passengers onboard. Kimetsu no Yaiba Movie: Mugen Ressha-hen delves into the deepest corners of Tanjirou's mind, putting his resolve and commitment to duty to the test.\n\n[Written by MAL Rewrite]",
-      background:
-        "The worldwide box office total for Kimetsu no Yaiba Movie: Mugen Ressha-hen is over $503 million from more than 41 million tickets sold, making it the highest-grossing film of 2020 as well as the highest-grossing anime and Japanese film of all time. It was the first time in the history of cinema that a non-Hollywood production topped the annual worldwide box office. It also became the highest-grossing R-rated animated film of all time.",
-      season: null,
-      year: null,
-      broadcast: {
-        day: null,
-        time: null,
-        timezone: null,
-        string: null,
-      },
-      producers: [
-        {
-          mal_id: 17,
-          type: "anime",
-          name: "Aniplex",
-          url: "https://myanimelist.net/anime/producer/17/Aniplex",
-        },
-        {
-          mal_id: 1365,
-          type: "anime",
-          name: "Shueisha",
-          url: "https://myanimelist.net/anime/producer/1365/Shueisha",
-        },
-      ],
-      licensors: [
-        {
-          mal_id: 493,
-          type: "anime",
-          name: "Aniplex of America",
-          url: "https://myanimelist.net/anime/producer/493/Aniplex_of_America",
-        },
-      ],
-      studios: [
-        {
-          mal_id: 43,
-          type: "anime",
-          name: "ufotable",
-          url: "https://myanimelist.net/anime/producer/43/ufotable",
-        },
-      ],
-      genres: [
-        {
-          mal_id: 1,
-          type: "anime",
-          name: "Action",
-          url: "https://myanimelist.net/anime/genre/1/Action",
-        },
-        {
-          mal_id: 10,
-          type: "anime",
-          name: "Fantasy",
-          url: "https://myanimelist.net/anime/genre/10/Fantasy",
-        },
-      ],
-      explicit_genres: [],
-      themes: [
-        {
-          mal_id: 13,
-          type: "anime",
-          name: "Historical",
-          url: "https://myanimelist.net/anime/genre/13/Historical",
-        },
-      ],
-      demographics: [
-        {
-          mal_id: 27,
-          type: "anime",
-          name: "Shounen",
-          url: "https://myanimelist.net/anime/genre/27/Shounen",
-        },
-      ],
-    },
-    {
-      mal_id: 431,
-      url: "https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro",
-      images: {
-        jpg: {
-          image_url: "https://cdn.myanimelist.net/images/anime/5/75810.jpg",
-          small_image_url:
-            "https://cdn.myanimelist.net/images/anime/5/75810t.jpg",
-          large_image_url:
-            "https://cdn.myanimelist.net/images/anime/5/75810l.jpg",
-        },
-        webp: {
-          image_url: "https://cdn.myanimelist.net/images/anime/5/75810.webp",
-          small_image_url:
-            "https://cdn.myanimelist.net/images/anime/5/75810t.webp",
-          large_image_url:
-            "https://cdn.myanimelist.net/images/anime/5/75810l.webp",
-        },
-      },
-      trailer: {
-        youtube_id: "iwROgK94zcM",
-        url: "https://www.youtube.com/watch?v=iwROgK94zcM",
-        embed_url:
-          "https://www.youtube.com/embed/iwROgK94zcM?enablejsapi=1&wmode=opaque&autoplay=1",
-        images: {
-          image_url: "https://img.youtube.com/vi/iwROgK94zcM/default.jpg",
-          small_image_url:
-            "https://img.youtube.com/vi/iwROgK94zcM/sddefault.jpg",
-          medium_image_url:
-            "https://img.youtube.com/vi/iwROgK94zcM/mqdefault.jpg",
-          large_image_url:
-            "https://img.youtube.com/vi/iwROgK94zcM/hqdefault.jpg",
-          maximum_image_url:
-            "https://img.youtube.com/vi/iwROgK94zcM/maxresdefault.jpg",
-        },
-      },
-      approved: true,
-      titles: [
-        {
-          type: "Default",
-          title: "Howl no Ugoku Shiro",
-        },
-        {
-          type: "Japanese",
-          title: "ハウルの動く城",
-        },
-        {
-          type: "English",
-          title: "Howl's Moving Castle",
-        },
-        {
-          type: "German",
-          title: "Das wandelnde Schloss",
-        },
-        {
-          type: "Spanish",
-          title: "El Castillo Ambulante",
-        },
-        {
-          type: "French",
-          title: "Le Château ambulant",
-        },
-      ],
-      title: "Howl no Ugoku Shiro",
-      title_english: "Howl's Moving Castle",
-      title_japanese: "ハウルの動く城",
-      title_synonyms: [],
-      type: "Movie",
-      source: "Novel",
-      episodes: 1,
-      status: "Finished Airing",
-      airing: false,
-      aired: {
-        from: "2004-11-20T00:00:00+00:00",
-        to: null,
-        prop: {
-          from: {
-            day: 20,
-            month: 11,
-            year: 2004,
-          },
-          to: {
-            day: null,
-            month: null,
-            year: null,
-          },
-        },
-        string: "Nov 20, 2004",
-      },
-      duration: "1 hr 59 min",
-      rating: "G - All Ages",
-      score: 8.66,
-      scored_by: 876792,
-      rank: 65,
-      popularity: 99,
-      members: 1268074,
-      favorites: 27190,
-      synopsis:
-        "That jumbled piece of architecture, that cacophony of hissing steam and creaking joints, with smoke billowing from it as it moves on its own... That castle is home to the magnificent wizard Howl, infamous for both his magical prowess and for being a womanizer—or so the rumor goes in Sophie Hatter's small town. Sophie, as the plain daughter of a hatmaker, does not expect much from her future and is content with working hard in the shop. \n\nHowever, Sophie's simple life takes a turn for the exciting when she is ensnared in a disturbing situation, and the mysterious wizard appears to rescue her. Unfortunately, this encounter, brief as it may be, spurs the vain and vengeful Witch of the Waste—in a fit of jealousy caused by a past discord with Howl—to put a curse on the maiden, turning her into an old woman.\n\nIn an endeavor to return to normal, Sophie must accompany Howl and a myriad of eccentric companions—ranging from a powerful fire demon to a hopping scarecrow—in his living castle, on a dangerous adventure as a raging war tears their kingdom apart.\n\n[Written by MAL Rewrite]",
-      background:
-        "Howl No Ugoku Shiro premiered at the Venice Film Festival in 2004 and was later released to Japanese theaters in November, making it one of only three Studio Ghibli films not to be released in July. In 2004 the film won the Osella Awards for Technical Achievement in the 61st Venice Film Festival, the Best Japanese Movie Overall in the Mainichi Film Awards and an Excellence Prize, Animation in the Japan Media Arts Festival. In 2005 the film won the Animation of the Year in the Tokyo International Anime Fair and the Audience Award in the Maui Film Festival. In 2006 it was nominated for the Best Animated Feature in the 78th Academy Award, but lost to the movie Wallace and Gromit: The Curse of the Were-Rabbit.",
-      season: null,
-      year: null,
-      broadcast: {
-        day: null,
-        time: null,
-        timezone: null,
-        string: null,
-      },
-      producers: [
-        {
-          mal_id: 164,
-          type: "anime",
-          name: "d-rights",
-          url: "https://myanimelist.net/anime/producer/164/d-rights",
-        },
-        {
-          mal_id: 382,
-          type: "anime",
-          name: "Tokuma Shoten",
-          url: "https://myanimelist.net/anime/producer/382/Tokuma_Shoten",
-        },
-      ],
-      licensors: [
-        {
-          mal_id: 417,
-          type: "anime",
-          name: "Disney Platform Distribution",
-          url: "https://myanimelist.net/anime/producer/417/Disney_Platform_Distribution",
-        },
-      ],
-      studios: [
-        {
-          mal_id: 21,
-          type: "anime",
-          name: "Studio Ghibli",
-          url: "https://myanimelist.net/anime/producer/21/Studio_Ghibli",
-        },
-      ],
-      genres: [
-        {
-          mal_id: 2,
-          type: "anime",
-          name: "Adventure",
-          url: "https://myanimelist.net/anime/genre/2/Adventure",
-        },
-        {
-          mal_id: 46,
-          type: "anime",
-          name: "Award Winning",
-          url: "https://myanimelist.net/anime/genre/46/Award_Winning",
-        },
-        {
-          mal_id: 8,
-          type: "anime",
-          name: "Drama",
-          url: "https://myanimelist.net/anime/genre/8/Drama",
-        },
-        {
-          mal_id: 10,
-          type: "anime",
-          name: "Fantasy",
-          url: "https://myanimelist.net/anime/genre/10/Fantasy",
-        },
-        {
-          mal_id: 22,
-          type: "anime",
-          name: "Romance",
-          url: "https://myanimelist.net/anime/genre/22/Romance",
-        },
-      ],
-      explicit_genres: [],
-      themes: [],
-      demographics: [],
-    },
-  ],
-};
+export const upcoming={
+"pagination": {
+"last_visible_page": 119,
+"has_next_page": true,
+"current_page": 1,
+"items": {
+"count": 4,
+"total": 475,
+"per_page": 4
+}
+},
+"data": [
+{
+"mal_id": 49458,
+"url": "https://myanimelist.net/anime/49458/Kono_Subarashii_Sekai_ni_Shukufuku_wo_3",
+"images": {
+"jpg": {
+"image_url": "https://cdn.myanimelist.net/images/anime/1800/136599.jpg",
+"small_image_url": "https://cdn.myanimelist.net/images/anime/1800/136599t.jpg",
+"large_image_url": "https://cdn.myanimelist.net/images/anime/1800/136599l.jpg"
+},
+"webp": {
+"image_url": "https://cdn.myanimelist.net/images/anime/1800/136599.webp",
+"small_image_url": "https://cdn.myanimelist.net/images/anime/1800/136599t.webp",
+"large_image_url": "https://cdn.myanimelist.net/images/anime/1800/136599l.webp"
+}
+},
+"trailer": {
+"youtube_id": null,
+"url": null,
+"embed_url": null,
+"images": {
+"image_url": null,
+"small_image_url": null,
+"medium_image_url": null,
+"large_image_url": null,
+"maximum_image_url": null
+}
+},
+"approved": true,
+"titles": [
+{
+"type": "Default",
+"title": "Kono Subarashii Sekai ni Shukufuku wo! 3"
+},
+{
+"type": "Japanese",
+"title": "この素晴らしい世界に祝福を！3"
+},
+{
+"type": "English",
+"title": "KonoSuba: God's Blessing on This Wonderful World! 3"
+}
+],
+"title": "Kono Subarashii Sekai ni Shukufuku wo! 3",
+"title_english": "KonoSuba: God's Blessing on This Wonderful World! 3",
+"title_japanese": "この素晴らしい世界に祝福を！3",
+"title_synonyms": [],
+"type": "TV",
+"source": "Light novel",
+"episodes": null,
+"status": "Not yet aired",
+"airing": false,
+"aired": {
+"from": "2024-01-01T00:00:00+00:00",
+"to": null,
+"prop": {
+"from": {
+"day": 1,
+"month": 1,
+"year": 2024
+},
+"to": {
+"day": null,
+"month": null,
+"year": null
+}
+},
+"string": "2024 to ?"
+},
+"duration": "Unknown",
+"rating": "PG-13 - Teens 13 or older",
+"score": null,
+"scored_by": null,
+"rank": null,
+"popularity": 1139,
+"members": 199455,
+"favorites": 2000,
+"synopsis": "Third season of Kono Subarashii Sekai ni Shukufuku wo!",
+"background": null,
+"season": null,
+"year": null,
+"broadcast": {
+"day": null,
+"time": null,
+"timezone": null,
+"string": "Unknown"
+},
+"producers": [
+{
+"mal_id": 1696,
+"type": "anime",
+"name": "Kadokawa",
+"url": "https://myanimelist.net/anime/producer/1696/Kadokawa"
+}
+],
+"licensors": [],
+"studios": [
+{
+"mal_id": 1967,
+"type": "anime",
+"name": "Drive",
+"url": "https://myanimelist.net/anime/producer/1967/Drive"
+}
+],
+"genres": [
+{
+"mal_id": 2,
+"type": "anime",
+"name": "Adventure",
+"url": "https://myanimelist.net/anime/genre/2/Adventure"
+},
+{
+"mal_id": 4,
+"type": "anime",
+"name": "Comedy",
+"url": "https://myanimelist.net/anime/genre/4/Comedy"
+},
+{
+"mal_id": 10,
+"type": "anime",
+"name": "Fantasy",
+"url": "https://myanimelist.net/anime/genre/10/Fantasy"
+}
+],
+"explicit_genres": [],
+"themes": [
+{
+"mal_id": 62,
+"type": "anime",
+"name": "Isekai",
+"url": "https://myanimelist.net/anime/genre/62/Isekai"
+},
+{
+"mal_id": 20,
+"type": "anime",
+"name": "Parody",
+"url": "https://myanimelist.net/anime/genre/20/Parody"
+},
+{
+"mal_id": 72,
+"type": "anime",
+"name": "Reincarnation",
+"url": "https://myanimelist.net/anime/genre/72/Reincarnation"
+}
+],
+"demographics": []
+},
+{
+"mal_id": 53887,
+"url": "https://myanimelist.net/anime/53887/Spy_x_Family_Season_2",
+"images": {
+"jpg": {
+"image_url": "https://cdn.myanimelist.net/images/anime/1573/136206.jpg",
+"small_image_url": "https://cdn.myanimelist.net/images/anime/1573/136206t.jpg",
+"large_image_url": "https://cdn.myanimelist.net/images/anime/1573/136206l.jpg"
+},
+"webp": {
+"image_url": "https://cdn.myanimelist.net/images/anime/1573/136206.webp",
+"small_image_url": "https://cdn.myanimelist.net/images/anime/1573/136206t.webp",
+"large_image_url": "https://cdn.myanimelist.net/images/anime/1573/136206l.webp"
+}
+},
+"trailer": {
+"youtube_id": "nbbCX5kAMss",
+"url": "https://www.youtube.com/watch?v=nbbCX5kAMss",
+"embed_url": "https://www.youtube.com/embed/nbbCX5kAMss?enablejsapi=1&wmode=opaque&autoplay=1",
+"images": {
+"image_url": "https://img.youtube.com/vi/nbbCX5kAMss/default.jpg",
+"small_image_url": "https://img.youtube.com/vi/nbbCX5kAMss/sddefault.jpg",
+"medium_image_url": "https://img.youtube.com/vi/nbbCX5kAMss/mqdefault.jpg",
+"large_image_url": "https://img.youtube.com/vi/nbbCX5kAMss/hqdefault.jpg",
+"maximum_image_url": "https://img.youtube.com/vi/nbbCX5kAMss/maxresdefault.jpg"
+}
+},
+"approved": true,
+"titles": [
+{
+"type": "Default",
+"title": "Spy x Family Season 2"
+},
+{
+"type": "Japanese",
+"title": "SPY×FAMILY Season 2"
+}
+],
+"title": "Spy x Family Season 2",
+"title_english": null,
+"title_japanese": "SPY×FAMILY Season 2",
+"title_synonyms": [],
+"type": "TV",
+"source": "Manga",
+"episodes": null,
+"status": "Not yet aired",
+"airing": false,
+"aired": {
+"from": "2023-10-01T00:00:00+00:00",
+"to": null,
+"prop": {
+"from": {
+"day": 1,
+"month": 10,
+"year": 2023
+},
+"to": {
+"day": null,
+"month": null,
+"year": null
+}
+},
+"string": "Oct 2023 to ?"
+},
+"duration": "Unknown",
+"rating": "PG-13 - Teens 13 or older",
+"score": null,
+"scored_by": null,
+"rank": null,
+"popularity": 1213,
+"members": 186291,
+"favorites": 1104,
+"synopsis": "Second season of Spy x Family.",
+"background": null,
+"season": "fall",
+"year": 2023,
+"broadcast": {
+"day": null,
+"time": null,
+"timezone": null,
+"string": "Unknown"
+},
+"producers": [
+{
+"mal_id": 1143,
+"type": "anime",
+"name": "TOHO animation",
+"url": "https://myanimelist.net/anime/producer/1143/TOHO_animation"
+},
+{
+"mal_id": 1365,
+"type": "anime",
+"name": "Shueisha",
+"url": "https://myanimelist.net/anime/producer/1365/Shueisha"
+}
+],
+"licensors": [],
+"studios": [
+{
+"mal_id": 858,
+"type": "anime",
+"name": "Wit Studio",
+"url": "https://myanimelist.net/anime/producer/858/Wit_Studio"
+},
+{
+"mal_id": 1835,
+"type": "anime",
+"name": "CloverWorks",
+"url": "https://myanimelist.net/anime/producer/1835/CloverWorks"
+}
+],
+"genres": [
+{
+"mal_id": 1,
+"type": "anime",
+"name": "Action",
+"url": "https://myanimelist.net/anime/genre/1/Action"
+},
+{
+"mal_id": 4,
+"type": "anime",
+"name": "Comedy",
+"url": "https://myanimelist.net/anime/genre/4/Comedy"
+}
+],
+"explicit_genres": [],
+"themes": [
+{
+"mal_id": 53,
+"type": "anime",
+"name": "Childcare",
+"url": "https://myanimelist.net/anime/genre/53/Childcare"
+}
+],
+"demographics": [
+{
+"mal_id": 27,
+"type": "anime",
+"name": "Shounen",
+"url": "https://myanimelist.net/anime/genre/27/Shounen"
+}
+]
+},
+{
+"mal_id": 52807,
+"url": "https://myanimelist.net/anime/52807/One_Punch_Man_3",
+"images": {
+"jpg": {
+"image_url": "https://cdn.myanimelist.net/images/anime/1885/127108.jpg",
+"small_image_url": "https://cdn.myanimelist.net/images/anime/1885/127108t.jpg",
+"large_image_url": "https://cdn.myanimelist.net/images/anime/1885/127108l.jpg"
+},
+"webp": {
+"image_url": "https://cdn.myanimelist.net/images/anime/1885/127108.webp",
+"small_image_url": "https://cdn.myanimelist.net/images/anime/1885/127108t.webp",
+"large_image_url": "https://cdn.myanimelist.net/images/anime/1885/127108l.webp"
+}
+},
+"trailer": {
+"youtube_id": null,
+"url": null,
+"embed_url": null,
+"images": {
+"image_url": null,
+"small_image_url": null,
+"medium_image_url": null,
+"large_image_url": null,
+"maximum_image_url": null
+}
+},
+"approved": true,
+"titles": [
+{
+"type": "Default",
+"title": "One Punch Man 3"
+},
+{
+"type": "Synonym",
+"title": "One Punch Man 3rd Season"
+},
+{
+"type": "Japanese",
+"title": "ワンパンマン 3"
+},
+{
+"type": "English",
+"title": "One Punch Man Season 3"
+}
+],
+"title": "One Punch Man 3",
+"title_english": "One Punch Man Season 3",
+"title_japanese": "ワンパンマン 3",
+"title_synonyms": [
+"One Punch Man 3rd Season"
+],
+"type": "TV",
+"source": "Manga",
+"episodes": null,
+"status": "Not yet aired",
+"airing": false,
+"aired": {
+"from": null,
+"to": null,
+"prop": {
+"from": {
+"day": null,
+"month": null,
+"year": null
+},
+"to": {
+"day": null,
+"month": null,
+"year": null
+}
+},
+"string": "Not available"
+},
+"duration": "Unknown",
+"rating": "R - 17+ (violence & profanity)",
+"score": null,
+"scored_by": null,
+"rank": null,
+"popularity": 1446,
+"members": 151879,
+"favorites": 1799,
+"synopsis": "Third season of One Punch Man.",
+"background": null,
+"season": null,
+"year": null,
+"broadcast": {
+"day": null,
+"time": null,
+"timezone": null,
+"string": "Unknown"
+},
+"producers": [
+{
+"mal_id": 1365,
+"type": "anime",
+"name": "Shueisha",
+"url": "https://myanimelist.net/anime/producer/1365/Shueisha"
+}
+],
+"licensors": [],
+"studios": [],
+"genres": [
+{
+"mal_id": 1,
+"type": "anime",
+"name": "Action",
+"url": "https://myanimelist.net/anime/genre/1/Action"
+},
+{
+"mal_id": 4,
+"type": "anime",
+"name": "Comedy",
+"url": "https://myanimelist.net/anime/genre/4/Comedy"
+}
+],
+"explicit_genres": [],
+"themes": [
+{
+"mal_id": 50,
+"type": "anime",
+"name": "Adult Cast",
+"url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
+},
+{
+"mal_id": 20,
+"type": "anime",
+"name": "Parody",
+"url": "https://myanimelist.net/anime/genre/20/Parody"
+},
+{
+"mal_id": 31,
+"type": "anime",
+"name": "Super Power",
+"url": "https://myanimelist.net/anime/genre/31/Super_Power"
+}
+],
+"demographics": [
+{
+"mal_id": 42,
+"type": "anime",
+"name": "Seinen",
+"url": "https://myanimelist.net/anime/genre/42/Seinen"
+}
+]
+},
+{
+"mal_id": 52299,
+"url": "https://myanimelist.net/anime/52299/Ore_dake_Level_Up_na_Ken",
+"images": {
+"jpg": {
+"image_url": "https://cdn.myanimelist.net/images/anime/1781/134578.jpg",
+"small_image_url": "https://cdn.myanimelist.net/images/anime/1781/134578t.jpg",
+"large_image_url": "https://cdn.myanimelist.net/images/anime/1781/134578l.jpg"
+},
+"webp": {
+"image_url": "https://cdn.myanimelist.net/images/anime/1781/134578.webp",
+"small_image_url": "https://cdn.myanimelist.net/images/anime/1781/134578t.webp",
+"large_image_url": "https://cdn.myanimelist.net/images/anime/1781/134578l.webp"
+}
+},
+"trailer": {
+"youtube_id": "srnpK54nRBk",
+"url": "https://www.youtube.com/watch?v=srnpK54nRBk",
+"embed_url": "https://www.youtube.com/embed/srnpK54nRBk?enablejsapi=1&wmode=opaque&autoplay=1",
+"images": {
+"image_url": "https://img.youtube.com/vi/srnpK54nRBk/default.jpg",
+"small_image_url": "https://img.youtube.com/vi/srnpK54nRBk/sddefault.jpg",
+"medium_image_url": "https://img.youtube.com/vi/srnpK54nRBk/mqdefault.jpg",
+"large_image_url": "https://img.youtube.com/vi/srnpK54nRBk/hqdefault.jpg",
+"maximum_image_url": "https://img.youtube.com/vi/srnpK54nRBk/maxresdefault.jpg"
+}
+},
+"approved": true,
+"titles": [
+{
+"type": "Default",
+"title": "Ore dake Level Up na Ken"
+},
+{
+"type": "Synonym",
+"title": "Na Honjaman Level Up"
+},
+{
+"type": "Synonym",
+"title": "I Level Up Alone"
+},
+{
+"type": "Synonym",
+"title": "나 혼자만 레벨업"
+},
+{
+"type": "Japanese",
+"title": "俺だけレベルアップな件"
+},
+{
+"type": "English",
+"title": "Solo Leveling"
+}
+],
+"title": "Ore dake Level Up na Ken",
+"title_english": "Solo Leveling",
+"title_japanese": "俺だけレベルアップな件",
+"title_synonyms": [
+"Na Honjaman Level Up",
+"I Level Up Alone",
+"나 혼자만 레벨업"
+],
+"type": "TV",
+"source": "Web manga",
+"episodes": null,
+"status": "Not yet aired",
+"airing": false,
+"aired": {
+"from": "2024-01-01T00:00:00+00:00",
+"to": null,
+"prop": {
+"from": {
+"day": 1,
+"month": 1,
+"year": 2024
+},
+"to": {
+"day": null,
+"month": null,
+"year": null
+}
+},
+"string": "Jan 2024 to ?"
+},
+"duration": "Unknown",
+"rating": null,
+"score": null,
+"scored_by": null,
+"rank": null,
+"popularity": 1477,
+"members": 147439,
+"favorites": 2892,
+"synopsis": "Ten years ago, \"the Gate\" appeared and connected the real world with the realm of magic and monsters. To combat these vile beasts, ordinary people received superhuman powers and became known as \"Hunters.\" Twenty-year-old Sung Jin-Woo is one such Hunter, but he is known as the \"World's Weakest,\" owing to his pathetic power compared to even a measly E-Rank. Still, he hunts monsters tirelessly in low-rank Gates to pay for his mother's medical bills.\n\nHowever, this miserable lifestyle changes when Jin-Woo—believing himself to be the only one left to die in a mission gone terribly wrong—awakens in a hospital three days later to find a mysterious screen floating in front of him. This \"Quest Log\" demands that Jin-Woo completes an unrealistic and intense training program, or face an appropriate penalty. Initially reluctant to comply because of the quest's rigor, Jin-Woo soon finds that it may just transform him into one of the world's most fearsome Hunters. \n\n[Written by MAL Rewrite]",
+"background": null,
+"season": "winter",
+"year": 2024,
+"broadcast": {
+"day": null,
+"time": null,
+"timezone": null,
+"string": "Unknown"
+},
+"producers": [
+{
+"mal_id": 17,
+"type": "anime",
+"name": "Aniplex",
+"url": "https://myanimelist.net/anime/producer/17/Aniplex"
+},
+{
+"mal_id": 1468,
+"type": "anime",
+"name": "Crunchyroll",
+"url": "https://myanimelist.net/anime/producer/1468/Crunchyroll"
+}
+],
+"licensors": [],
+"studios": [
+{
+"mal_id": 56,
+"type": "anime",
+"name": "A-1 Pictures",
+"url": "https://myanimelist.net/anime/producer/56/A-1_Pictures"
+}
+],
+"genres": [
+{
+"mal_id": 1,
+"type": "anime",
+"name": "Action",
+"url": "https://myanimelist.net/anime/genre/1/Action"
+},
+{
+"mal_id": 2,
+"type": "anime",
+"name": "Adventure",
+"url": "https://myanimelist.net/anime/genre/2/Adventure"
+},
+{
+"mal_id": 10,
+"type": "anime",
+"name": "Fantasy",
+"url": "https://myanimelist.net/anime/genre/10/Fantasy"
+}
+],
+"explicit_genres": [],
+"themes": [],
+"demographics": []
+}
+]
+}
 export const popularData = {
   pagination: {
     last_visible_page: 5047,

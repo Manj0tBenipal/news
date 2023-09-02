@@ -20,7 +20,7 @@ export default function Hero() {
     const item = el.attributes;
 
     return (
-      <SwiperSlide data-bs-interval="2300" key={el.id}>
+      <SwiperSlide data-bs-interval="1500" key={el.id}>
         <div className={`carousel-item`}>
           <div className="anime-info">
             <div className="anime-info-content">

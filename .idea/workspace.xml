@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Details page headeer complete for both APIs. hero component uses more filtered data">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7c479e75-3838-405a-bf9a-60537496fe6b" name="Changes" comment="Routes added for nav links and featured section's view More link" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -412,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693679749018</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Routes added for nav links and featured section's view More link">
+      <created>1693687979769</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1693687979769</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Logic change in how navsidebar works" />
     <MESSAGE value="Reviews section ata fetching from api  added. Files renamed" />
     <MESSAGE value="Featured section completed" />
     <MESSAGE value="::after removed from hero + review type selector chnges" />
@@ -497,6 +501,7 @@
     <MESSAGE value="Image size adjusted across the website to improve loading time and performance" />
     <MESSAGE value="Details page added with header component" />
     <MESSAGE value="Details page headeer complete for both APIs. hero component uses more filtered data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Details page headeer complete for both APIs. hero component uses more filtered data" />
+    <MESSAGE value="Routes added for nav links and featured section's view More link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Routes added for nav links and featured section's view More link" />
   </component>
 </project>

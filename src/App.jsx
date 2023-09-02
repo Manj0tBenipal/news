@@ -8,13 +8,14 @@ import AnimeInfoJikan from "./components/AnimeInfo/AnimeInfoJikan";
 import AnimeByFilter from "./pages/AnimeByFilter";
 import "./main.css";
 import AnimeByType from "./pages/AnimeByType";
+import RecommendedTopTen from "./Layouts/RecommendedTopTen";
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="details">
+          <Route path="details" element={<RecommendedTopTen />}>
             <Route path="kitsu/:id" element={<AnimeInfoKitsu />} />
             <Route path="jikan/:id" element={<AnimeInfoJikan />} />
           </Route>

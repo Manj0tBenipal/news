@@ -5,12 +5,12 @@ import {
   onaData,
   ovaData,
   specialsData,
-  upcomingData,
+  moviesData,
 } from "../data/mainSection";
 import {
   favoriteData,
   topAiringData,
-  moviesData,
+  upcoming,
   popularData,
 } from "../data/featured";
 import characterData from "../data/characters";
@@ -32,7 +32,8 @@ function useExecuteQuery(queryKey, endpoint) {
 
 export function useHandleJikanResponse(queryKey, endpoint, backupData) {
   const res = useExecuteQuery(queryKey, endpoint);
-  const data = res.isError || res.data === null ? backupData : res.data?.data;
+  const data =
+    res.isError || res.data === undefined ? backupData : res.data?.data;
   return { data: data, isLoading: res.isLoading };
 }
 
@@ -104,7 +105,7 @@ export function useTopUpcoming() {
   return useHandleJikanResponse(
     "top-upcoming",
     "top/anime?filter=upcoming&limit=4",
-    upcomingData
+    upcoming
   );
 }
 export function useGenre() {
@@ -134,6 +135,13 @@ export function useGetAnimeByType(type) {
   return useHandleJikanResponse(
     `anime-by-type-${type}`,
     `top/anime?type=${type}`,
+    null
+  );
+}
+export function useGetRecommendedAnime(type) {
+  return useHandleJikanResponse(
+    `recommended-anime`,
+    `anime?limit=24&status=airing&filter=bypopularity&type=tv&order_by=popularity`,
     null
   );
 }
